@@ -1,3 +1,3 @@
-# nuxt3-vuetify3
+# nuxt3-vuetify3`
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/nuxt-starter-p1kqzi)
+[Source ⚡️](https://stackblitz.com/edit/nuxt-starter-p1kqzi)
