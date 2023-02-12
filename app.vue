@@ -8,12 +8,18 @@
           color === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'
         "
         @click="onClick"
-        >Toggle Theme</v-btn
+        ></v-btn
       >
     </v-app-bar>
 
     <v-main>
-      <v-container><nuxt-page /></v-container>
+      <v-container>
+          <nuxt-page />
+      </v-container>
+
+        <v-footer color="transparent" class="pt-5 pb-5">
+
+        </v-footer>
     </v-main>
   </v-app>
 </template>
