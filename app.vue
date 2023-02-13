@@ -1,12 +1,15 @@
 <template>
   <v-app :theme="color">
     <v-app-bar>
-      <v-spacer></v-spacer>
 
+        <template v-slot:prepend>
+            <img src="/bp.png" height="38" class="mr-2" alt="BP">
+        </template>
+
+
+      <v-spacer></v-spacer>
       <v-btn
-        :prepend-icon="
-          color === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'
-        "
+        :prepend-icon="color === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'"
         @click="onClick"
         ></v-btn
       >
