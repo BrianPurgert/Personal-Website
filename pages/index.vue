@@ -27,7 +27,6 @@ const app = useNuxtApp();
                     </v-col>
 
                     <v-col cols="12" md="6" class="landing-image">
-                        <img src="/images/landing.png" alt="">
                     </v-col>
                 </v-row>
             </v-container>
