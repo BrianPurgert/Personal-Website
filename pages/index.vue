@@ -15,13 +15,12 @@ const app = useNuxtApp();
                 <v-row no-gutters>
 
                     <v-col cols="12" md="6" class="mt-md-8">
-                        <h1 class="display-2 mb-6">Hi, I'm </h1>
+                        <h3 class="display-2 mb-6">Hi my name is Brian Purgert</h3>
 
+                        <Icon name="uil:github"/>
+                        <p class="body-1 font-weight-bold">if you're reading this, I'm still working on it</p>
 
-                        <p class="body-1 font-weight-bold">short description here</p>
-
-                        <v-btn class="ml-2 " x-large nuxt :to="'/about'">
-                            <v-icon left>mdi-download</v-icon>
+                        <v-btn prepend-icon="mdi-download" rounded="pill" to="/BrianPurgert_Resume.pdf">
                             My Resume
                         </v-btn>
                     </v-col>
