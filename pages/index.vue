@@ -17,10 +17,9 @@ const app = useNuxtApp();
                     <v-col cols="12" md="6" class="mt-md-8">
                         <h3 class="display-2 mb-6">Hi my name is Brian Purgert</h3>
 
-                        <Icon name="uil:github"/>
                         <p class="body-1 font-weight-bold">if you're reading this, I'm still working on it</p>
 
-                        <v-btn prepend-icon="mdi-download" rounded="pill" to="/BrianPurgert_Resume.pdf">
+                        <v-btn prepend-icon="mdi-download" rounded="pill" href="/BrianPurgert_Resume.pdf" download>
                             My Resume
                         </v-btn>
                     </v-col>
