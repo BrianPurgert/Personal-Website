@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "@nuxt-alt/vuetify": "^1.1.0",
-    "vuetify": "^3.1.4"
+    "vuetify": "^3.1.4",
+    "vue-typewriter-effect": "^0.1.2"
   },
   "devDependencies": {
     "nuxt": "^3.2.0",

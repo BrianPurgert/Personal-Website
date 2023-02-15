@@ -1,9 +1,11 @@
 <script setup>
-const theme = useTheme();
-const app = useNuxtApp();
+import BrianIsTyping from "~/components/BrianIsTyping.vue"
+import VIframe from "~/pages/VIframe.vue"
+
+const theme = useTheme()
+const app = useNuxtApp()
 
 </script>
-
 
 
 <template>
@@ -12,25 +14,37 @@ const app = useNuxtApp();
         <section class="white pb-6">
 
             <v-container>
-                <v-row no-gutters>
 
-                    <v-col cols="12" md="6" class="mt-md-8">
-                        <h3 class="display-2 mb-6">Hi my name is Brian Purgert</h3>
+                <v-alert border="top" prominent title="Hey I'm Brian" type="info" variant="tonal">
+                   <div class=""> if you're reading this <span class="font-weight-bold"> I'm still working on this site.</span>
+                       but I'm in need of a job ASAP, so if you want a top tier developer, for pennies on the dollar
+                       <v-btn
+                               download
+                               variant="tonal"
+                               href="/BrianPurgert_Resume.pdf"
+                               prepend-icon="mdi-download"
+                               color="cyan"
+                       >my contact info is in my resume</v-btn>
 
-                        <p class="body-1 font-weight-bold">if you're reading this, I'm still working on it</p>
 
-                        <v-btn prepend-icon="mdi-download" rounded="pill" href="/BrianPurgert_Resume.pdf" download>
-                            My Resume
-                        </v-btn>
-                    </v-col>
 
-                    <v-col cols="12" md="6" class="landing-image">
-                    </v-col>
-                </v-row>
+                   </div>
+                </v-alert>
+
+                <brian-is-typing/>
+
+                <v-iframe/>
+                <v-alert prominent border="bottom" text="..." type="error" variant="tonal">
+                    above animation is in an iframe on <nuxt-link to="https://codepen.io/BrianPurgert/pen/QWVWZwg">CodePen</nuxt-link> it's what I want, just not the way I want it.
+                </v-alert>
+
+
+                <v-col class="landing-image" cols="12" md="6">
+                </v-col>
             </v-container>
         </section>
 
-        <!-- partners -->
+      <h1 class="text-center">This is about to Projects</h1>
         <section class="grey lighten-5 partners pa-3">
             <projects-timeline/>
         </section>
@@ -63,14 +77,13 @@ const app = useNuxtApp();
 <script>
 import ProjectsTimeline from '../components/ProjectsTimeline.vue'
 
+
 export default {
 	components: {
 		ProjectsTimeline
 	},
 	data() {
-		return {
-
-		}
+		return {}
 	}
 }
 </script>

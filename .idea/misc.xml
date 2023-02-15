@@ -9,4 +9,7 @@
     <option name="additionalUIScale" value="1.3" />
     <option name="ignoreWarnings" value="true" />
   </component>
+  <component name="ProjectResources">
+    <xml-schema-version>XMLSchema_1_1</xml-schema-version>
+  </component>
 </project>
