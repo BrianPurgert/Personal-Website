@@ -6,3 +6,10 @@ node_modules
 .output
 .env
 dist
+/.idea/codeStyles/codeStyleConfig.xml
+/.idea/dictionaries/brian.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/dbnavigator.xml
+/.idea/jsLibraryMappings.xml
+/.idea/markdown.xml
+/.idea/webResources.xml

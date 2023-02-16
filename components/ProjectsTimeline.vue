@@ -27,13 +27,25 @@
                   Twixer Chrome Extension
               </v-card-title>
               <v-card-text>
-                  <img src="/twixer/twixer_logo.svg" >
-                  <img src="/twixer/sidebar.png" >
+                  <img src="/twixer/twixer_logo.svg" alt="Twixer Logo">
+                  <img src="/twixer/sidebar.png" alt="Sidebar">
 
               </v-card-text>
           </v-card>
       </v-timeline-item>
-
+      <v-timeline-item>
+          <template v-slot:opposite>
+              <div class="pt-1 headline font-weight-bold text-cyan" v-text="2002"></div>
+          </template>
+          <div>
+              <h2 :class="`mt-n1 headline font-weight-light mb-4 text-amber`">
+                  heading
+              </h2>
+              <div>
+                  body
+              </div>
+          </div>
+      </v-timeline-item>
 
   </v-timeline>
 </template>

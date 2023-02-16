@@ -44,7 +44,7 @@ const app = useNuxtApp()
             </v-container>
         </section>
 
-      <h1 class="text-center">This is about to Projects</h1>
+        <!-- projects -->
         <section class="grey lighten-5 partners pa-3">
             <projects-timeline/>
         </section>
