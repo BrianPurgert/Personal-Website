@@ -1,89 +1,98 @@
-<script setup>
-import BrianIsTyping from "~/components/BrianIsTyping.vue"
-import VIframe from "~/pages/VIframe.vue"
+<script setup >
+import BrianIsTyping from '~/components/BrianIsTyping.vue'
+import VIframe       from '~/pages/VIframe.vue'
 
 const theme = useTheme()
 const app = useNuxtApp()
 
-</script>
+</script >
 
 
-<template>
-    <div>
-        <!-- landing section -->
-        <section class="white pb-6">
+<template >
+	<div >
+		<!-- landing section -->
+		<v-row align = 'center' >
+			<v-col >
+				<v-alert prominent border = "bottom" text = "" type = "info" variant = "tonal" >
 
-            <v-container>
+					<h4 ><strong >Hi my name is Brian Brian and this is my portfolio </strong ></h4 >
 
-                <v-alert border="top" prominent title="Hey I'm Brian" type="info" variant="tonal">
-                   <div class=""> if you're reading this <span class="font-weight-bold"> I'm still working on this site.</span>
-                       but I'm in need of a job ASAP, so if you want a top tier developer, for pennies on the dollar
-                       <v-btn
-                               download
-                               variant="tonal"
-                               href="/BrianPurgert_Resume.pdf"
-                               prepend-icon="mdi-download"
-                               color="cyan"
-                       >my contact info is in my resume</v-btn>
+					<li >This site is a work in progress</li >
+					<li >I'm looking for a full-time position</li >
+					<p >my skills and passion are in app development,full stack web development, anything within the AI field</p >
 
+					<li >I live Lakeland, I'm willing to relocate around 100 miles</li >
 
-
-                   </div>
-                </v-alert>
-
-                <brian-is-typing/>
-
-                <v-iframe/>
-                <v-alert prominent border="bottom" text="..." type="error" variant="tonal">
-                    above animation is in an iframe on <nuxt-link to="https://codepen.io/BrianPurgert/pen/QWVWZwg">CodePen</nuxt-link> it's what I want, just not the way I want it.
-                </v-alert>
+					<li >my contact info is in my
+						<v-btn
+								download
+								density = 'compact'
+								size = 'small'
+								variant = "tonal"
+								href = "/BrianPurgert_Resume.pdf"
+								prepend-icon = "mdi-download"
+								color = "cyan"
+								elevation = '10'
+						>Resume
+						</v-btn >
+					</li >
 
 
-                <v-col class="landing-image" cols="12" md="6">
-                </v-col>
-            </v-container>
-        </section>
+				</v-alert >
 
-        <!-- projects -->
-        <section class="grey lighten-5 partners pa-3">
-            <projects-timeline/>
-        </section>
 
-        <!-- features -->
-        <section class="white text-center">
-            <v-container>
-                <v-row>
-                    <v-col>
+				<brian-is-typing />
 
-                    </v-col>
-                </v-row>
-            </v-container>
-        </section>
+				<!--                <v-iframe/>-->
+				<v-alert prominent border = "bottom" text = "" type = "info" variant = "tonal" >
+					C
+					<nuxt-link to = "https://codepen.io/BrianPurgert/pen/QWVWZwg" >
+						<Icon name = "fa-brands:codepen" />
+						CodePen
+					</nuxt-link >
+				</v-alert >
+			</v-col >
+		</v-row >
 
-        <section class="grey lighten-5 pa-5">
-        </section>
+		<!-- projects -->
+		<section class = "grey lighten-5 partners pa-3" >
+			<projects-timeline />
+		</section >
 
-        <section class="white pa-5"></section>
+		<!-- features -->
+		<section class = "white text-center" >
+			<v-container >
+				<v-row >
+					<v-col >
 
-        <section class="white text-center pt-2">
-            <v-container>
+					</v-col >
+				</v-row >
+			</v-container >
+		</section >
 
-            </v-container>
-            <v-divider class="mt-2"></v-divider>
-        </section>
-    </div>
-</template>
+		<section class = "grey lighten-5 pa-5" >
+		</section >
 
-<script>
+		<section class = "white pa-5" ></section >
+
+		<section class = "white text-center pt-2" >
+			<v-container >
+
+			</v-container >
+			<v-divider class = "mt-2" ></v-divider >
+		</section >
+	</div >
+</template >
+
+<script >
 import ProjectsTimeline from '../components/ProjectsTimeline.vue'
 
 
 export default {
 	components: {
 		ProjectsTimeline
-	},
-	data() {
+	}, data() {
 		return {}
 	}
 }
-</script>
+</script >
