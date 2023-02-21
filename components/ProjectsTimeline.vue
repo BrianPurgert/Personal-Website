@@ -61,8 +61,7 @@
 						SimpleGSA
 					</v-card-title >
 					<v-card-text >
-						<img alt = "SimpleGSA Logo" src = "/simplegsa/simplegsa_logo.svg" >
-						<img alt = "SimpleGSA" src = "/simplegsa/simplegsa.png" >
+			
 					</v-card-text >
 				</v-sheet >
 			</v-container >
