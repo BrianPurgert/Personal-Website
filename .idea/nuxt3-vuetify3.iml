@@ -5,8 +5,11 @@
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
-      <excludeFolder url="file://$MODULE_DIR$/.idea" />
-      <excludeFolder url="file://$MODULE_DIR$/node_modules" />
+    </content>
+    <content url="file://$MODULE_DIR$/.nuxt" />
+    <content url="file://$MODULE_DIR$/../static--">
+    </content>
+    <content url="file://$MODULE_DIR$/../videos">
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

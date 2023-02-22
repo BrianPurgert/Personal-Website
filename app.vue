@@ -8,6 +8,13 @@
 
 
 			<v-spacer ></v-spacer >
+			<v-btn to = "https://codepen.io/BrianPurgert/" >
+				<template v-slot:prepend >
+					<Icon name = "fa-brands:codepen" size = "1.5em" />
+				</template >
+				CodePen
+			</v-btn >
+
 			<template v-slot:append >
 				<v-btn download href = "/BrianPurgert_Resume.pdf" rounded = "lg" size = "large" >
 					<template v-slot:prepend >

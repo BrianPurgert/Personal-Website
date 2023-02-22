@@ -7,12 +7,12 @@
 
 svg.logo{
 	/*max-width:        120%;*/
-	display:          block;
-	font-family:      "tesla", cursive;
-	justify-content:  center;
-	align-content:    center;
-	font-style:       italic;
-	background-color: aquamarine;
+	display:         block;
+	font-family:     "tesla", cursive;
+	justify-content: center;
+	align-content:   center;
+	font-style:      italic;
+	/*background-color: aquamarine;*/
 }
 
 .text-copy{
@@ -34,18 +34,10 @@ svg.logo{
 }
 
 .text-copy:nth-child(2){
-	animation-delay: -2s;
-}
-
-.text-copy:nth-child(3){
 	animation-delay: -3s;
 }
 
-.text-copy:nth-child(4){
-	animation-delay: -4s;
-}
-
-.text-copy:nth-child(5){
+.text-copy:nth-child(3){
 	animation-delay: -5s;
 }
 
@@ -75,13 +67,6 @@ svg.logo{
 		<text class = "b-top" x = "5" y = "16" >b</text >
 	</svg >
 
-	<!--	<h1 >I'm </h1 >-->
-	<TypewriterEffect
-			:strings = "['rian','urgert','brian purgert','   Computer Engineer']"
-			class = "logo"
-			delay = "50"
-			wrapperClassName = "bp-wrapper"
-	></TypewriterEffect >
 
 </template >
 

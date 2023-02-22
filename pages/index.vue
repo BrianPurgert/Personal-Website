@@ -1,4 +1,4 @@
-<script setup >
+<script setup xmlns = "http://www.w3.org/1999/html" >
 import BrianIsTyping from '~/components/BrianIsTyping.vue'
 import VIframe       from '~/pages/VIframe.vue'
 
@@ -17,11 +17,11 @@ const app = useNuxtApp()
 
 					<h4 ><strong >Hi my name is Brian Brian and this is my portfolio </strong ></h4 >
 
-					<li >This site is a work in progress</li >
+					<li >This site is a work in progress!</li >
 					<li >I'm looking for a full-time position</li >
-					<p >my skills and passion are in app development,full stack web development, anything within the AI field</p >
+					<li >my skills and passion are in app development,full stack web development, AI and IT</li >
+					<li >I live Lakeland, but I'm willing to relocate</li >
 
-					<li >I live Lakeland, I'm willing to relocate around 100 miles</li >
 
 					<li >my contact info is in my
 						<v-btn
@@ -43,14 +43,7 @@ const app = useNuxtApp()
 
 				<brian-is-typing />
 
-				<!--                <v-iframe/>-->
-				<v-alert prominent border = "bottom" text = "" type = "info" variant = "tonal" >
-					C
-					<nuxt-link to = "https://codepen.io/BrianPurgert/pen/QWVWZwg" >
-						<Icon name = "fa-brands:codepen" />
-						CodePen
-					</nuxt-link >
-				</v-alert >
+
 			</v-col >
 		</v-row >
 

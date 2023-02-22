@@ -1,7 +1,7 @@
 <!--
-  2004	Battlefield 1942 modding
-  2006	Scripting
-  2008	Crysis Interstate
+  2004 - age 12 -	Battlefield 1942 modding
+  2006 - age 14 - Runescape Scripting
+  2008	 Crysis Interstate
   2010 	Space Bike
   2012 	Project High Flight
   https://www.facebook.com/ProjectHighFlight/photos
@@ -61,7 +61,7 @@
 						SimpleGSA
 					</v-card-title >
 					<v-card-text >
-			
+
 					</v-card-text >
 				</v-sheet >
 			</v-container >
