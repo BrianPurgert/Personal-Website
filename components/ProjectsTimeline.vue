@@ -20,9 +20,15 @@
 			<v-container >
 				<v-sheet class = "elevation-2" >
 					<v-card-title class = "text-h5" >
-						Smart Diaper
+						will be adding sections for each
 					</v-card-title >
 					<v-card-text >
+						2004 - age 12 - Battlefield 1942 modding<br />
+						2006 - age 14 - Runescape Scripting<br />
+						2008 Crysis Interstate<br />
+						2010 Space Bike
+						
+
 					</v-card-text >
 				</v-sheet >
 			</v-container >
@@ -55,7 +61,7 @@
 				<div class = "tesla-text"
 						v-text = "'2018'" ></div >
 			</template >
-			
+
 			<nuxt-icon filled name = "ruby_discord" style = 'font-size: 20em' />
 
 
