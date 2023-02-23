@@ -27,7 +27,7 @@
 						2006 - age 14 - Runescape Scripting<br />
 						2008 Crysis Interstate<br />
 						2010 Space Bike
-						
+
 
 					</v-card-text >
 				</v-sheet >
@@ -101,16 +101,6 @@ export default {
 </script >
 
 <style >
-.twixer .v-timeline-divider__dot{
-	/*background-color: transparent !important;*/
-}
 
-.v-timeline-divider__inner-dot{
-	/*background-color: transparent !important;*/
-}
 
-.v-timeline-divider__dot,
-.v-timeline-divider__inner-dot{
-	background-color: transparent !important;
-}
 </style >

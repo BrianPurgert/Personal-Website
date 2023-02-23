@@ -1,0 +1,85 @@
+@font-face{
+	font-family: "tesla";
+	src:         url("https://brianpurgert2.com/fonts/tesla.woff2") format("woff2");
+}
+
+svg.logo{
+	align-content:   center;
+	display:         block;
+	font-family:     "tesla", cursive;
+	font-style:      italic;
+	justify-content: center;
+}
+
+.text-copy{
+	animation:         stroke-offset 10s infinite linear alternate;
+	fill:              #bd2c44;
+	stroke:            #2975a8;
+	stroke-dasharray:  0 10 20;
+	stroke-dashoffset: -50%;
+	text-shadow:       3px 3px 2px rgba(24, 24, 27, 0.8);
+}
+
+.b-top{
+	fill:        #bd2c44;
+	text-shadow: none;
+}
+
+.text-copy:nth-child(1){
+	animation-delay: -1s;
+}
+
+.text-copy:nth-child(2){
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(3){
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100%{
+		stroke-dashoffset: 50%;
+	}
+}
+
+.tesla-text{
+	/*display:           block;*/
+	align-content:     center;
+	animation:         stroke-offset 10s infinite linear alternate;
+	color:             #bd2c44;
+	fill:              #bd2c44;
+	font-family:       "tesla", cursive;
+	font-size:         2.1rem;
+	font-style:        italic;
+	justify-content:   center;
+	stroke:            #2975a8;
+	stroke-dasharray:  0 10 20;
+	stroke-dashoffset: -50%;
+	text-shadow:       -1px -1px 0 #2975a8,
+	                   1px -1px 0 #2975a8,
+	                   -1px 1px 0 #2975a8,
+	                   1px 1px 0 #2975a8;
+	width:             max-content;
+	/*text-shadow:       3px 3px 2px rgba(24, 24, 27, 0.8);*/
+}
+
+@keyframes stroke-offset{
+	100%{
+		stroke-dashoffset: 50%;
+	}
+}
+
+.twixer .v-timeline-divider__dot{
+	/*background-color: transparent !important;*/
+}
+
+.v-timeline-divider__inner-dot{
+	/*background-color: transparent !important;*/
+}
+
+.v-timeline-divider__dot,
+.v-timeline-divider__inner-dot{
+	background-color: transparent !important;
+}
+
