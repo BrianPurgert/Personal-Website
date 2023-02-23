@@ -6,6 +6,40 @@ const theme = useTheme()
 const app = useNuxtApp()
 
 </script >
+<style >
+@font-face{
+	font-family: "tesla";
+	src:         url("https://brianpurgert2.com/fonts/tesla.woff2") format("woff2");
+}
+
+.tesla-text{
+	/*display:           block;*/
+	font-family:       "tesla", cursive;
+	justify-content:   center;
+	align-content:     center;
+	font-style:        italic;
+	font-size:         2.1rem;
+	width:             max-content;
+	animation:         stroke-offset 10s infinite linear alternate;
+	color:             #bd2c44;
+	text-shadow:       -1px -1px 0 #2975a8,
+	                   1px -1px 0 #2975a8,
+	                   -1px 1px 0 #2975a8,
+	                   1px 1px 0 #2975a8;
+	fill:              #bd2c44;
+	stroke:            #2975a8;
+	stroke-dasharray:  0 10 20;
+	stroke-dashoffset: -50%;
+	/*text-shadow:       3px 3px 2px rgba(24, 24, 27, 0.8);*/
+}
+
+@keyframes stroke-offset{
+	100%{
+		stroke-dashoffset: 50%;
+	}
+}
+
+</style >
 
 
 <template >

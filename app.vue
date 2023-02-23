@@ -3,12 +3,12 @@
 		<v-app-bar >
 
 			<template v-slot:prepend >
-				<img src = "/SVG/bp_logo.svg" height = "38" class = "mr-2" alt = "BP" >
+				<img src = "/bp.svg" height = "38" class = "mr-2" alt = "BP" >
 			</template >
 
 
 			<v-spacer ></v-spacer >
-			<v-btn to = "https://codepen.io/BrianPurgert/" >
+			<v-btn href = 'https://codepen.io/BrianPurgert/' >
 				<template v-slot:prepend >
 					<Icon name = "fa-brands:codepen" size = "1.5em" />
 				</template >
@@ -22,7 +22,8 @@
 					</template >
 					Resume
 				</v-btn >
-
+				<!--				{{ color === 'light' ? 'Dark' : 'Light' }}-->
+				<!--		Toggle switch here would be cool  -->
 				<v-btn
 						:prepend-icon = "color === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'"
 						@click = "onClick"

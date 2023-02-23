@@ -54,7 +54,7 @@ svg.logo{
 			<text class = "b2" x = "5" y = "16" >b</text >
 			<text class = "b2" x = "5" y = "16" >p</text >
 			<text id = "replace_me_plz" class = "word" x = "18" y = "16" >
-				rian purgert
+				{{ text }}
 			</text >
 		</symbol >
 		<g class = "g-ants" >
@@ -67,17 +67,33 @@ svg.logo{
 		<text class = "b-top" x = "5" y = "16" >b</text >
 	</svg >
 
+	<!--	<TypewriterEffect style = 'background-color: red' :element = 'span' skipAddStyles-->
+	<!--			:strings = "['hello', 'world']" />-->
+
 
 </template >
 
 
 <script >
+
+
 import TypewriterEffect from 'vue-typewriter-effect'
 
 
 export default {
-	name: 'brian-is-typing', components: {TypewriterEffect}
-}
+	name: 'brian-is-typing', components: {
+		TypewriterEffect
+	}, data() {
+		return {
+			text: 'rian purgert'
+		}
+	}, mounted() {
+		this.$nextTick(() => {
+			this.text = 'rian purgert'
+		})
+	}
 
+
+}
 
 </script >
