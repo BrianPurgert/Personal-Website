@@ -1,8 +1,7 @@
 <script setup >
-import BrianIsTyping from '~/components/BrianIsTyping.vue'
-
 const theme = useTheme()
 const app = useNuxtApp()
+
 
 </script >
 <style >
@@ -82,11 +81,12 @@ const app = useNuxtApp()
 
 <script >
 import ProjectsTimeline from '../components/ProjectsTimeline.vue'
+import BrianIsTyping    from '~/components/BrianIsTyping.vue'
 
 
 export default {
 	components: {
-		ProjectsTimeline
+		ProjectsTimeline, BrianIsTyping
 	}, data() {
 		return {}
 	}

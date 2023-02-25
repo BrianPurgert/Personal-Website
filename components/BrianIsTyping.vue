@@ -3,9 +3,10 @@
 		<symbol id = "s-text" >
 			<text class = "b2" x = "5" y = "16" >b</text >
 			<text class = "b2" x = "5" y = "16" >p</text >
-			<text class = "word" x = "18" y = "16" >
-				{{ text }}
+			<text class = "" x = "18" y = "16" >
+				{{ typeValue }}
 			</text >
+
 		</symbol >
 		<g class = "g-ants" >
 			<use class = "text-copy" href = "#s-text" ></use >
@@ -20,21 +21,98 @@
 
 
 <script >
-import TypewriterEffect from 'vue-typewriter-effect'
+
 
 export default {
-	name: 'brian-is-typing', components: {
-		TypewriterEffect
-	}, data() {
+	name: 'brian-is-typing', components: {}, data: () => {
 		return {
-			text: 'rian purgert'
+			typeValue: '',
+			typeStatus: false,
+			displayTextArray: ['rian', 'urgert'],
+			typingSpeed: 50,
+			erasingSpeed: 100,
+			newTextDelay: 2000,
+			displayTextArrayIndex: 0,
+			charIndex: 0
 		}
-	}, mounted() {
-		this.$nextTick(() => {
-			this.text = 'rian purgert'
-		})
+	}, props: {}, created() {
+		setTimeout(this.typeText, this.newTextDelay + 200)
+	}, methods: {
+		typeText() {
+			if (this.charIndex < this.displayTextArray[this.displayTextArrayIndex].length) {
+				if (!this.typeStatus) {
+					this.typeStatus = true
+				}
+				this.typeValue += this.displayTextArray[this.displayTextArrayIndex].charAt(this.charIndex)
+				this.charIndex += 1
+				setTimeout(this.typeText, this.typingSpeed)
+			} else {
+				this.typeStatus = false
+				setTimeout(this.eraseText, this.newTextDelay)
+			}
+		}, eraseText() {
+			if (this.charIndex > 0) {
+				if (!this.typeStatus) {
+					this.typeStatus = true
+				}
+				this.typeValue = this.displayTextArray[this.displayTextArrayIndex].substring(0, this.charIndex - 1)
+				this.charIndex -= 1
+				setTimeout(this.eraseText, this.erasingSpeed)
+			} else {
+				this.typeStatus = false
+				this.displayTextArrayIndex += 1
+				if (this.displayTextArrayIndex >= this.displayTextArray.length) {
+					this.displayTextArrayIndex = 0
+				}
+				setTimeout(this.typeText, this.typingSpeed + 1000)
+			}
+		}
 	}
-
-
 }
 </script >
+
+
+<style scoped >
+
+svg.logo{
+	align-content:   center;
+	display:         block;
+	font-family:     "tesla", cursive;
+	font-style:      italic;
+	justify-content: center;
+}
+
+.text-copy{
+	animation:         stroke-offset 10s infinite linear alternate;
+	fill:              #bd2c44;
+	stroke:            #2975a8;
+	stroke-dasharray:  0 10 20;
+	stroke-dashoffset: -50%;
+	text-shadow:       3px 3px 2px rgba(24, 24, 27, 0.8);
+}
+
+.b-top{
+	fill:        #bd2c44;
+	text-shadow: none !important;
+}
+
+.text-copy:nth-child(1){
+	animation-delay: -1s;
+}
+
+.text-copy:nth-child(2){
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(3){
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100%{
+		stroke-dashoffset: 50%;
+	}
+}
+
+
+</style >
