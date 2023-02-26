@@ -1,5 +1,4 @@
 <script setup >
-import App                 from '~/app.vue'
 import WorkInProgressAlert from '~/components/WorkInProgessAlert.vue'
 
 const theme = useTheme()
@@ -15,17 +14,12 @@ const app = useNuxtApp()
 	<div >
 		<!-- landing section -->
 		<v-row align = 'baseline' >
-			<!--			<v-col-->
-			<!--					cols = '1'-->
-			<!--					style = 'border: 2px solid #bd2c44'-->
-			<!--					v-text = "values"-->
-			<!--			>-->
+
+			<v-col align-self = 'center' class = 'overflow-visible' cols = '8' offset = '2'
+			>
 
 
-			<!--			</v-col >-->
-			<v-col align-self = 'start' cols = '12' style = 'border: 2px dotted #bd2c44' >
-
-
+				<h1 class = "text-h1 tesla-text" >I'm</h1 >
 				<brian-is-typing />
 
 

@@ -1,26 +1,26 @@
 <template >
 
-	<div class = 'logo-container' >
-		<svg class = "logo" viewBox = "0 0 100 17"
-		>
-			<symbol id = "s-text" >
-				<text class = "b2" x = "5" y = "12" >b</text >
-				<text class = "b2" x = "5" y = "12" >p</text >
-				<text class = "" x = "18" y = "12" >
-					{{ typeValue }}
-				</text >
 
-			</symbol >
-			<g class = "g-ants" >
-				<use class = "text-copy" href = "#s-text" ></use >
-				<use class = "text-copy" href = "#s-text" ></use >
-				<use class = "text-copy" href = "#s-text" ></use >
-				<use class = "text-copy" href = "#s-text" ></use >
-				<use class = "text-copy" href = "#s-text" ></use >
-			</g >
-			<text class = "b-top" x = "5" y = "12" >b</text >
-		</svg >
-	</div >
+	<svg class = "logo" viewBox = "0 0 100 17"
+	>
+		<symbol id = "s-text" >
+			<text class = "b2" x = "5" y = "12" >b</text >
+			<text class = "b2" x = "5" y = "12" >p</text >
+			<text class = "" x = "18" y = "12" >
+				{{ typeValue }}
+			</text >
+
+		</symbol >
+		<g class = "g-ants" >
+			<use class = "text-copy" href = "#s-text" ></use >
+			<use class = "text-copy" href = "#s-text" ></use >
+			<use class = "text-copy" href = "#s-text" ></use >
+			<use class = "text-copy" href = "#s-text" ></use >
+			<use class = "text-copy" href = "#s-text" ></use >
+		</g >
+		<text class = "b-top" x = "5" y = "12" >b</text >
+	</svg >
+
 </template >
 
 
@@ -78,19 +78,14 @@ export default {
 
 <style scoped >
 
-.logo-container{
-	align-content:   center;
-	display:         flex;
-	justify-content: center;
-}
 
 svg.logo{
-	
-	align-content:   center;
-	display:         block;
-	font-family:     "tesla", cursive;
-	font-style:      italic;
-	justify-content: center;
+	align-content: baseline;
+	display:       block;
+	font-family:   "tesla", cursive;
+	font-style:    italic;
+	max-height:    10rem;
+
 }
 
 .text-copy{
