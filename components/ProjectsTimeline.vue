@@ -12,7 +12,7 @@
   -->
 
 <template >
-	<v-timeline align = 'start' line-inset = "25" side = 'end' >
+	<v-timeline align = 'center' line-inset = "25" side = 'end' >
 		<v-timeline-item >
 			<template v-slot:opposite >
 				<div

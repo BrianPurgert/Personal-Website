@@ -8,7 +8,7 @@
 
 
 			<v-spacer ></v-spacer >
-			<v-btn href = 'https://codepen.io/BrianPurgert/' >
+			<v-btn color = '#afd5aa' href = 'https://codepen.io/BrianPurgert/' >
 				<template v-slot:prepend >
 					<Icon name = "fa-brands:codepen" size = "1.5em" />
 				</template >
@@ -16,7 +16,7 @@
 			</v-btn >
 
 			<template v-slot:append >
-				<v-btn download href = "/BrianPurgert_Resume.pdf" rounded = "lg" size = "large" >
+				<v-btn color = '#afd5aa' download href = "/BrianPurgert_Resume.pdf" rounded = "lg" size = "large" >
 					<template v-slot:prepend >
 						<Icon name = "carbon:generate-pdf" size = "1.5em" />
 					</template >

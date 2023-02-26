@@ -3,6 +3,39 @@
 	src:         url("https://brianpurgert2.com/fonts/tesla.woff2") format("woff2");
 }
 
+div, svg, p, h1, h2, h3, h4, h5, h6, a, li, ul, ol, span, i, b, strong, em, small, label, input, textarea, select, button, form, table, tr, td, th, tbody, thead, tfoot, caption, blockquote, q, cite, pre, code, hr, fieldset, legend, dl, dt, dd, address, article, aside, audio, canvas, details, figcaption, figure, footer, header, hgroup, main, menu, nav, output, section, summary, time, video, img{
+
+	/*box-shadow: 0px 0px 0 1px rgba(189, 44, 68, 0.26), inset 0px 1px 0 0px rgb(18, 90, 134);*/
+
+}
+
+/*--v-theme-primary: #bd2c44;*/
+/* CSS HEX */
+:root{
+
+	--cardinal:     #bd2c44ff;
+	--cordovan:     #932638ff;
+	--gunmetal:     #182b38ff;
+	--night:        #121212ff;
+	--wine:         #681f2bff;
+	--black-bean:   #3d191fff;
+	--ucla-blue:    #2975a8ff;
+	--indigo-dye:   #1e445dff;
+	--lapis-lazuli: #245d83ff;
+}
+
+.v-btn--variant-text,
+.v-btn .v-icon,
+.v-btn__content,
+.v-btn__prepend{
+
+	color: var(--ucla-blue);
+}
+
+.v-snackbar__content{
+	padding: 1px !important;
+}
+
 .tesla-text{
 	align-content:     center;
 	color:             #bd2c44;

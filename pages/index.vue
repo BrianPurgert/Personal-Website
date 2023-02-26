@@ -1,52 +1,38 @@
 <script setup >
+import App                 from '~/app.vue'
+import WorkInProgressAlert from '~/components/WorkInProgessAlert.vue'
+
 const theme = useTheme()
 const app = useNuxtApp()
 
 
 </script >
-<style >
-
-
-</style >
 
 
 <template >
+	<work-in-progress-alert />
+
 	<div >
 		<!-- landing section -->
-		<v-row align = 'center' >
-			<v-col >
-				<v-alert prominent border = "bottom" text = "" type = "info" variant = "tonal" >
-
-					<h4 ><strong >Hi my name is Brian and this is my portfolio </strong ></h4 >
-
-					<li >This site is a work in progress!</li >
-					<li >I'm looking for a full-time position</li >
-					<li >my skills and passion are in app development,full stack web development, AI and IT</li >
-					<li >I live Lakeland, but I'm willing to relocate</li >
+		<v-row align = 'baseline' >
+			<!--			<v-col-->
+			<!--					cols = '1'-->
+			<!--					style = 'border: 2px solid #bd2c44'-->
+			<!--					v-text = "values"-->
+			<!--			>-->
 
 
-					<li >my contact info is in my
-						<v-btn
-								download
-								density = 'compact'
-								size = 'small'
-								variant = "tonal"
-								href = "/BrianPurgert_Resume.pdf"
-								prepend-icon = "mdi-download"
-								color = "cyan"
-								elevation = '10'
-						>Resume
-						</v-btn >
-					</li >
-
-
-				</v-alert >
+			<!--			</v-col >-->
+			<v-col align-self = 'start' cols = '12' style = 'border: 2px dotted #bd2c44' >
 
 
 				<brian-is-typing />
 
 
 			</v-col >
+
+			<!--			<v-col cols = '1' style = 'border: 2px dotted rgb(189,44,68)' >-->
+			<!--			</v-col >-->
 		</v-row >
 
 		<!-- projects -->
@@ -88,7 +74,10 @@ export default {
 	components: {
 		ProjectsTimeline, BrianIsTyping
 	}, data() {
-		return {}
+
+		return {
+			values: 'values'
+		}
 	}
 }
 </script >
