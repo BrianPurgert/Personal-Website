@@ -16,18 +16,18 @@
 		<v-timeline-item >
 			<template v-slot:opposite >
 				<div
-						class = "pt-1 headline font-weight-bold text-cyan"
-						v-text = "2014"
+						class = "pt-1 headline font-weight-bold "
+						v-text = "1992"
 				></div >
 			</template >
 			<v-container >
 				<v-sheet class = "elevation-2" >
 					<v-card-title class = "text-h5" >
-						will be adding sections for each
+						will be adding sections for each possibly
 					</v-card-title >
 					<v-card-text >
 						2004 - age 12 - Battlefield 1942 modding<br />
-						2006 - age 14 - Runescape Scripting<br />
+						2006 - age 14 - Scar Scripting<br />
 						2008 Crysis Interstate<br />
 						2010 Space Bike
 					</v-card-text >
@@ -37,7 +37,24 @@
 		<v-timeline-item >
 			<template v-slot:opposite >
 				<div
-						class = "pt-1 headline font-weight-bold text-cyan"
+						class = "pt-1 headline font-weight-bold"
+						v-text = "2010"
+				></div >
+			</template >
+			<v-container >
+				<v-sheet class = "elevation-2" >
+					<v-card-title class = "text-h5" > Space Bike</v-card-title >
+					<v-card-text >
+						<img alt = "Space Bike" src = "/spacebike/rotating_photos.png" />
+					</v-card-text >
+				</v-sheet >
+			</v-container >
+		</v-timeline-item >
+
+		<v-timeline-item >
+			<template v-slot:opposite >
+				<div
+						class = "pt-1 headline font-weight-bold "
 						v-text = "2017"
 				></div >
 			</template >
@@ -51,8 +68,8 @@
 
 		<v-timeline-item dot-color = "transparent" line-inset = "25" size = "x-large" >
 			<template v-slot:icon >
-				<!--				<nuxt-icon filled name = "discord_full_logo" style = 'font-size: 10em' />-->
-				<!--				<nuxt-icon filled name = "ruby_solo" style = 'font-size: 15em' />-->
+				<nuxt-icon filled name = "generic" style = 'font-size: 5em' />
+
 			</template >
 			<template v-slot:opposite >
 				<div class = "tesla-text" v-text = "'2018'" ></div >
@@ -75,7 +92,7 @@
 			</template >
 			<template v-slot:opposite >
 				<div
-						class = "pt-1 headline font-weight-bold text-cyan"
+						class = "pt-1 headline font-weight-bold "
 						v-text = "2019"
 				></div >
 			</template >

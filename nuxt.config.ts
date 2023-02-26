@@ -5,6 +5,7 @@ export default defineNuxtConfig({
 				pluginOptions: {
 						styles: 'sass'
 				}, vuetifyOptions: {
+
 						blueprint: 'md3', theme: {
 								defaultTheme: 'dark'
 						}

@@ -17,7 +17,7 @@ const app = useNuxtApp()
 			<v-col >
 				<v-alert prominent border = "bottom" text = "" type = "info" variant = "tonal" >
 
-					<h4 ><strong >Hi my name is Brian Brian and this is my portfolio </strong ></h4 >
+					<h4 ><strong >Hi my name is Brian and this is my portfolio </strong ></h4 >
 
 					<li >This site is a work in progress!</li >
 					<li >I'm looking for a full-time position</li >
