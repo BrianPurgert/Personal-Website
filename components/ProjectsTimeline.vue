@@ -45,7 +45,7 @@
 				<v-sheet class = "elevation-2" >
 					<v-card-title class = "text-h5" > Space Bike</v-card-title >
 					<v-card-text >
-						<img alt = "Space Bike" src = "/spacebike/rotating_photos.png" />
+						
 					</v-card-text >
 				</v-sheet >
 			</v-container >
