@@ -1,5 +1,4 @@
 <script setup >
-import WorkInProgressAlert from '~/components/WorkInProgessAlert.vue'
 
 const theme = useTheme()
 const app = useNuxtApp()
@@ -9,9 +8,9 @@ const app = useNuxtApp()
 
 
 <template >
-	<work-in-progress-alert />
 
-	<div >
+
+<div >
 		<!-- landing section -->
 		<v-row align = 'baseline' >
 
