@@ -10,7 +10,7 @@ const app = useNuxtApp()
 <template >
 
 
-<div >
+	<div >
 		<!-- landing section -->
 		<v-row align = 'baseline' >
 

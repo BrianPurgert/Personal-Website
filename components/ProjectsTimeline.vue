@@ -26,8 +26,8 @@
 						will be adding sections for each possibly
 					</v-card-title >
 					<v-card-text >
-						2004 - age 12 - Battlefield 1942 modding<br />
-						2006 - age 14 - Scar Scripting<br />
+						2004 - age 12 - modding<br />
+						2006 - age 14 - Scripting<br />
 						2008 Crysis Interstate<br />
 						2010 Space Bike
 					</v-card-text >
@@ -45,7 +45,7 @@
 				<v-sheet class = "elevation-2" >
 					<v-card-title class = "text-h5" > Space Bike</v-card-title >
 					<v-card-text >
-						
+
 					</v-card-text >
 				</v-sheet >
 			</v-container >
