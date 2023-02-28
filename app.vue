@@ -1,50 +1,66 @@
-<template >
-	<v-app :theme = "color" >
-		<v-app-bar >
+<template>
+	<v-app :theme="color">
+		<v-app-bar border>
 
-			<template v-slot:prepend >
-				<img src = "/bp.svg" height = "38" class = "mr-2" alt = "BP" >
-			</template >
+			<template v-slot:prepend>
+				<v-btn color="transparent" icon to="/">
+					<img alt="BP" class="mr-2" height="40" src="/bp.svg" width="40">
+				</v-btn>
+			</template>
+			<v-spacer></v-spacer>
 
 
-			<v-spacer ></v-spacer >
-			<v-btn color = '#afd5aa' href = 'https://codepen.io/BrianPurgert/' >
-				<template v-slot:prepend >
-					<Icon name = "fa-brands:codepen" size = "1.5em" />
-				</template >
-				CodePen
-			</v-btn >
+			<template v-slot:append>
 
-			<template v-slot:append >
-				<v-btn color = '#afd5aa' download href = "/BrianPurgert_Resume.pdf" rounded = "lg" size = "large" >
-					<template v-slot:prepend >
-						<Icon name = "carbon:generate-pdf" size = "1.5em" />
-					</template >
+				<v-btn color='#afd5aa' href='https://www.linkedin.com/in/brian-purgert/'>
+					<template v-slot:prepend>
+						<Icon name="fa-brands:linkedin-in" size="1.5em"/>
+					</template>
+					LinkedIn
+				</v-btn>
+
+				<v-btn color='#afd5aa' href='https://github.com/BrianPurgert/'>
+					<template v-slot:prepend>
+						<Icon name="fa-brands:github" size="1.5em"/>
+					</template>
+					GitHub
+				</v-btn>
+
+				<v-btn color='#afd5aa' href='https://codepen.io/BrianPurgert/'>
+					<template v-slot:prepend>
+						<Icon name="fa-brands:codepen" size="1.5em"/>
+					</template>
+					CodePen
+				</v-btn>
+
+				<v-btn color='#afd5aa' download href="/BrianPurgert_Resume.pdf">
+					<template v-slot:prepend>
+						<Icon name="carbon:generate-pdf" size="1.5em"/>
+					</template>
 					Resume
-				</v-btn >
-				<!--				{{ color === 'light' ? 'Dark' : 'Light' }}-->
-				<!--		Toggle switch here would be cool  -->
+				</v-btn>
+
 				<v-btn
-						:prepend-icon = "color === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'"
-						@click = "onClick"
-				></v-btn >
-			</template >
+					:icon="color === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'"
+					@click="onClick"
+				></v-btn>
+			</template>
 
 
-		</v-app-bar >
+		</v-app-bar>
 
-		<v-main >
-			<v-container >
-				<nuxt-page />
-			</v-container >
+		<v-main>
+			<v-container>
+				<nuxt-page/>
+			</v-container>
 
-			<v-footer color = "transparent" class = "pt-5 pb-5" >
-			</v-footer >
-		</v-main >
-	</v-app >
-</template >
+			<v-footer class="pt-5 pb-5" color="transparent">
+			</v-footer>
+		</v-main>
+	</v-app>
+</template>
 
-<script setup >
+<script setup>
 import {ref} from 'vue'
 
 const color = ref('dark')
@@ -52,4 +68,4 @@ const color = ref('dark')
 function onClick() {
 	color.value = color.value === 'light' ? 'dark' : 'light'
 }
-</script >
+</script>

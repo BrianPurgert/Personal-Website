@@ -1,30 +1,30 @@
-<template >
+<template>
 
 
-	<svg class = "logo" viewBox = "0 0 100 17"
+	<svg class="logo" viewBox="0 0 100 17"
 	>
-		<symbol id = "s-text" >
-			<text class = "b2" x = "5" y = "12" >b</text >
-			<text class = "b2" x = "5" y = "12" >p</text >
-			<text class = "" x = "18" y = "12" >
+		<symbol id="s-text">
+			<text class="b2" x="5" y="12">b</text>
+			<text class="b2" x="5" y="12">p</text>
+			<text class="" x="18" y="12">
 				{{ typeValue }}
-			</text >
+			</text>
 
-		</symbol >
-		<g class = "g-ants" >
-			<use class = "text-copy" href = "#s-text" ></use >
-			<use class = "text-copy" href = "#s-text" ></use >
-			<use class = "text-copy" href = "#s-text" ></use >
-			<use class = "text-copy" href = "#s-text" ></use >
-			<use class = "text-copy" href = "#s-text" ></use >
-		</g >
-		<text class = "b-top" x = "5" y = "12" >b</text >
-	</svg >
+		</symbol>
+		<g class="g-ants">
+			<use class="text-copy" href="#s-text"></use>
+			<use class="text-copy" href="#s-text"></use>
+			<use class="text-copy" href="#s-text"></use>
+			<use class="text-copy" href="#s-text"></use>
+			<use class="text-copy" href="#s-text"></use>
+		</g>
+		<text class="b-top" x="5" y="12">b</text>
+	</svg>
 
-</template >
+</template>
 
 
-<script >
+<script>
 
 
 export default {
@@ -33,8 +33,8 @@ export default {
 			typeValue: '',
 			typeStatus: false,
 			displayTextArray: ['rian', 'urgert'],
-			typingSpeed: 50,
-			erasingSpeed: 100,
+			typingSpeed: 100,
+			erasingSpeed: 200,
 			newTextDelay: 2000,
 			displayTextArrayIndex: 0,
 			charIndex: 0
@@ -73,52 +73,51 @@ export default {
 		}
 	}
 }
-</script >
+</script>
 
 
-<style scoped >
+<style scoped>
 
-
-svg.logo{
+svg.logo {
 	align-content: baseline;
-	display:       block;
-	font-family:   "tesla", cursive;
-	font-style:    italic;
-	max-height:    10rem;
+	display: block;
+	font-family: "tesla", cursive;
+	font-style: italic;
+	max-height: 10rem;
 
 }
 
-.text-copy{
-	animation:         stroke-offset 10s infinite linear alternate;
-	fill:              #bd2c44;
-	stroke:            #2975a8;
-	stroke-dasharray:  0 10 20;
+.text-copy {
+	animation: stroke-offset 10s infinite linear alternate;
+	fill: #bd2c44;
+	stroke: #2975a8;
+	stroke-dasharray: 0 10 20;
 	stroke-dashoffset: -50%;
-	text-shadow:       3px 3px 2px rgba(24, 24, 27, 0.8);
+	text-shadow: 3px 3px 2px rgba(24, 24, 27, 0.8);
 }
 
-.b-top{
-	fill:        #bd2c44;
+.b-top {
+	fill: #bd2c44;
 	text-shadow: none !important;
 }
 
-.text-copy:nth-child(1){
+.text-copy:nth-child(1) {
 	animation-delay: -1s;
 }
 
-.text-copy:nth-child(2){
+.text-copy:nth-child(2) {
 	animation-delay: -3s;
 }
 
-.text-copy:nth-child(3){
+.text-copy:nth-child(3) {
 	animation-delay: -5s;
 }
 
-@keyframes stroke-offset{
-	100%{
+@keyframes stroke-offset {
+	100% {
 		stroke-dashoffset: 50%;
 	}
 }
 
 
-</style >
+</style>
