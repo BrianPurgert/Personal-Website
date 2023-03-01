@@ -1,17 +1,37 @@
-@font-face{
-	font-family: "tesla";
-	src:         url("https://brianpurgert2.com/fonts/tesla.woff2") format("woff2");
+@font-face
+{
+	font-family: 'tesla';
+	src:         url('/fonts/tesla.woff2') format('woff2');
 }
 
-div, svg, p, h1, h2, h3, h4, h5, h6, a, li, ul, ol, span, i, b, strong, em, small, label, input, textarea, select, button, form, table, tr, td, th, tbody, thead, tfoot, caption, blockquote, q, cite, pre, code, hr, fieldset, legend, dl, dt, dd, address, article, aside, audio, canvas, details, figcaption, figure, footer, header, hgroup, main, menu, nav, output, section, summary, time, video, img{
+@font-face
+{
+	font-family: 'Barcade No Bar Italic Italic';
+	font-style:  normal;
+	font-weight: normal;
+	src:         local('Barcade No Bar Italic Italic'), url('/fonts/barcadenobarital.woff') format('woff');
+}
 
-	/*box-shadow: 0px 0px 0 1px rgba(189, 44, 68, 0.26), inset 0px 1px 0 0px rgb(18, 90, 134);*/
+@font-face
+{
+	font-family: 'Barcade No Bar Bold Bold';
+	font-style:  normal;
+	font-weight: normal;
+	src:         local('Barcade No Bar Bold Bold'), url('/fonts/barcadnobarbold.woff') format('woff');
+}
+
+
+div, svg, p, h1, h2, h3, h4, h5, h6, a, li, ul, ol, span, i, b, strong, em, small, label, input, textarea, select, button, form, table, tr, td, th, tbody, thead, tfoot, caption, blockquote, q, cite, pre, code, hr, fieldset, legend, dl, dt, dd, address, article, aside, audio, canvas, details, figcaption, figure, footer, header, hgroup, main, menu, nav, output, section, summary, time, video, img
+{
+
+	box-shadow: 1px 1px 0 0px rgba(189, 44, 68, 0.2), inset 1px 1px 0 0px rgba(18, 90, 134, 0.2);
 
 }
 
 /*--v-theme-primary: #bd2c44;*/
 /* CSS HEX */
-:root{
+:root
+{
 
 	--cardinal:     #bd2c44ff;
 	--cordovan:     #932638ff;
@@ -27,38 +47,43 @@ div, svg, p, h1, h2, h3, h4, h5, h6, a, li, ul, ol, span, i, b, strong, em, smal
 .v-btn--variant-text,
 .v-btn .v-icon,
 .v-btn__content,
-.v-btn__prepend{
+.v-btn__prepend
+{
 
 	color: var(--ucla-blue);
 }
 
-.v-snackbar__content{
+.v-snackbar__content
+{
 
 }
 
-.tesla-text{
-	color:          #2975a8;
-	/*line-height:    4rem !important;*/
-	font-family:    "tesla", cursive !important;
-	font-size:      7.1rem !important;
-	/*font-family:   "Arame Mono", monospace !important;*/
+.tesla-text
+{
+	font-family:    'Barcade No Bar Italic Italic' !important;
+	font-size:      3.1rem !important;
 	font-style:     italic;
+	line-height:    7rem !important;
 	margin-bottom:  -2rem;
 	margin-left:    -5rem;
-	text-shadow:    1px 1px 0px rgba(9, 9, 9, 0.95), 3px 3px 0px rgba(243, 243, 243, 0.95);
 	vertical-align: baseline !important;
+	color:          #2975a8;
+	text-shadow:    1px 1px 0px rgba(9, 9, 9, 0.95), 3px 3px 0px rgba(243, 243, 243, 0.95);
 }
 
-.twixer .v-timeline-divider__dot{
+.twixer .v-timeline-divider__dot
+{
 	/*background-color: transparent !important;*/
 }
 
-.v-timeline-divider__inner-dot{
+.v-timeline-divider__inner-dot
+{
 	/*background-color: transparent !important;*/
 }
 
 .v-timeline-divider__dot,
-.v-timeline-divider__inner-dot{
+.v-timeline-divider__inner-dot
+{
 	background-color: transparent !important;
 }
 
