@@ -37,11 +37,18 @@
 						v-text = "2010"
 				></div>
 			</template>
-			<v-container fluid>
+			<v-card class = "elevation-2" style = "min-width: 35vw!important;">
+				<v-carousel show-arrows = "hover">
+					<v-carousel-item>
+						<v-img
+								src = "https://brianpurgert2.com/SpaceBike/feature.png"
+						></v-img>
+					</v-carousel-item>
+				</v-carousel>
 
-				<space-bike-carousel/>
 
-			</v-container>
+			</v-card>
+
 		</v-timeline-item>
 
 		<v-timeline-item>
@@ -124,14 +131,18 @@
 </template>
 
 <script>
-    import SpaceBikeCarousel from "~/components/SpaceBikeCarousel.vue";
+    import Carousel from "~/components/Carousel.vue";
 
     export default {
         name: 'ProjectsTimeline',
-        components: {SpaceBikeCarousel},
+        components: {Carousel},
         data() {
             return {
-                text: 'text'
+                text: 'text',
+                slides: [
+                    'https://brianpurgert2.com/SpaceBike/feature.png',
+
+                ],
             }
         }
     }

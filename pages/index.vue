@@ -6,8 +6,7 @@
 	<!-- landing section -->
 	<v-container fluid>
 
-		<h1 class = "text-h2 tesla-text">hello my name is </h1>
-		<brian-is-typing/>
+		<brian-is-typing></brian-is-typing>
 
 	</v-container>
 	<!-- projects -->

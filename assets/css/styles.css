@@ -24,7 +24,7 @@
 div, svg, p, h1, h2, h3, h4, h5, h6, a, li, ul, ol, span, i, b, strong, em, small, label, input, textarea, select, button, form, table, tr, td, th, tbody, thead, tfoot, caption, blockquote, q, cite, pre, code, hr, fieldset, legend, dl, dt, dd, address, article, aside, audio, canvas, details, figcaption, figure, footer, header, hgroup, main, menu, nav, output, section, summary, time, video, img
 {
 
-	box-shadow: 1px 1px 0 0px rgba(189, 44, 68, 0.2), inset 1px 1px 0 0px rgba(18, 90, 134, 0.2);
+	/*box-shadow: 1px 1px 0 0px rgba(189, 44, 68, 0.2), inset 1px 1px 0 0px rgba(18, 90, 134, 0.2);*/
 
 }
 
@@ -56,19 +56,6 @@ div, svg, p, h1, h2, h3, h4, h5, h6, a, li, ul, ol, span, i, b, strong, em, smal
 .v-snackbar__content
 {
 
-}
-
-.tesla-text
-{
-	font-family:    'Barcade No Bar Italic Italic' !important;
-	font-size:      3.1rem !important;
-	font-style:     italic;
-	line-height:    7rem !important;
-	margin-bottom:  -2rem;
-	margin-left:    -5rem;
-	vertical-align: baseline !important;
-	color:          #2975a8;
-	text-shadow:    1px 1px 0px rgba(9, 9, 9, 0.95), 3px 3px 0px rgba(243, 243, 243, 0.95);
 }
 
 .twixer .v-timeline-divider__dot

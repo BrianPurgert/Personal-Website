@@ -1,5 +1,6 @@
 <template>
 
+	<h1 class = "text-h2 tesla-text">hello my name is </h1>
 
 	<svg
 			class = "logo" viewBox = "0 0 100 17"
@@ -79,6 +80,19 @@
 
 <style scoped>
 
+	.tesla-text
+	{
+		font-family: 'tesla' !important;
+		/*font-family:    'Barcade No Bar Italic Italic' !important;*/
+		font-size:   3.1vw !important;
+		font-style:  normal !important;
+		/*line-height: 90% !important;*/
+		/*margin-bottom:  -2rem;*/
+		/*margin-left:    -5rem;*/
+		color:       #2975a8;
+		text-shadow: 1px 1px 0px rgba(9, 9, 9, 0.95), 3px 3px 0px rgba(243, 243, 243, 0.95);
+	}
+
 	svg.logo
 	{
 		align-content: baseline;
@@ -86,6 +100,7 @@
 		font-family:   'tesla', cursive;
 		font-style:    italic;
 		max-height:    9rem;
+		margin:        0 auto;
 
 	}
 
@@ -102,7 +117,7 @@
 	.b-top
 	{
 		fill: #bd2c44;
-		
+
 	}
 
 	.text-copy:nth-child(1)
