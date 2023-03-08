@@ -9,12 +9,12 @@
   },
   "dependencies": {
 	"@nuxt-alt/vuetify": "^1.1.1",
-	"@vercel/analytics": "^0.1.10",
-	"vuetify": "^3.1.5"
+	"@vercel/analytics": "^0.1.11",
+	"vuetify": "^3.1.7"
   },
   "devDependencies": {
 	"@nuxt/types": "^2.16.0",
-	"nuxt": "^3.2.2",
+	"nuxt": "^3.2.3",
 	"nuxt-icon": "^0.3.2",
 	"nuxt-icons": "^3.1.0",
 	"nuxt-svgo": "^1.1.0",
