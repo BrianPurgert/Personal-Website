@@ -1,7 +1,6 @@
 <template>
 
-	<h1 class = "text-h2 tesla-text">hello my name is </h1>
-
+	<h1 class = "text-h2 tesla-text text-center">hi! my name is </h1>
 	<svg
 			class = "logo" viewBox = "0 0 100 17"
 	>
@@ -22,6 +21,8 @@
 		</g>
 		<text class = "b-top" x = "5" y = "12">b</text>
 	</svg>
+
+	<h1 class = "text-caption text-center">it says brian purgert but you see how I combined the b and the p? wow amazing, I wish someone with this kind of talent was available for hire</h1>
 
 </template>
 

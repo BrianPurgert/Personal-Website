@@ -11,6 +11,13 @@
   -->
 
 <template>
+	<v-banner
+			color = "primary"
+			dense
+			icon = "mdi-timeline"
+			text = "Projects Timeline"
+	></v-banner>
+
 	<v-timeline
 			density = "comfortable"
 			line-inset = "25"
@@ -30,27 +37,23 @@
 				</v-sheet>
 			</v-container>
 		</v-timeline-item>
+		<!--	SpaceBike/Doodle Bike   -->
 		<v-timeline-item>
+			<template v-slot:icon>
+				<img src = "/SpaceBike/icon.png" style = ''/>
+			</template>
 			<template v-slot:opposite>
 				<div
 						class = "pt-1 headline font-weight-bold"
 						v-text = "2010"
 				></div>
 			</template>
-			<v-card class = "elevation-2" style = "min-width: 35vw!important;">
-				<v-carousel show-arrows = "hover">
-					<v-carousel-item>
-						<v-img
-								src = "https://brianpurgert2.com/SpaceBike/feature.png"
-						></v-img>
-					</v-carousel-item>
-				</v-carousel>
 
+			<Carousel :slides = "slides"></Carousel>
 
-			</v-card>
 
 		</v-timeline-item>
-
+		<!--	SimpleGSA   -->
 		<v-timeline-item>
 			<template v-slot:opposite>
 				<div
@@ -65,7 +68,7 @@
 				</v-sheet>
 			</v-container>
 		</v-timeline-item>
-
+		<!--	Ruby Discord   -->
 		<v-timeline-item dot-color = "transparent" line-inset = "25" size = "x-large">
 			<template v-slot:icon>
 				<nuxt-icon filled name = "ruby_solo" style = 'font-size: 5em'/>
@@ -98,6 +101,7 @@
 				</v-card-text>
 			</v-card>
 		</v-timeline-item>
+		<!--	Twixer   -->
 		<v-timeline-item
 				class = "twixer"
 				dot-color = "transparent"

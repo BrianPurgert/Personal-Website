@@ -5,7 +5,6 @@
 <template>
 	<!-- landing section -->
 	<v-container fluid>
-
 		<brian-is-typing></brian-is-typing>
 
 	</v-container>
