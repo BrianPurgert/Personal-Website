@@ -22,7 +22,11 @@
 		<text class = "b-top" x = "5" y = "12">b</text>
 	</svg>
 
-	<h1 class = "text-caption text-center">it says brian purgert but you see how I combined the b and the p? wow amazing, I wish someone with this kind of talent was available for hire</h1>
+	<h1 class = "text-caption text-center">
+		this is a collection of things that shaped me as a developer, many of which have never seen the light of day,
+		in fact some of these things I worked on for months and never told a soul.
+		I was able to find some evidence of these long lost projects but mostly forum posts with misspellings and bad grammar.
+	</h1>
 
 </template>
 

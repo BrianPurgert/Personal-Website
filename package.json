@@ -10,7 +10,7 @@
   "dependencies": {
 	"@nuxt-alt/vuetify": "^1.1.1",
 	"@vercel/analytics": "^0.1.11",
-	"vuetify": "^3.1.7"
+	"vuetify": "^3.1.8"
   },
   "devDependencies": {
 	"@nuxt/types": "^2.16.0",
