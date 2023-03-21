@@ -1,6 +1,8 @@
 <template>
 
-	<h1 class = "text-h2 tesla-text text-center">hi! my name is </h1>
+
+	<h2 class = "text-h4 bp-shadow shadow-blue text-left">hello, my name is</h2>
+	<v-divider></v-divider>
 	<svg
 			class = "logo" viewBox = "0 0 100 17"
 	>
@@ -21,6 +23,9 @@
 		</g>
 		<text class = "b-top" x = "5" y = "12">b</text>
 	</svg>
+	<v-divider></v-divider>
+
+	<h1 class = "text-h4 bp-shadow shadow-red text-right">This is my Developer Story</h1>
 
 
 </template>

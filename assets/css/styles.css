@@ -1,3 +1,8 @@
+@import url('https://fonts.cdnfonts.com/css/robot-crush?styles=79693,79692');
+@import url('https://fonts.cdnfonts.com/css/axial-cut?styles=152102,152101');
+@import url('https://fonts.cdnfonts.com/css/vegano');
+@import url('https://fonts.cdnfonts.com/css/yielding-timber');
+
 @font-face
 {
 	font-family: 'tesla';
@@ -18,6 +23,54 @@
 	font-style:  normal;
 	font-weight: normal;
 	src:         local('Barcade No Bar Bold Bold'), url('/fonts/barcadnobarbold.woff') format('woff');
+}
+
+
+.robot-crush
+{
+	font-family: 'Robot Crush', sans-serif !important;
+	/*font-size:   3.1vw !important;*/
+	font-style:  italic;
+	/*font-weight: 400;*/
+	color:       #2975a8;
+	text-shadow: 1px 1px 0px rgba(9, 9, 9, 0.95), 3px 3px 0px rgba(243, 243, 243, 0.95);
+}
+
+.axial-cut
+{
+	font-family: 'Axial Cut', sans-serif !important;
+	color:       #2975a8;
+	text-shadow: 1px 1px 0px rgba(9, 9, 9, 0.95),
+	             2px 2px 0px rgb(189, 44, 68),
+	             3px 3px 0px rgba(243, 243, 243, 0.95);
+}
+
+.bp-shadow
+{
+	color:       rgb(255, 255, 255);
+	font-family: 'Yielding Timber', sans-serif !important;
+
+	/*font-weight: 100;*/
+
+	/*font-size:   3.1vw !important;*/
+	/*font-family: 'VEGANO', sans-serif !important;*/
+	font-style:  italic;
+
+
+	/*text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5,*/
+	/*             -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5;*/
+	/*text-shadow: -2px 1px 0px rgb(189, 44, 68), -2px -4px 0px rgb(41, 117, 168);*/
+	/*text-shadow: 1px 1px 1px rgb(189, 44, 68), 2px 2px 1px rgb(189, 44, 68);*/
+}
+
+.shadow-blue
+{
+	text-shadow: 1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 1px rgb(41, 117, 168), 3px 3px 1px rgb(41, 117, 168);
+}
+
+.shadow-red
+{
+	text-shadow: 1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 1px rgb(189, 44, 68), 3px 3px 1px rgb(189, 44, 68);
 }
 
 

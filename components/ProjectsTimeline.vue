@@ -11,43 +11,69 @@
   -->
 
 <template>
-	<v-banner
-			color = "primary"
 
-			icon = "mdi-timeline"
-			text = "Timeline"
+
+	<v-card
+			class = "mx-auto elevation-2"
+
+
 	>
-		<h1 class = "text-caption text-center">
-			this is a collection of things that shaped me as a developer, many of which have never seen the light of day,
-			in fact some of these things I worked on for months and never told a soul.
-			luckily I was able to find some evidence of these long lost projects on the internet, some stuff as old as 15 years ago.
-			a timeline of my projects is a way to document my journey as a developer and to show that I have been doing this for a long time.
-		</h1>
-	</v-banner>
+		<template v-slot:title>
+			<h1
+					class = "text-h5 bp-shadow shadow-blue"
+					style = "font-style:  normal;">my Projects</h1>
+		</template>
+
+	</v-card>
 
 	<v-timeline
 			density = "comfortable"
 			line-inset = "25"
 			side = "end"
 	>
+
 		<v-timeline-item>
 			<template v-slot:opposite>
 				<div
 						class = "pt-1 headline font-weight-bold "
-						v-text = "1992"
+						v-text = "2004"
 				></div>
 			</template>
-			<v-container>
-				<v-sheet class = "elevation-2">
-					<v-card-title class = "text-h5"></v-card-title>
-					<v-card-text></v-card-text>
-				</v-sheet>
-			</v-container>
+			<template v-slot:icon>
+
+
+				<img src = "/is82/backside.png" style = 'max-width: 80px'/>
+			</template>
+			<v-card class = "elevation-2">
+				<v-card-title>Battlefield 1942 mapping</v-card-title>
+				<v-card-subtitle>Interstate 82</v-card-subtitle>
+				<v-card-text></v-card-text>
+			</v-card>
+
+		</v-timeline-item>
+		<v-timeline-item>
+			<template v-slot:opposite>
+				<div
+						class = "pt-1 headline font-weight-bold "
+						v-text = "2008"
+				></div>
+			</template>
+			<template v-slot:icon>
+
+				<nuxt-icon name = "crytek" filled style = 'font-size: 5em'/>
+				<!--								<img src = "/crysis_interstate/crysis_interstate_icon.png" style = 'max-width: 60px'/>-->
+			</template>
+			<v-card class = "elevation-2">
+				<v-card-title>Crysis Interstate</v-card-title>
+				<v-card-subtitle>Crysis Mod development</v-card-subtitle>
+				<v-card-text></v-card-text>
+			</v-card>
+
 		</v-timeline-item>
 		<!--	SpaceBike/Doodle Bike   -->
 		<v-timeline-item>
 			<template v-slot:icon>
-				<img src = "/SpaceBike/spacebike_icon.png" style = ''/>
+				<img src = "/doodlebike/doodlebike_icon.png" style = 'max-width: 60px'/>
 			</template>
 			<template v-slot:opposite>
 				<div
@@ -55,16 +81,30 @@
 						v-text = "2010"
 				></div>
 			</template>
-			<v-card class = "elevation-2" style = "min-width: 35vw!important;">
-				<!--				<img src = "/SpaceBike/rotating_photos.png" width = "854" height = "480" style = ''/>-->
-				<video autoplay loop muted playsinline>
+			<v-card>
+				<video autoplay loop muted playsinline width = "600px">
 					<source src = "/doodlebike/DoodleBike_Portfolio_final.webm" type = "video/webm"/>
 
 				</video>
 			</v-card>
-			<!--			<Carousel :slides = "slides"></Carousel>-->
+		</v-timeline-item>
+		<v-timeline-item>
+			<template v-slot:icon>
+				<img src = "/SpaceBike/spacebike_icon.png" style = 'max-width: 60px'/>
 
-
+			</template>
+			<template v-slot:opposite>
+				<div
+						class = "pt-1 headline font-weight-bold "
+						v-text = "2010"
+				></div>
+			</template>
+			<v-container>
+				<v-sheet class = "elevation-2" style = "min-width: 35vw!important;">
+					<v-card-title class = "text-h5"></v-card-title>
+					<v-card-text></v-card-text>
+				</v-sheet>
+			</v-container>
 		</v-timeline-item>
 		<!--	SimpleGSA   -->
 		<v-timeline-item>
