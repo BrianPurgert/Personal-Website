@@ -31,36 +31,51 @@
 			line-inset = "25"
 			side = "end"
 	>
-
 		<v-timeline-item>
 			<template v-slot:opposite>
 				<div
-						class = "pt-1 headline font-weight-bold "
+						class = "bp-year"
 						v-text = "2004"
 				></div>
 			</template>
 			<template v-slot:icon>
-
-
 				<img src = "/is82/backside.png" style = 'max-width: 80px'/>
 			</template>
 			<v-card class = "elevation-2">
 				<v-card-title>Battlefield 1942 mapping</v-card-title>
-				<v-card-subtitle>Interstate 82</v-card-subtitle>
-				<v-card-text></v-card-text>
+				<v-card-subtitle></v-card-subtitle>
+				<v-card-text>Interstate 82</v-card-text>
 			</v-card>
-
 		</v-timeline-item>
 		<v-timeline-item>
 			<template v-slot:opposite>
 				<div
-						class = "pt-1 headline font-weight-bold "
+						class = "bp-year"
+						v-text = "2006"
+				></div>
+			</template>
+			<template v-slot:icon>
+				<nuxt-icon name = "scar_divi" filled style = 'font-size: 5em'/>
+			</template>
+			<v-card class = "elevation-2">
+				<v-card-title>SCAR Scripting</v-card-title>
+				<v-card-subtitle>my hello world</v-card-subtitle>
+				<v-card-text>
+					<nuxt-link href = "https://wiki.scar-divi.com/SCAR_Divi_Online_Manual">SCAR Wiki</nuxt-link>
+				</v-card-text>
+			</v-card>
+		</v-timeline-item>
+
+		<v-timeline-item>
+			<template v-slot:opposite>
+				<div
+						class = "bp-year"
 						v-text = "2008"
 				></div>
 			</template>
 			<template v-slot:icon>
 
-				<nuxt-icon name = "crytek" filled style = 'font-size: 5em'/>
+				<nuxt-icon name = "cryengine-logo-vertical-white" filled style = 'font-size: 8em'/>
 				<!--								<img src = "/crysis_interstate/crysis_interstate_icon.png" style = 'max-width: 60px'/>-->
 			</template>
 			<v-card class = "elevation-2">
@@ -77,25 +92,35 @@
 			</template>
 			<template v-slot:opposite>
 				<div
-						class = "pt-1 headline font-weight-bold"
+						class = "bp-year"
 						v-text = "2010"
 				></div>
 			</template>
-			<v-card>
-				<video autoplay loop muted playsinline width = "600px">
-					<source src = "/doodlebike/DoodleBike_Portfolio_final.webm" type = "video/webm"/>
+			<v-card class = "elevation-2" style = "min-width: 44vw!important;">
+				<video-background
+						src = "/doodlebike/DoodleBike_Portfolio_final.webm"
+						style = "max-height: 400px; height: 40vh;"
+						poster = "/doodlebike/doodlebike_menu.png"
+						objectFit = "cover"
 
-				</video>
+				>
+				</video-background>
+
+			</v-card>
+			<v-card>
+
 			</v-card>
 		</v-timeline-item>
 		<v-timeline-item>
 			<template v-slot:icon>
-				<img src = "/SpaceBike/spacebike_icon.png" style = 'max-width: 60px'/>
+				<!--				<img src = "/SpaceBike/spacebike_icon.png" style = 'max-width: 60px'/>-->
+				<nuxt-icon filled name = "spacebike_icon_new" style = 'font-size: 5em'/>
+
 
 			</template>
 			<template v-slot:opposite>
 				<div
-						class = "pt-1 headline font-weight-bold "
+						class = "bp-year"
 						v-text = "2010"
 				></div>
 			</template>
@@ -110,7 +135,7 @@
 		<v-timeline-item>
 			<template v-slot:opposite>
 				<div
-						class = "pt-1 headline font-weight-bold "
+						class = "bp-year"
 						v-text = "2017"
 				></div>
 			</template>
@@ -129,7 +154,7 @@
 			</template>
 			<template v-slot:opposite>
 				<div
-						class = "pt-1 headline font-weight-bold"
+						class = "bp-year"
 						v-text = "'2018'"
 				></div>
 			</template>
@@ -170,7 +195,7 @@
 			</template>
 			<template v-slot:opposite>
 				<div
-						class = "pt-1 headline font-weight-bold "
+						class = "bp-year"
 						v-text = "2019"
 				></div>
 			</template>
