@@ -3,15 +3,10 @@
     const app = useNuxtApp()
 </script>
 <template>
-	<!-- landing section -->
 	<v-container fluid>
 		<brian-is-typing></brian-is-typing>
-
 	</v-container>
-	<!-- projects -->
-	<section class = "grey lighten-5 partners pa-3">
-		<projects-timeline/>
-	</section>
+	<projects-timeline/>
 	<!-- features -->
 	<section class = "white text-center">
 		<v-container>

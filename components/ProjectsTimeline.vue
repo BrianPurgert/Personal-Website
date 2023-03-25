@@ -32,6 +32,47 @@
 			side = "end"
 	>
 		<v-timeline-item>
+			<v-container fluid class = "bg-surface-variant" style = "width: max-content;">
+				<v-row no-gutters>
+					<v-col align-self = "end" cols = '1'>
+						<h1 class = "text-h5">📵📵📵📵</h1>
+					</v-col>
+					<v-col cols = '12'>
+						<v-card class = "elevation-2">
+							<v-card-title>Battlefield 1942 mapping</v-card-title>
+							<v-card-subtitle></v-card-subtitle>
+							<v-card-item>
+								<v-carousel
+										hide-delimiters
+										cycle
+										show-arrows = "hover"
+										height = "400"
+								>
+									<v-carousel-item
+											src = "/is82/2004.jpg"
+											cover
+									></v-carousel-item>
+
+									<v-carousel-item
+											src = "/is82/2004_1.jpg"
+											cover
+									></v-carousel-item>
+
+									<v-carousel-item
+											src = "/is82/2004_2.jpg"
+											cover
+									></v-carousel-item>
+								</v-carousel>
+							</v-card-item>
+							<v-card-text>Interstate 82</v-card-text>
+						</v-card>
+					</v-col>
+					<v-col cols = '1'>
+						<h1 class = "text-h5">🪀🪀🪀🪀🪀</h1>
+					</v-col>
+
+				</v-row>
+			</v-container>
 			<template v-slot:opposite>
 				<div
 						class = "bp-year"
@@ -41,11 +82,6 @@
 			<template v-slot:icon>
 				<img src = "/is82/backside.png" style = 'max-width: 80px'/>
 			</template>
-			<v-card class = "elevation-2">
-				<v-card-title>Battlefield 1942 mapping</v-card-title>
-				<v-card-subtitle></v-card-subtitle>
-				<v-card-text>Interstate 82</v-card-text>
-			</v-card>
 		</v-timeline-item>
 		<v-timeline-item>
 			<template v-slot:opposite>
@@ -100,7 +136,7 @@
 				<video-background
 						src = "/doodlebike/DoodleBike_Portfolio_final.webm"
 						style = "max-height: 400px; height: 40vh;"
-						poster = "/doodlebike/doodlebike_menu.png"
+
 						objectFit = "cover"
 
 				>
@@ -115,8 +151,6 @@
 			<template v-slot:icon>
 				<!--				<img src = "/SpaceBike/spacebike_icon.png" style = 'max-width: 60px'/>-->
 				<nuxt-icon filled name = "spacebike_icon_new" style = 'font-size: 5em'/>
-
-
 			</template>
 			<template v-slot:opposite>
 				<div
@@ -128,6 +162,13 @@
 				<v-sheet class = "elevation-2" style = "min-width: 35vw!important;">
 					<v-card-title class = "text-h5"></v-card-title>
 					<v-card-text></v-card-text>
+					<v-card-item>
+						<video-background
+								src = "/SpaceBike/gameplay_space_bike_trimmed.mp4"
+								style = "max-height: 400px; height: 40vh;"
+								objectFit = "cover"
+						></video-background>
+					</v-card-item>
 				</v-sheet>
 			</v-container>
 		</v-timeline-item>
@@ -159,7 +200,7 @@
 				></div>
 			</template>
 			<v-card class = "elevation-2">
-				<v-card-title class = "text-h5 "> Ruby Discord</v-card-title>
+				<v-card-title class = "text-h5 ">Ruby Discord</v-card-title>
 				<v-card-text>
 					<p>
 						Created the official Ruby Discord
