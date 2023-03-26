@@ -15,7 +15,7 @@
   },
   "devDependencies": {
 	"@nuxt/types": "^2.16.3",
-	"nuxt": "^3.3.1",
+	"nuxt": "^3.3.2",
 	"nuxt-icon": "^0.3.3",
 	"nuxt-icons": "^3.1.0",
 	"nuxt-svgo": "^1.1.0",

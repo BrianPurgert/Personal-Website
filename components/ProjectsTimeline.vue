@@ -11,34 +11,32 @@
   -->
 
 <template>
-
-
-	<v-card
-			class = "mx-auto elevation-2"
-
-
-	>
+	<v-card class = "mx-auto elevation-2">
 		<template v-slot:title>
 			<h1
 					class = "text-h5 bp-shadow shadow-blue"
 					style = "font-style:  normal;">my Projects</h1>
 		</template>
-
 	</v-card>
 
+	<!--	.v-timeline-item__body-->
+	<!--	justify-self: auto;-->
+	<!--    side = "end"-->
+
 	<v-timeline
-			density = "comfortable"
-			line-inset = "25"
 			side = "end"
+			density = "comfortable"
+			line-inset = "28"
+			align = "center"
 	>
-		<v-timeline-item>
-			<v-container fluid class = "bg-surface-variant" style = "width: max-content;">
-				<v-row no-gutters>
-					<v-col align-self = "end" cols = '1'>
-						<h1 class = "text-h5">📵📵📵📵</h1>
-					</v-col>
-					<v-col cols = '12'>
-						<v-card class = "elevation-2">
+		<v-timeline-item width = "100%">
+			<v-container class = "">
+				<v-row justify = "space-around">
+
+					<v-col cols = "10">
+						<v-card
+								min-width = "fit-content"
+								class = "elevation-6 justify-space-around">
 							<v-card-title>Battlefield 1942 mapping</v-card-title>
 							<v-card-subtitle></v-card-subtitle>
 							<v-card-item>
@@ -46,30 +44,29 @@
 										hide-delimiters
 										cycle
 										show-arrows = "hover"
-										height = "400"
+										:height = "400"
+
 								>
 									<v-carousel-item
 											src = "/is82/2004.jpg"
-											cover
+											contain
 									></v-carousel-item>
 
 									<v-carousel-item
 											src = "/is82/2004_1.jpg"
-											cover
+											contain
 									></v-carousel-item>
 
 									<v-carousel-item
 											src = "/is82/2004_2.jpg"
-											cover
+											contain
 									></v-carousel-item>
 								</v-carousel>
 							</v-card-item>
 							<v-card-text>Interstate 82</v-card-text>
 						</v-card>
 					</v-col>
-					<v-col cols = '1'>
-						<h1 class = "text-h5">🪀🪀🪀🪀🪀</h1>
-					</v-col>
+
 
 				</v-row>
 			</v-container>

@@ -6,24 +6,9 @@
 	<v-container fluid>
 		<brian-is-typing></brian-is-typing>
 	</v-container>
+
 	<projects-timeline/>
-	<!-- features -->
-	<section class = "white text-center">
-		<v-container>
-			<v-row>
-				<v-col>
-				</v-col>
-			</v-row>
-		</v-container>
-	</section>
-	<section class = "grey lighten-5 pa-5">
-	</section>
-	<section class = "white pa-5"></section>
-	<section class = "white text-center pt-2">
-		<v-container>
-		</v-container>
-		<v-divider class = "mt-2"></v-divider>
-	</section>
+
 </template>
 <script>
     import ProjectsTimeline from '../components/ProjectsTimeline.vue'

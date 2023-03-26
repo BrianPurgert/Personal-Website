@@ -90,12 +90,26 @@
 }
 
 
-div, svg, p, h1, h2, h3, h4, h5, h6, a, li, ul, ol, span, i, b, strong, em, small, label, input, textarea, select, button, form, table, tr, td, th, tbody, thead, tfoot, caption, blockquote, q, cite, pre, code, hr, fieldset, legend, dl, dt, dd, address, article, aside, audio, canvas, details, figcaption, figure, footer, header, hgroup, main, menu, nav, output, section, summary, time, video, img
+.bp-test
 {
 
-	/*box-shadow: 1px 1px 0 0px rgba(189, 44, 68, 0.2), inset 1px 1px 0 0px rgba(18, 90, 134, 0.2);*/
+	outline:    5px dotted rgba(189, 44, 68, 0.9);
+	box-shadow: inset 0px 0px 0px 4px rgb(106, 0, 85),
+	            inset 0px 0px 6px 6px rgb(0, 56, 106);
 
 }
+
+.bg-primary
+{
+	background-color: rgba(59, 59, 59, 0.37) !important;
+
+}
+
+.v-timeline-item__body
+{
+	/*justify-self: auto !important;*/
+}
+
 
 /*--v-theme-primary: #bd2c44;*/
 /* CSS HEX */
