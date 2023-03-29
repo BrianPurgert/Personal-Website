@@ -11,7 +11,7 @@
 	"@nuxt-alt/vuetify": "^1.1.1",
 	"@vercel/analytics": "^0.1.11",
 	"vue-responsive-video-background-player": "^2.3.1",
-	"vuetify": "^3.1.11"
+	"vuetify": "^3.1.12"
   },
   "devDependencies": {
 	"@nuxt/types": "^2.16.3",
