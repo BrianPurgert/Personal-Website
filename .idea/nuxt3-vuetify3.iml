@@ -7,7 +7,6 @@
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/.output" />
     </content>
-    <content url="file://$MODULE_DIR$/.nuxt" />
     <content url="file://$MODULE_DIR$/../quickienewsonline" />
     <content url="file://$MODULE_DIR$/../static--" />
     <content url="file://$MODULE_DIR$/../videos" />

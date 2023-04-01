@@ -1,5 +1,8 @@
+// @ts-ignore
 export default defineNuxtConfig({
-	css: ['@/assets/css/styles.css'],
+	css: [
+		'@/assets/css/styles.css'
+	],
 	modules: [
 		'@nuxt-alt/vuetify',
 		'nuxt-svgo',
