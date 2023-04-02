@@ -1,3 +1,3 @@
-# nuxt3-vuetify3`
+# My Portfolio
 
-[Source ⚡️](https://stackblitz.com/edit/nuxt-starter-p1kqzi)
+[brianpurgert2.com ⚡️](https://brianpurgert2.com)
