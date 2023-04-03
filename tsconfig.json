@@ -1,7 +1,6 @@
 {
   // https://v3.nuxtjs.org/concepts/typescript
   "paths": {
-	"@alias/*": ["folder/*"],
   },
   "extends": "./.nuxt/tsconfig.json"
 }
