@@ -8,8 +8,6 @@
       <excludeFolder url="file://$MODULE_DIR$/.output" />
     </content>
     <content url="file://$MODULE_DIR$/../quickienewsonline" />
-    <content url="file://$MODULE_DIR$/../static--" />
-    <content url="file://$MODULE_DIR$/../videos" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="@types/npm" level="application" />

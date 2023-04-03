@@ -49,16 +49,19 @@
 							>
 								<v-carousel-item
 										src = "/is82/2004.jpg"
+										height = "400px"
 										cover
 								></v-carousel-item >
 
 								<v-carousel-item
 										src = "/is82/2004_1.jpg"
+										height = "500px"
 										cover
 								></v-carousel-item >
 
 								<v-carousel-item
 										src = "/is82/2004_2.jpg"
+										height = "400px"
 										cover
 								></v-carousel-item >
 							</v-carousel >
