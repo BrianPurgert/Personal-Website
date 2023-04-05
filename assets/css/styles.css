@@ -112,19 +112,25 @@
 
 
 /*--v-theme-primary: #bd2c44;*/
-/* CSS HEX */
+
 :root
 {
 
-	--cardinal:     #bd2c44ff;
-	--cordovan:     #932638ff;
-	--gunmetal:     #182b38ff;
 	--night:        #121212ff;
-	--wine:         #681f2bff;
 	--black-bean:   #3d191fff;
-	--ucla-blue:    #2975a8ff;
-	--indigo-dye:   #1e445dff;
+	--wine:         #681f2bff;
+	--cordovan:     #932638ff;
+	--cardinal:     #bd2c44ff; /* Main Red */
+	--ucla-blue:    #2975a8ff; /* Main Blue */
 	--lapis-lazuli: #245d83ff;
+	--indigo-dye:   #1e445dff;
+	--gunmetal:     #182b38ff;
+
+
+
+
+
+
 }
 
 .v-btn--variant-text,

@@ -13,3 +13,5 @@ dist
 /.idea/jsLibraryMappings.xml
 /.idea/markdown.xml
 /.idea/webResources.xml
+*Thumbs.db
+

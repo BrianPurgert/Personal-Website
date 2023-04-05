@@ -28,7 +28,7 @@
 
 			<v-timeline
 
-					:density = "smAndDown ? 'compact' : 'default'"
+					:density = "smAndDown ? 'compact' : 'comfortable'"
 					side = "end"
 					line-inset = "28"
 					align = "center"
