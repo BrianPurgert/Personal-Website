@@ -1,43 +1,201 @@
 @import url('https://fonts.cdnfonts.com/css/robot-crush?styles=79693,79692');
 @import url('https://fonts.cdnfonts.com/css/axial-cut?styles=152102,152101');
 @import url('https://fonts.cdnfonts.com/css/vegano');
-@import url('https://fonts.cdnfonts.com/css/yielding-timber');
 
-@font-face
-{
+@font-face {
+	font-family: yielding timber;
+	font-style:  normal;
+	font-weight: 400;
+	src:         local('Yielding Timber'), url(https://fonts.cdnfonts.com/s/95345/YieldingTimber-axvmg.woff) format('woff')
+}
+
+@font-face {
+	font-family: yielding timber spaced;
+	font-style:  normal;
+	font-weight: 400;
+	src:         local('Yielding Timber Spaced'), url(https://fonts.cdnfonts.com/s/95345/YieldingTimberSpaced-ywRKe.woff) format('woff')
+}
+
+@font-face {
+	font-family: yielding timber spaced italic;
+	font-style:  normal;
+	font-weight: 400;
+	src:         local('Yielding Timber Spaced Italic'), url(https://fonts.cdnfonts.com/s/95345/YieldingTimberSpacedItalic-9YRJn.woff) format('woff')
+}
+
+@font-face {
+	font-family: 'yielding timber 3d';
+	font-style:  normal;
+	font-weight: 400;
+	src:         local('Yielding Timber 3D'), url(https://fonts.cdnfonts.com/s/95345/YieldingTimber3D-EadD8.woff) format('woff')
+}
+
+@font-face {
+	font-family: yielding timber compact;
+	font-style:  normal;
+	font-weight: 400;
+	src:         local('Yielding Timber Compact'), url(https://fonts.cdnfonts.com/s/95345/YieldingTimberCompact-ZVBrz.woff) format('woff')
+}
+
+@font-face {
+	font-family: yielding timber compact italic;
+	font-style:  normal;
+	font-weight: 400;
+	src:         local('Yielding Timber Compact Italic'), url(https://fonts.cdnfonts.com/s/95345/YieldingTimberCompactItalic-3zAG8.woff) format('woff')
+}
+
+@font-face {
+	font-family: yielding timber gradient;
+	font-style:  normal;
+	font-weight: 400;
+	src:         local('Yielding Timber Gradient'), url(https://fonts.cdnfonts.com/s/95345/YieldingTimberGradient-qZOn5.woff) format('woff')
+}
+
+@font-face {
+	font-family: yielding timber semi-leftalic;
+	font-style:  normal;
+	font-weight: 400;
+	src:         local('Yielding Timber Semi-Leftalic'), url(https://fonts.cdnfonts.com/s/95345/YieldingTimberSemiLeftalic-51GDV.woff) format('woff')
+}
+
+@font-face {
+	font-family: yielding timber super-italic;
+	font-style:  normal;
+	font-weight: 400;
+	src:         local('Yielding Timber Super-Italic'), url(https://fonts.cdnfonts.com/s/95345/YieldingTimberSuperItalic-lg0a0.woff) format('woff')
+}
+
+@font-face {
+	font-family: 'yielding timber 3d italic';
+	font-style:  normal;
+	font-weight: 400;
+	src:         local('Yielding Timber 3D Italic'), url(https://fonts.cdnfonts.com/s/95345/YieldingTimber3DItalic-OVaDp.woff) format('woff')
+}
+
+@font-face {
+	font-family: yielding timber condensed;
+	font-style:  normal;
+	font-weight: 400;
+	src:         local('Yielding Timber Condensed'), url(https://fonts.cdnfonts.com/s/95345/YieldingTimberCondensed-x31Mq.woff) format('woff')
+}
+
+@font-face {
+	font-family: yielding timber condensed italic;
+	font-style:  normal;
+	font-weight: 400;
+	src:         local('Yielding Timber Condensed Italic'), url(https://fonts.cdnfonts.com/s/95345/YieldingTimberCondensedItalic-p7ElO.woff) format('woff')
+}
+
+@font-face {
+	font-family: yielding timber expanded;
+	font-style:  normal;
+	font-weight: 400;
+	src:         local('Yielding Timber Expanded'), url(https://fonts.cdnfonts.com/s/95345/YieldingTimberExpanded-DOm5R.woff) format('woff')
+}
+
+@font-face {
+	font-family: yielding timber expanded italic;
+	font-style:  normal;
+	font-weight: 400;
+	src:         local('Yielding Timber Expanded Italic'), url(https://fonts.cdnfonts.com/s/95345/YieldingTimberExpandedItalic-ALvDA.woff) format('woff')
+}
+
+@font-face {
+	font-family: yielding timber gradient italic;
+	font-style:  normal;
+	font-weight: 400;
+	src:         local('Yielding Timber Gradient Italic'), url(https://fonts.cdnfonts.com/s/95345/YieldingTimberGradientItalic-VG9RB.woff) format('woff')
+}
+
+@font-face {
+	font-family: yielding timber italic;
+	font-style:  normal;
+	font-weight: 400;
+	src:         local('Yielding Timber Italic'), url(https://fonts.cdnfonts.com/s/95345/YieldingTimberItalic-JRoDM.woff) format('woff')
+}
+
+@font-face {
+	font-family: yielding timber leftalic;
+	font-style:  normal;
+	font-weight: 400;
+	src:         local('Yielding Timber Leftalic'), url(https://fonts.cdnfonts.com/s/95345/YieldingTimberLeftalic-GOLDg.woff) format('woff')
+}
+
+@font-face {
+	font-family: yielding timber outline;
+	font-style:  normal;
+	font-weight: 400;
+	src:         local('Yielding Timber Outline'), url(https://fonts.cdnfonts.com/s/95345/YieldingTimberOutline-jEoe0.woff) format('woff')
+}
+
+@font-face {
+	font-family: yielding timber outline italic;
+	font-style:  normal;
+	font-weight: 400;
+	src:         local('Yielding Timber Outline Italic'), url(https://fonts.cdnfonts.com/s/95345/YieldingTimberOutlineItalic-z8B24.woff) format('woff')
+}
+
+@font-face {
+	font-family: yielding timber semi-italic;
+	font-style:  normal;
+	font-weight: 400;
+	src:         local('Yielding Timber Semi-Italic'), url(https://fonts.cdnfonts.com/s/95345/YieldingTimberSemiItalic-6YlAA.woff) format('woff')
+}
+
+@font-face {
 	font-family: 'tesla';
 	src:         url('/fonts/tesla.woff2') format('woff2');
 }
 
-@font-face
-{
+@font-face {
 	font-family: 'Barcade No Bar Italic Italic';
 	font-style:  normal;
 	font-weight: normal;
 	src:         local('Barcade No Bar Italic Italic'), url('/fonts/barcadenobarital.woff') format('woff');
 }
 
-@font-face
-{
+@font-face {
 	font-family: 'Barcade No Bar Bold Bold';
 	font-style:  normal;
 	font-weight: normal;
 	src:         local('Barcade No Bar Bold Bold'), url('/fonts/barcadnobarbold.woff') format('woff');
 }
 
+#is82 .v-card-title{
+	font-family: 'Yielding Timber Semi-Italic', sans-serif !important;
+	/*font-style:  italic;*/
+	position:    absolute;
+	/*top:      0px;*/
+	bottom:      0px;
+	font-size:       2.0em !important;
+	width:           100% !important;
+	height:          2.7rem !important;
+	text-align:      center;
+	color:           rgb(255, 255, 255);
+	background:      rgba(0, 0, 0, 0.5);
+	text-shadow:     1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 0px rgb(41, 117, 168);
+	backdrop-filter: blur(5px);
 
-.robot-crush
-{
+}
+#is82 .v-card-subtitle{
+	font-family: 'Yielding Timber Semi-Italic', sans-serif !important;
+	position:    absolute;
+	bottom:      0px;
+
+}
+#is82 .v-card-text{
+	/*position:    absolute;*/
+
+}
+
+.robot-crush {
 	font-family: 'Robot Crush', sans-serif !important;
-	/*font-size:   3.1vw !important;*/
 	font-style:  italic;
-	/*font-weight: 400;*/
 	color:       #2975a8;
 	text-shadow: 1px 1px 0px rgba(9, 9, 9, 0.95), 3px 3px 0px rgba(243, 243, 243, 0.95);
 }
 
-.axial-cut
-{
+.axial-cut {
 	font-family: 'Axial Cut', sans-serif !important;
 	color:       #2975a8;
 	text-shadow: 1px 1px 0px rgba(9, 9, 9, 0.95),
@@ -45,16 +203,15 @@
 	             3px 3px 0px rgba(243, 243, 243, 0.95);
 }
 
-.bp-shadow
-{
-	color:       rgb(255, 255, 255);
+.bp-shadow {
 	font-family: 'Yielding Timber', sans-serif !important;
+	font-style:  italic;
 
 	/*font-weight: 100;*/
 
 	/*font-size:   3.1vw !important;*/
 	/*font-family: 'VEGANO', sans-serif !important;*/
-	font-style:  italic;
+	color:       rgb(255, 255, 255);
 
 
 	/*text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5,*/
@@ -63,8 +220,7 @@
 	/*text-shadow: 1px 1px 1px rgb(189, 44, 68), 2px 2px 1px rgb(189, 44, 68);*/
 }
 
-.bp-year
-{
+.bp-year {
 	/*font-family:         'Barcade No Bar Bold Bold', sans-serif !important;*/
 	font-family:  'Yielding Timber Semi-Italic', sans-serif !important;
 	font-size:    1.4em !important;
@@ -79,19 +235,84 @@
 	/*text-shadow: 1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 0px rgba(243, 243, 243, 0.95);*/
 }
 
-.shadow-blue
-{
+video-background {
+	height: 337px;
+}
+
+.video-overlay-text {
+	font-family:     'Yielding Timber Semi-Italic', sans-serif !important;
+	font-size:       2.4em !important;
+	position:        absolute !important;
+	bottom:          0;
+	width:           100% !important;
+	height:          2.7rem !important;
+	/*line-height: 50%!important;*/
+	text-align:      center;
+	color:           rgb(255, 255, 255);
+	/*line-height: 1.2em!important;*/
+	background:      rgba(0, 0, 0, 0.5);
+	/*margin-right: 0.5em;*/
+
+	/*color:       #2975a8;*/
+	text-shadow:     1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 0px rgb(41, 117, 168);
+	backdrop-filter: blur(5px);
+}
+
+.video-overlay-subtext {
+
+	font-family: 'Yielding Timber Semi-Italic', sans-serif !important;
+	font-size:   1.0em !important;
+	position:    absolute !important;
+	/*padding: 0!important;*/
+	/*overflow: visible;*/
+	/*background: rgba(0, 0, 0, 0.5);*/
+	/*backdrop-filter: blur(5px);*/
+
+
+	/*text-align:  start;*/
+	bottom:      0;
+	left:        0;
+	width:       45% !important;
+	height:      4.5rem !important;
+	padding:     0.8rem !important;
+	/*z-index:     100!important;*/
+
+	opacity:     1 !important;
+	color:       rgb(255, 255, 255);
+	text-shadow: 1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 0px rgb(41, 117, 168);
+
+}
+
+.google_installs {
+	/*z-index:99999;*/
+	font-size: 10em;
+	position:  absolute;
+	/*display: contents;*/
+	bottom:    0px;
+	left:      0;
+	height:    100%;
+	/*min-width:100em; */
+	/*max-height: 8em;*/
+}
+
+.google_installs > svg {
+	width:          1em;
+	height:         0.5em !important;
+	margin-bottom:  -75px !important;
+	margin-left:    -4px;
+	vertical-align: bottom;
+}
+
+.shadow-blue {
 	text-shadow: 1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 1px rgb(41, 117, 168), 3px 3px 1px rgb(41, 117, 168);
 }
 
-.shadow-red
-{
+.shadow-red {
 	text-shadow: 1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 1px rgb(189, 44, 68), 3px 3px 1px rgb(189, 44, 68);
 }
 
 
-.bp-test
-{
+.bp-test {
 
 	outline:    5px dotted rgba(189, 44, 68, 0.9);
 	box-shadow: inset 0px 0px 0px 4px rgb(106, 0, 85),
@@ -99,22 +320,19 @@
 
 }
 
-.bg-primary
-{
+.bg-primary {
 	background-color: rgba(59, 59, 59, 0.37) !important;
 
 }
 
-.v-timeline-item__body
-{
+.v-timeline-item__body {
 	/*justify-self: auto !important;*/
 }
 
 
 /*--v-theme-primary: #bd2c44;*/
 
-:root
-{
+:root {
 
 	--night:        #121212ff;
 	--black-bean:   #3d191fff;
@@ -127,39 +345,30 @@
 	--gunmetal:     #182b38ff;
 
 
-
-
-
-
 }
 
 .v-btn--variant-text,
 .v-btn .v-icon,
 .v-btn__content,
-.v-btn__prepend
-{
+.v-btn__prepend {
 
 	color: var(--ucla-blue);
 }
 
-.v-snackbar__content
-{
+.v-snackbar__content {
 
 }
 
-.twixer .v-timeline-divider__dot
-{
+.twixer .v-timeline-divider__dot {
 	/*background-color: transparent !important;*/
 }
 
-.v-timeline-divider__inner-dot
-{
+.v-timeline-divider__inner-dot {
 	/*background-color: transparent !important;*/
 }
 
 .v-timeline-divider__dot,
-.v-timeline-divider__inner-dot
-{
+.v-timeline-divider__inner-dot {
 	background-color: transparent !important;
 }
 

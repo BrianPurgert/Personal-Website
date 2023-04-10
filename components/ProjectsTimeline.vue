@@ -22,13 +22,12 @@
 	<!--	.v-timeline-item__body-->
 	<!--	justify-self: auto;-->
 	<!--    side = "end"-->
-	<v-row no-gutters >
-		<v-col cols = "12 pa-0 ma-0" >
+
 
 
 			<v-timeline
-
-					:density = "smAndDown ? 'compact' : 'comfortable'"
+					class = "mx-auto"
+					:density = "smAndDown ? 'comfortable' : 'compact'"
 					side = "end"
 					line-inset = "28"
 					align = "center"
@@ -38,38 +37,36 @@
 
 					<v-container >
 						<v-card
+							id = "is82"
 								class = "mx-auto"
-								width = "500"
+								width = "600"
 						>
-
 							<v-carousel
-									hide-delimiters
-									cycle
-									show-arrows = "hover"
+								hide-delimiters
+								cycle
+								show-arrows = "hover"
 							>
 								<v-carousel-item
-										src = "/is82/2004.jpg"
-										height = "400px"
-										cover
-								></v-carousel-item >
-
+									src = "/is82/2004.jpg"
+									cover
+								></v-carousel-item>
 								<v-carousel-item
-										src = "/is82/2004_1.jpg"
-										height = "500px"
-										cover
-								></v-carousel-item >
-
+									src = "/is82/2004_1.jpg"
+									cover
+								></v-carousel-item>
 								<v-carousel-item
-										src = "/is82/2004_2.jpg"
-										height = "400px"
-										cover
-								></v-carousel-item >
-							</v-carousel >
+									src = "/is82/2004_2.jpg"
+									cover
+								></v-carousel-item>
+								<v-carousel-item
+									src = "/is82/addict.jpg"
+									cover
+								></v-carousel-item>
+
 							<v-card-title >Battlefield 1942 mapping</v-card-title >
-							<v-card-subtitle >My first time modding</v-card-subtitle >
+							</v-carousel>
 							<v-card-text >
-								I started modding in Battlefield 1942 in 2004, when I was 12. specifically for a mod called interstate 82.
-								I was a perfectionist, with a strong desire to make the best map I could possible. unfortunately, my computer broke and I was never able to finish the map.
+								when I was 12, I started making maps for a Battlefield 1942 mod called Interstate '82.
 							</v-card-text >
 
 						</v-card >
@@ -98,14 +95,16 @@
 						<nuxt-icon name = "scar_divi" filled style = 'font-size: 5em' />
 					</template >
 					<v-container >
-						<v-card class = "elevation-2" >
+						<v-card class = "elevation-2" width = "600" >
 							<v-card-title >SCAR Scripting</v-card-title >
-							<v-card-subtitle >My first time writing code</v-card-subtitle >
-							<v-card-text >I was 13 when I learned
-								<nuxt-link href = "https://wiki.scar-divi.com/SCAR_Divi_Online_Manual" >SCAR Divi</nuxt-link >
-								to automate tasks in RuneScape for me. personally I created a bot that would automatically buy feathers and sell them
-								back to the store owner, making me a profit. Not impressive, but it was my first time writing code, and I got hooked,
-								I actually thought scripting in RuneScape was more fun than the game itself.
+							<v-card-subtitle >Aka RuneScape botting</v-card-subtitle >
+							<v-card-text >
+								The primary motivation for me to learn programming was my interest in Autoing in RuneScape.
+								<nuxt-link href = "https://wiki.scar-divi.com/SCAR_Divi_Online_Manual" >SCAR</nuxt-link >
+								, a cheat development environment (CDE), enables users to create their own scripts for various games. More than just a color clicker, SCAR offers users the ability to make scripts in Pascal for autoing in RuneScape.
+								Upon acquiring this cheat, users can either utilize great scripts made by others or create their own, but they won't instantly reap the benefits of this CDE. SCAR's effectiveness exceeds expectations, providing users with a versatile tool for automating tasks in RuneScape.
+
+								For instance, I personally created a bot using SCAR that would automatically buy feathers and sell them back to the store owner, generating a profit for me. It was my first experience with coding. I found scripting in RuneScape to be even more enjoyable than playing the game itself.
 							</v-card-text >
 						</v-card >
 					</v-container >
@@ -123,30 +122,29 @@
 						<nuxt-icon name = "cryengine-logo-vertical-white" filled style = 'font-size: 8em' />
 						<!--								<img src = "/crysis_interstate/crysis_interstate_icon.png" style = 'max-width: 60px'/>-->
 					</template >
-					<v-container >
-						<v-card class = "elevation-2" >
-							<v-card-title >Crysis Interstate</v-card-title >
-							<v-card-subtitle >Crysis Mod development</v-card-subtitle >
-							<v-card-text ></v-card-text >
-						</v-card >
-					</v-container >
+					<crysis/>
+
+
 				</v-timeline-item >
 				<!--	SpaceBike/Doodle Bike   -->
 				<v-timeline-item width = "min-content" min-width = "fit-content" >
 					<v-container >
-						<v-card class = "elevation-5" width = "100%" style = "min-width: 35vw!important;" >
-							<v-card-title >Doodle Bike</v-card-title >
-							<v-card-subtitle >Published on Google Play</v-card-subtitle >
-							<v-card-item >
-
+						<v-responsive aspect-ratio="16 / 9">
+							<v-card
+								class = "elevation-5 pa-0" width = "600">
 								<video-background
-										src = "/doodlebike/DoodleBike_Portfolio_final.webm"
-										style = "height: 30vh;"
-										objectFit = "cover"
+									src = "/doodlebike/DoodleBike_Portfolio_final.webm"
+									objectFit = "cover"
+									style = "min-height: 337px;"
 								>
+									<v-card-title class="video-overlay-text" >Doodle Bike
+									</v-card-title >
+
 								</video-background >
-							</v-card-item >
-						</v-card >
+								<v-card-subtitle >
+								</v-card-subtitle >
+							</v-card >
+						</v-responsive>
 					</v-container >
 					<template v-slot:icon >
 						<img src = "/doodlebike/doodlebike_icon.png" style = 'max-width: 60px' />
@@ -163,20 +161,31 @@
 				<!--	spacebike	-->
 				<v-timeline-item width = "min-content" min-width = "fit-content" >
 					<v-container >
-						<v-card class = "elevation-2" width = "400" style = "min-width: 35vw!important;" >
-							<v-card-title class = "text-h5" >SpaceBike</v-card-title >
-							<v-card-subtitle >
-								<!--						<Icon name = "logos:google-play-icon" size = "0.8em"/>-->
-								Published on Google Play
-							</v-card-subtitle >
-							<v-card-item >
-								<video-background
+						<v-responsive aspect-ratio="16 / 9">
+							<v-card class = "elevation-5 pa-0" width = "600" >
+									<video-background
 										src = "/SpaceBike/gameplay_space_bike_trimmed.mp4"
-										style = "height: 30vh;"
+										objectFit = "cover"
+										style = "min-height: 337px;"
+									>
 
-								></video-background >
-							</v-card-item >
-						</v-card >
+
+										<v-card-title class="video-overlay-text" >SpaceBike
+										</v-card-title>
+
+
+									</video-background>
+								<nuxt-icon name = "google_installs" filled class="google_installs" ></nuxt-icon>
+
+<!--								<v-card-subtitle  class="video-overlay-subtext">-->
+
+<!--									<Icon name = "logos:google-play" width="3em" font-size="3.1em"/>-->
+<!--									<span style="position: absolute; right: 0; bottom: 0; padding-right: 1em">500k Downloads</span>-->
+
+<!--								</v-card-subtitle>-->
+
+							</v-card>
+						</v-responsive>
 					</v-container >
 					<template v-slot:icon >
 						<nuxt-icon filled name = "spacebike_icon_new" style = 'font-size: 5em' />
@@ -286,16 +295,17 @@
 			</v-timeline >
 
 
-		</v-col >
-	</v-row >
+
 
 </template >
 
-<script >
-import { useDisplay } from 'vuetify'
+<script>
+	import {useDisplay} from 'vuetify'
+	import Crysis from "~/components/Crysis.vue";
 
-export default {
+	export default {
 	name: 'ProjectsTimeline',
+		components: {Crysis},
 	data() {
 		return {
 			text: 'text',
@@ -305,9 +315,10 @@ export default {
 			]
 		}
 	},
+
 	setup() {
-		const { xs, sm, md, lg, xl, smAndDown } = useDisplay()
-		return { xs, sm, md, lg, xl, smAndDown }
+		const { xs, sm, md, lg, xl, smAndDown, mdAndUp, mobile } = useDisplay()
+		return { xs, sm, md, lg, xl, smAndDown, mdAndUp, mobile }
 	}
 }
 </script >
