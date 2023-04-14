@@ -1,64 +1,76 @@
 <template>
 
+
 	<v-container>
 		<v-card
-			class = "mx-auto"
+			class = "mx-auto pa-0"
 			elevation = "8"
-			width = "600"
+
 
 		>
 			<v-slide-group
 				v-model = "model"
-				class = "pa-4"
+				class = "pa-0"
 				selected-class = "bg-primary"
 				show-arrows
 			>
 				<v-slide-group-item
-					v-for = "n in 8"
+					v-for = "(image,n) in images"
 					:key = "n"
-					v-slot = "{ isSelected, toggle, selectedClass }"
+					v-slot = "{ isSelected, toggle }"
 				>
 					<v-card
+						:class = "['ma-2']"
 						color = "blue-lighten-1"
-						:class = "['ma-2', selectedClass]"
-						height = "200"
-						width = "250"
+						height = "350"
+						width = "500"
 						@click = "toggle"
 					>
-						<div class = "d-flex fill-height align-center justify-center">
-							<v-scale-transition>
-								<v-icon
-									v-if = "isSelected"
-									color = "white"
-									size = "48"
-									icon = "mdi-close-circle-outline"
-								></v-icon>
-							</v-scale-transition>
-						</div>
+						<v-img
+							:src = "image"
+							aspect-ratio = "1.2"
+							cover
+						></v-img>
+
 					</v-card>
 				</v-slide-group-item>
 			</v-slide-group>
 
-			<v-expand-transition>
-				<v-sheet
-					v-if = "model != null"
-					height = "300"
-				>
-					<div class = "d-flex fill-height align-center justify-center">
-						<h3 class = "text-h6">
-							Selected {{ model }}
-						</h3>
-					</div>
-				</v-sheet>
-			</v-expand-transition>
 		</v-card>
 	</v-container>
+
 </template>
 <script>
 	export default {
 		data: () => ({
 			model: null,
-			images:[]
+			images: ["/crysis/2007_12_09.jpg",
+				"/crysis/2008_cryengine.jpg",
+				"/crysis/2008_deathrace.jpg",
+				"/crysis/2008_fan.jpg",
+				"/crysis/2008_loop.jpg",
+				"/crysis/a.jpg",
+				"/crysis/arbiter.jpg",
+				"/crysis/arbiter2.jpg",
+				"/crysis/arbiter4.jpg",
+				"/crysis/cliffside1.jpg",
+				"/crysis/cliffside2.jpg",
+				"/crysis/deathrace2.jpg",
+				"/crysis/deathrace3.jpg",
+				"/crysis/deathrace4.jpg",
+				"/crysis/deathraceloop.jpg",
+				"/crysis/deathracestart.jpg",
+				"/crysis/dunes1.jpg",
+				"/crysis/dunes4.jpg",
+				"/crysis/flowchart.jpg",
+				"/crysis/guns.jpg",
+				"/crysis/highwaytohellcave.jpg",
+				"/crysis/intocar.jpg",
+				"/crysis/mg.jpg",
+				"/crysis/nitro.jpg",
+				"/crysis/rockets.jpg",
+				"/crysis/shotguns.jpg",
+				"/crysis/wow.jpg"]
 		}),
 		name: 'crysis'
 	}

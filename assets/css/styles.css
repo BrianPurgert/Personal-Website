@@ -161,13 +161,23 @@
 	src:         local('Barcade No Bar Bold Bold'), url('/fonts/barcadnobarbold.woff') format('woff');
 }
 
-#is82 .v-card-title{
-	font-family: 'Yielding Timber Semi-Italic', sans-serif !important;
+.rs-hovering {
+	left:    0;
+	opacity: 0.5;
+}
+
+.rs-not-hovering {
+	left:    -500px;
+	opacity: 1;
+}
+
+#is82 .v-card-title {
+	font-family:     'Yielding Timber Semi-Italic', sans-serif !important;
 	/*font-style:  italic;*/
-	position:    absolute;
-	/*top:      0px;*/
-	bottom:      0px;
 	font-size:       2.0em !important;
+	/*top:      0px;*/
+	position:        absolute;
+	bottom:          0px;
 	width:           100% !important;
 	height:          2.7rem !important;
 	text-align:      center;
@@ -177,13 +187,15 @@
 	backdrop-filter: blur(5px);
 
 }
-#is82 .v-card-subtitle{
+
+#is82 .v-card-subtitle {
 	font-family: 'Yielding Timber Semi-Italic', sans-serif !important;
 	position:    absolute;
 	bottom:      0px;
 
 }
-#is82 .v-card-text{
+
+#is82 .v-card-text {
 	/*position:    absolute;*/
 
 }
@@ -233,6 +245,12 @@
 	text-shadow:  1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 0px rgb(41, 117, 168);
 
 	/*text-shadow: 1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 0px rgba(243, 243, 243, 0.95);*/
+}
+
+.v-timeline-item__body {
+	/*width:     -webkit-fill-available;*/
+	/*min-width: unset;*/
+	max-width: 1313px;
 }
 
 video-background {
@@ -359,13 +377,6 @@ video-background {
 
 }
 
-.twixer .v-timeline-divider__dot {
-	/*background-color: transparent !important;*/
-}
-
-.v-timeline-divider__inner-dot {
-	/*background-color: transparent !important;*/
-}
 
 .v-timeline-divider__dot,
 .v-timeline-divider__inner-dot {
