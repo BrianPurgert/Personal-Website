@@ -116,26 +116,24 @@
 							cover
 							src = "/runescape/scar/asset_2113.svg"
 						>
-							<v-card-text>
-								The primary motivation for me to learn programming was my interest in Autoing in RuneScape.
-								<nuxt-link href = "https://wiki.scar-divi.com/SCAR_Divi_Online_Manual">SCAR</nuxt-link>
-								, a cheat development environment (CDE), enables users to create their own scripts for
-								various
-								games. More than just a color clicker, SCAR offers users the ability to make scripts in
-								Pascal
-								for autoing in RuneScape.
-								Upon acquiring this cheat, users can either utilize great scripts made by others or create
-								their
-								own, but they won't instantly reap the benefits of this CDE. SCAR's effectiveness exceeds
-								expectations, providing users with a versatile tool for automating tasks in RuneScape.
-
-								For instance, I personally created a bot using SCAR that would automatically buy feathers
-								and
-								sell them back to the store owner, generating a profit for me. It was my first experience
-								with
-								coding. I found scripting in RuneScape to be even more enjoyable than playing the game
-								itself.
-							</v-card-text>
+							<v-container class = "mt-1">
+								<div class = "seDefault">
+									<SPAN class = "Comment">//The primary motivation for me to learn programming was my interest</span><br>
+									<SPAN class = "Comment">//in Autoing in RuneScape.</span><br>
+									<br>
+									<SPAN class = "Comment">//SCAR is an IDE for writing scripts that automate tasks in</span><br>
+									<SPAN class = "Comment">//video games like clicking on colors or images on the screen.</span><br>
+									<SPAN class = "Comment">//SCAR's syntax was inspired by Pascal.</span><br><br>
+									<SPAN class = "Comment">//The first script I ever wrote was called script I wrote was called</span><br>
+									<br>
+									<SPAN class = "Reserved_word">program</span> &nbsp;<SPAN class = "Identifier">briansFeatherBuyer</span><SPAN
+									class = "Symbol">;</span><br>
+									<SPAN class = "Reserved_word">begin</span><br>
+									                                             &nbsp;<SPAN class = "Identifier">WriteLn</span><SPAN
+									class = "Symbol">(</span><SPAN class = "String">'Hello World!'</span><SPAN class = "Symbol">)</span><SPAN
+									class = "Symbol">;</span><br>
+									<SPAN class = "Reserved_word">end</span><SPAN class = "Symbol">.</span></div>
+							</v-container>
 						</v-img>
 
 

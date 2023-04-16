@@ -171,11 +171,12 @@
 	opacity: 1;
 }
 
+
 #is82 .v-card-title {
 	font-family:     'Yielding Timber Semi-Italic', sans-serif !important;
-	/*font-style:  italic;*/
+
 	font-size:       2.0em !important;
-	/*top:      0px;*/
+
 	position:        absolute;
 	bottom:          0px;
 	width:           100% !important;
@@ -196,7 +197,7 @@
 }
 
 #is82 .v-card-text {
-	/*position:    absolute;*/
+
 
 }
 
@@ -219,37 +220,30 @@
 	font-family: 'Yielding Timber', sans-serif !important;
 	font-style:  italic;
 
-	/*font-weight: 100;*/
 
-	/*font-size:   3.1vw !important;*/
-	/*font-family: 'VEGANO', sans-serif !important;*/
 	color:       rgb(255, 255, 255);
 
 
-	/*text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5,*/
-	/*             -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5;*/
-	/*text-shadow: -2px 1px 0px rgb(189, 44, 68), -2px -4px 0px rgb(41, 117, 168);*/
-	/*text-shadow: 1px 1px 1px rgb(189, 44, 68), 2px 2px 1px rgb(189, 44, 68);*/
 }
 
 .bp-year {
-	/*font-family:         'Barcade No Bar Bold Bold', sans-serif !important;*/
+
 	font-family:  'Yielding Timber Semi-Italic', sans-serif !important;
 	font-size:    1.4em !important;
-	/*-webkit-text-stroke: 1px #00386a;*/
-	/*font-style:          italic;*/
+
+
 	margin-right: 0.5em;
 
-	/*color:       #2975a8;*/
+
 	color:        rgb(255, 255, 255);
 	text-shadow:  1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 0px rgb(41, 117, 168);
 
-	/*text-shadow: 1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 0px rgba(243, 243, 243, 0.95);*/
+
 }
 
 .v-timeline-item__body {
-	/*width:     -webkit-fill-available;*/
-	/*min-width: unset;*/
+
+
 	max-width: 1313px;
 }
 
@@ -264,14 +258,13 @@ video-background {
 	bottom:          0;
 	width:           100% !important;
 	height:          2.7rem !important;
-	/*line-height: 50%!important;*/
+
 	text-align:      center;
 	color:           rgb(255, 255, 255);
-	/*line-height: 1.2em!important;*/
-	background:      rgba(0, 0, 0, 0.5);
-	/*margin-right: 0.5em;*/
 
-	/*color:       #2975a8;*/
+	background:      rgba(0, 0, 0, 0.5);
+
+
 	text-shadow:     1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 0px rgb(41, 117, 168);
 	backdrop-filter: blur(5px);
 }
@@ -281,19 +274,14 @@ video-background {
 	font-family: 'Yielding Timber Semi-Italic', sans-serif !important;
 	font-size:   1.0em !important;
 	position:    absolute !important;
-	/*padding: 0!important;*/
-	/*overflow: visible;*/
-	/*background: rgba(0, 0, 0, 0.5);*/
-	/*backdrop-filter: blur(5px);*/
 
 
-	/*text-align:  start;*/
 	bottom:      0;
 	left:        0;
 	width:       45% !important;
 	height:      4.5rem !important;
 	padding:     0.8rem !important;
-	/*z-index:     100!important;*/
+
 
 	opacity:     1 !important;
 	color:       rgb(255, 255, 255);
@@ -302,15 +290,15 @@ video-background {
 }
 
 .google_installs {
-	/*z-index:99999;*/
+
 	font-size: 10em;
 	position:  absolute;
-	/*display: contents;*/
+
 	bottom:    0px;
 	left:      0;
 	height:    100%;
-	/*min-width:100em; */
-	/*max-height: 8em;*/
+
+
 }
 
 .google_installs > svg {
@@ -344,11 +332,9 @@ video-background {
 }
 
 .v-timeline-item__body {
-	/*justify-self: auto !important;*/
+
 }
 
-
-/*--v-theme-primary: #bd2c44;*/
 
 :root {
 
@@ -356,8 +342,8 @@ video-background {
 	--black-bean:   #3d191fff;
 	--wine:         #681f2bff;
 	--cordovan:     #932638ff;
-	--cardinal:     #bd2c44ff; /* Main Red */
-	--ucla-blue:    #2975a8ff; /* Main Blue */
+	--cardinal:     #bd2c44ff;
+	--ucla-blue:    #2975a8ff;
 	--lapis-lazuli: #245d83ff;
 	--indigo-dye:   #1e445dff;
 	--gunmetal:     #182b38ff;
@@ -383,3 +369,32 @@ video-background {
 	background-color: transparent !important;
 }
 
+/* SCAR CODE */
+
+.seDefault { font-family: 'Courier New'; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none; color: #000000; white-space: nowrap; overflow: hidden; }
+
+.Default { font-family: 'Courier New'; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none; color: #000000;white-space: nowrap; overflow: hidden; }
+
+.Symbol { font-weight: normal; font-style: normal; text-decoration: none; color: #000000;}
+
+.Number { font-weight: normal; font-style: normal; text-decoration: none; color: #000080;}
+
+.String { font-weight: normal; font-style: normal; text-decoration: none; color: #FF00FF;}
+
+.Identifier { font-weight: normal; font-style: normal; text-decoration: none; color: #000000;}
+
+.Reserved_word { font-weight: bold; font-style: normal; text-decoration: none; color: #000000;}
+
+.Comment { font-weight: normal; font-style: normal; text-decoration: none; color: #008000;white-space: nowrap; overflow: hidden; }
+
+.Preprocessor { font-weight: normal; font-style: normal; text-decoration: none; color: #800080;}
+
+.Selected_block {color: #FFFFFF; background-color: #0078D7;}
+
+.Current_block {}
+
+.Current_Line {background-color: #E3E3E3;}
+
+.#Search_Match {font-weight: bold; font-style: normal; text-decoration: none; color: #FFFFFF; background-color: #000000;}
+
+.Invalid_symbol { font-weight: bold; font-style: normal; text-decoration: line-through; color: #FF0000;}
