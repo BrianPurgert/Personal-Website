@@ -26,8 +26,8 @@
                         height="520px"
                         src="/twixer/description.png"
                 >
-                    <img class="h-25" src="twixer/logo.svg"
-                         style="position: absolute; left:100px; bottom: 50px; ">
+                    <img alt="twixer logo" class="h-25"
+                         src="/twixer/logo.svg" style="position: absolute; left:100px; bottom: 50px; ">
                     <v-card-title class="video-overlay-text">Chrome Browser Extension</v-card-title>
 
 

@@ -1,10 +1,5 @@
 <script setup>
-console.log(
-	'%c this site was built NuxtJS, Vuetify and TypeScript: : ' +
-	'%c https://github.com/BrianPurgert/Personal-Website',
-	'font-style: italic; color: #bada55; font-size: 0.8em;',
-	'font-style: italic; color: #bada55; font-size: 1em; padding: 0.5em;'
-)
+
 </script>
 
 <template>
