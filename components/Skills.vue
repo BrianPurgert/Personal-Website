@@ -24,7 +24,6 @@
     <v-container
             class="d-flex flex-wrap  justify-center   pa-5"
     >
-
     </v-container>
 
     <v-container

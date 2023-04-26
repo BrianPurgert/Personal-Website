@@ -1,4 +1,15 @@
 <script setup>
+if (process.client) {
+	// Add custom CSS styles for the console message
+	const consoleStyles = `
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+  `;
+
+	// Log the message in the console with the custom styles
+	console.log('%cSource Code: https://github.com/BrianPurgert/Personal-Website', consoleStyles);
+}
 
 </script>
 

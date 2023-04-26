@@ -110,7 +110,7 @@ svg.logo {
     stroke: #2975a8;
     stroke-dasharray: 0 10 20;
     stroke-dashoffset: -50%;
-    text-shadow: 3px 3px 2px rgba(24, 24, 27, 0.8);
+    text-shadow: 3px 3px 0px rgba(24, 24, 27, 1);
 }
 
 .b-top {
