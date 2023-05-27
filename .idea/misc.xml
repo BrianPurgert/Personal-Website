@@ -6,8 +6,11 @@
   </component>
   <component name="ExtraIconsSettingsProject">
     <option name="ignoredPattern" value="" />
-    <option name="additionalUIScale" value="1.5" />
+    <option name="additionalUIScale" value="1.9" />
     <option name="ignoreWarnings" value="true" />
+  </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="FLOW" />
   </component>
   <component name="ProjectResources">
     <xml-schema-version>XMLSchema_1_1</xml-schema-version>

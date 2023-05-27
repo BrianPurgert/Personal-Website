@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="060701e1-6e21-49cc-b580-572e9ccc722c" name="GCloud" url="http://34.138.154.182:3000">
+        <fileTransfer rootFolder="/home/brian" accessType="SFTP" host="34.138.153.182" port="22" sshConfigId="3142aeec-c734-4af7-9deb-5bb394842cb0" sshConfig="brian@34.138.153.182:22 key" keyPair="true" />
+      </webServer>
+    </option>
+  </component>
+</project>
