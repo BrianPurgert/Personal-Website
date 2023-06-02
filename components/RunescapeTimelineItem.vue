@@ -30,15 +30,14 @@
 									</v-expand-transition >
 
 									<v-img
-										  class = " bg-white"
+										  class = "bg-white position-absolute dialog-top-transition"
 										  style = "z-index: 1; top: -1px; left: -1px; right: -1px; bottom: 0;"
 										  src = "/runescape/scar/asset_2113.svg"
-
 									>
 										  <v-container
-												style = "position: absolute; top: 75px; left: 30px; bottom: 0;"
+												class = "pr-1"
 
-												class = "pr-1" >
+												style = "position: absolute; top: 75px; left: 30px; bottom: 0;" >
 												<div class = "seDefault" >
 									<span
 										  class = "Comment" >//The primary motivation for me to learn programming was my interest</span ><br >
