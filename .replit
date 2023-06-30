@@ -9,7 +9,7 @@ localPort = 24678
 externalPort = 24678
 
 [nix]
-channel = "stable-22_11"
+channel = "stable-23_05"
 
 [languages.html]
 pattern = "**/*.html"
