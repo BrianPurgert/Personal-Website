@@ -1,4 +1,7 @@
 export default defineNuxtConfig({
+	devServer: {
+		port: 80
+	},
 	css: ['@/assets/css/styles.css'],
 	modules: ['@nuxt/content', '@nuxt-alt/vuetify', 'nuxt-icons', 'nuxt-icon'],
 	content: {
