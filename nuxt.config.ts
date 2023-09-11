@@ -3,19 +3,17 @@ export default defineNuxtConfig({
 		port: 80
 	},
 	css: ['@/assets/css/styles.css'],
-	modules: ['@nuxt/content', '@nuxt-alt/vuetify', 'nuxt-icons', 'nuxt-icon'],
-	content: {
-		// https://content.nuxtjs.org/api/configuration
+	modules: ['@nuxt-alt/vuetify', 'nuxt-icons', 'nuxt-icon'],
+	vuetify: {
+		pluginOptions: { styles: true },
+		vuetifyOptions: {
+			blueprint: 'md3',
+			theme: { defaultTheme: 'dark' }
+		}
 	},
 	
-	plugins: [{
-		src: '~/plugins/vercel.ts', mode: 'client'
-	}],
-	vuetify: {
-		pluginOptions: {
-			styles: true
-		}, vuetifyOptions: {
-			blueprint: 'md3', theme: { defaultTheme: 'dark' }
-		}
-	}
+	plugins: [
+		{ src: '~/plugins/vercel.ts', mode: 'client' },
+		{ src: '~/plugins/video-bg.client.ts', mode: 'client' }
+	]
 })
