@@ -7,7 +7,7 @@
                     width="600"
             >
 
-                <img src="miami/logo-horizontal-stacked.png"
+                <img src="/miami/logo-horizontal-stacked.png"
                      style='max-width: 500px'/>
                 <v-card-title class="headline">Computer Science & Computer Engineering
                 </v-card-title>
