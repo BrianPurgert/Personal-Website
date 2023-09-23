@@ -1,310 +1,286 @@
-:root{
-	--night:        #121212ff;
-	--black-bean:   #3d191fff;
-	--wine:         #681f2bff;
-	--cordovan:     #932638ff;
-	--cardinal:     #bd2c44ff;
-	--ucla-blue:    #2975a8ff;
-	--lapis-lazuli: #245d83ff;
-	--indigo-dye:   #1e445dff;
-	--gunmetal:     #182b38ff;
-}
+:root {
+    --night        : #121212ff;
+    --black-bean   : #3d191fff;
+    --wine         : #681f2bff;
+    --cordovan     : #932638ff;
+    --cardinal     : #bd2c44ff;
+    --ucla-blue    : #2975a8ff;
+    --lapis-lazuli : #245d83ff;
+    --indigo-dye   : #1e445dff;
+    --gunmetal     : #182b38ff;
+    }
 
-@font-face{
-	font-family: yielding timber;
-	font-style:  normal;
-	font-weight: 400;
-	src:         local("Yielding Timber"), url(https://fonts.cdnfonts.com/s/95345/YieldingTimber-axvmg.woff) format("woff")
-}
+@font-face {
+    font-family : yielding timber;
+    font-style  : normal;
+    font-weight : 400;
+    src         : local("Yielding Timber"), url(https://fonts.cdnfonts.com/s/95345/YieldingTimber-axvmg.woff) format("woff")
+    }
 
-@font-face{
-	font-family: yielding timber semi-italic;
-	font-style:  normal;
-	font-weight: 400;
-	src:         local("Yielding Timber Semi-Italic"), url(https://fonts.cdnfonts.com/s/95345/YieldingTimberSemiItalic-6YlAA.woff) format("woff")
-}
+@font-face {
+    font-family : yielding timber semi-italic;
+    font-style  : normal;
+    font-weight : 400;
+    src         : local("Yielding Timber Semi-Italic"), url(https://fonts.cdnfonts.com/s/95345/YieldingTimberSemiItalic-6YlAA.woff) format("woff")
+    }
 
-@font-face{
-	font-family: "tesla";
-	src:         url("/fonts/tesla.woff2") format("woff2");
-}
+@font-face {
+    font-family : "tesla";
+    src         : url("/fonts/tesla.woff2") format("woff2");
+    }
 
-#is82 .v-card-title{
-	font-family:     "Yielding Timber Semi-Italic", sans-serif !important;
+#is82 .v-card-title {
+    font-family     : "Yielding Timber Semi-Italic", sans-serif !important;
+    font-size       : 2.0em !important;
+    position        : absolute;
+    bottom          : 0px;
+    width           : 100% !important;
+    height          : 2.7rem !important;
+    text-align      : center;
+    color           : rgb(255, 255, 255);
+    background      : rgba(0, 0, 0, 0.5);
+    text-shadow     : 1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 0px rgb(41, 117, 168);
+    backdrop-filter : blur(5px);
+    }
 
-	font-size:       2.0em !important;
+#bp:hover {
+    filter : hue-rotate(0deg) saturate(150%) brightness(100%) contrast(100%);
+    }
 
-	position:        absolute;
-	bottom:          0px;
-	width:           100% !important;
-	height:          2.7rem !important;
-	text-align:      center;
-	color:           rgb(255, 255, 255);
-	background:      rgba(0, 0, 0, 0.5);
-	text-shadow:     1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 0px rgb(41, 117, 168);
-	backdrop-filter: blur(5px);
+#is82 .v-card-subtitle {
+    font-family : "Yielding Timber Semi-Italic", sans-serif !important;
+    position    : absolute;
+    bottom      : 0px;
+    }
 
-}
+#is82 .v-card-text {
+    }
 
-#bp:hover{
-	filter: hue-rotate(0deg) saturate(150%) brightness(100%) contrast(100%);
-}
+.robot-crush {
+    font-family : "Robot Crush", sans-serif !important;
+    font-style  : italic;
+    color       : #2975a8;
+    text-shadow : 1px 1px 0px rgba(9, 9, 9, 0.95), 3px 3px 0px rgba(243, 243, 243, 0.95);
+    }
 
-#is82 .v-card-subtitle{
-	font-family: "Yielding Timber Semi-Italic", sans-serif !important;
-	position:    absolute;
-	bottom:      0px;
+.axial-cut {
+    font-family : "Axial Cut", sans-serif !important;
+    color       : #2975a8;
+    text-shadow : 1px 1px 0px rgba(9, 9, 9, 0.95),
+    2px 2px 0px rgb(189, 44, 68),
+    3px 3px 0px rgba(243, 243, 243, 0.95);
+    }
 
-}
+.bp-shadow {
+    font-family : "Yielding Timber", sans-serif !important;
+    font-style  : italic;
+    color       : rgb(255, 255, 255);
+    }
 
-#is82 .v-card-text{
+.bp-year {
+    font-family  : "Yielding Timber Semi-Italic", sans-serif !important;
+    font-size    : 1.4em !important;
+    margin-right : 0.5em;
+    color        : rgb(255, 255, 255);
+    text-shadow  : 1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 0px rgb(41, 117, 168);
+    }
 
-}
+.rs-hovering {
+    left    : 0;
+    opacity : 0.5;
+    }
 
-.robot-crush{
-	font-family: "Robot Crush", sans-serif !important;
-	font-style:  italic;
-	color:       #2975a8;
-	text-shadow: 1px 1px 0px rgba(9, 9, 9, 0.95), 3px 3px 0px rgba(243, 243, 243, 0.95);
-}
+.rs-not-hovering {
+    left    : -500px;
+    opacity : 1;
+    }
 
-.axial-cut{
-	font-family: "Axial Cut", sans-serif !important;
-	color:       #2975a8;
-	text-shadow: 1px 1px 0px rgba(9, 9, 9, 0.95),
-	             2px 2px 0px rgb(189, 44, 68),
-	             3px 3px 0px rgba(243, 243, 243, 0.95);
-}
+.v-timeline-item__body {
+    max-width : calc(100% - 300px);
+    }
 
-.bp-shadow{
-	font-family: "Yielding Timber", sans-serif !important;
-	font-style:  italic;
+VideoBackground {
+    height : 337px;
+    }
 
-	color:       rgb(255, 255, 255);
+.video-overlay-text {
+    font-family     : "Yielding Timber Semi-Italic", sans-serif !important;
+    font-size       : 2.4em !important;
+    position        : absolute !important;
+    bottom          : 0;
+    width           : 100% !important;
+    height          : 2.7rem !important;
+    text-align      : center;
+    color           : rgb(255, 255, 255);
+    background      : rgba(0, 0, 0, 0.5);
+    text-shadow     : 1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 0px rgb(41, 117, 168);
+    backdrop-filter : blur(5px);
+    }
 
-}
+.video-overlay-subtext {
+    font-family : "Yielding Timber Semi-Italic", sans-serif !important;
+    font-size   : 1.0em !important;
+    position    : absolute !important;
+    bottom      : 0;
+    left        : 0;
+    width       : 45% !important;
+    height      : 4.5rem !important;
+    padding     : 0.8rem !important;
+    opacity     : 1 !important;
+    color       : rgb(255, 255, 255);
+    text-shadow : 1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 0px rgb(41, 117, 168);
+    }
 
-.bp-year{
-	font-family:  "Yielding Timber Semi-Italic", sans-serif !important;
-	font-size:    1.4em !important;
-	margin-right: 0.5em;
-	color:        rgb(255, 255, 255);
-	text-shadow:  1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 0px rgb(41, 117, 168);
+.google_installs {
+    font-size : 10em;
+    position  : absolute;
+    bottom    : 0px;
+    left      : 0;
+    height    : 100%;
+    }
 
-}
+.google_installs > svg {
+    width          : 1em;
+    height         : 0.5em !important;
+    margin-bottom  : -75px !important;
+    margin-left    : -4px;
+    vertical-align : bottom;
+    }
 
-.rs-hovering{
-	left:    0;
-	opacity: 0.5;
-}
+.shadow-blue {
+    text-shadow : 1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 1px rgb(41, 117, 168), 3px 3px 1px rgb(41, 117, 168);
+    }
 
-.rs-not-hovering{
-	left:    -500px;
-	opacity: 1;
-}
+.shadow-red {
+    text-shadow : 1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 1px rgb(189, 44, 68), 3px 3px 1px rgb(189, 44, 68);
+    }
 
-.v-timeline-item__body{
-	max-width: calc(100% - 300px);
-}
+.bp-test {
+    outline    : 5px dotted rgba(189, 44, 68, 0.9);
+    box-shadow : inset 0px 0px 0px 4px rgb(106, 0, 85),
+    inset 0px 0px 6px 6px rgb(0, 56, 106);
+    }
 
-VideoBackground{
-	height: 337px;
-}
-
-.video-overlay-text{
-	font-family:     "Yielding Timber Semi-Italic", sans-serif !important;
-	font-size:       2.4em !important;
-	position:        absolute !important;
-	bottom:          0;
-	width:           100% !important;
-	height:          2.7rem !important;
-
-	text-align:      center;
-	color:           rgb(255, 255, 255);
-
-	background:      rgba(0, 0, 0, 0.5);
-
-	text-shadow:     1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 0px rgb(41, 117, 168);
-	backdrop-filter: blur(5px);
-}
-
-.video-overlay-subtext{
-
-	font-family: "Yielding Timber Semi-Italic", sans-serif !important;
-	font-size:   1.0em !important;
-	position:    absolute !important;
-
-	bottom:      0;
-	left:        0;
-	width:       45% !important;
-	height:      4.5rem !important;
-	padding:     0.8rem !important;
-
-	opacity:     1 !important;
-	color:       rgb(255, 255, 255);
-	text-shadow: 1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 0px rgb(41, 117, 168);
-
-}
-
-.google_installs{
-
-	font-size: 10em;
-	position:  absolute;
-
-	bottom:    0px;
-	left:      0;
-	height:    100%;
-
-}
-
-.google_installs > svg{
-	width:          1em;
-	height:         0.5em !important;
-	margin-bottom:  -75px !important;
-	margin-left:    -4px;
-	vertical-align: bottom;
-}
-
-.shadow-blue{
-	text-shadow: 1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 1px rgb(41, 117, 168), 3px 3px 1px rgb(41, 117, 168);
-}
-
-.shadow-red{
-	text-shadow: 1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 1px rgb(189, 44, 68), 3px 3px 1px rgb(189, 44, 68);
-}
-
-.bp-test{
-
-	outline:    5px dotted rgba(189, 44, 68, 0.9);
-	box-shadow: inset 0px 0px 0px 4px rgb(106, 0, 85),
-	            inset 0px 0px 6px 6px rgb(0, 56, 106);
-
-}
-
-.bg-primary{
-	background-color: rgba(24, 24, 24, 0.75) !important;
-
-}
+.bg-primary {
+    background-color : rgba(24, 24, 24, 0.75) !important;
+    }
 
 /* timeline */
-.v-timeline-item__body{
-
-}
+.v-timeline-item__body {
+    }
 
 .v-btn--variant-text,
 .v-btn .v-icon,
 .v-btn__content,
-.v-btn__prepend{
-	color: var(--ucla-blue);
-}
+.v-btn__prepend {
+    color : var(--ucla-blue);
+    }
 
-.v-snackbar__content{
-
-}
+.v-snackbar__content {
+    }
 
 .v-timeline-divider__dot,
-.v-timeline-divider__inner-dot{
-	background-color: transparent !important;
-}
+.v-timeline-divider__inner-dot {
+    background-color : transparent !important;
+    }
 
 /* SCAR CODE */
+.seDefault {
+    font-family     : "Courier New";
+    font-size       : 12px;
+    font-weight     : normal;
+    font-style      : normal;
+    overflow        : hidden;
+    white-space     : nowrap;
+    text-decoration : none;
+    color           : #000000;
+    }
 
-.seDefault{
-	font-family:     "Courier New";
-	font-size:       12px;
-	font-weight:     normal;
-	font-style:      normal;
-	overflow:        hidden;
-	white-space:     nowrap;
-	text-decoration: none;
-	color:           #000000;
-}
+.Default {
+    font-family     : "Courier New";
+    font-size       : 12px;
+    font-weight     : normal;
+    font-style      : normal;
+    overflow        : hidden;
+    white-space     : nowrap;
+    text-decoration : none;
+    color           : #000000;
+    }
 
-.Default{
-	font-family:     "Courier New";
-	font-size:       12px;
-	font-weight:     normal;
-	font-style:      normal;
-	overflow:        hidden;
-	white-space:     nowrap;
-	text-decoration: none;
-	color:           #000000;
-}
+.Symbol {
+    font-weight     : normal;
+    font-style      : normal;
+    text-decoration : none;
+    color           : #000000;
+    }
 
-.Symbol{
-	font-weight:     normal;
-	font-style:      normal;
-	text-decoration: none;
-	color:           #000000;
-}
+.Number {
+    font-weight     : normal;
+    font-style      : normal;
+    text-decoration : none;
+    color           : #000080;
+    }
 
-.Number{
-	font-weight:     normal;
-	font-style:      normal;
-	text-decoration: none;
-	color:           #000080;
-}
+.String {
+    font-weight     : normal;
+    font-style      : normal;
+    text-decoration : none;
+    color           : #ff00ff;
+    }
 
-.String{
-	font-weight:     normal;
-	font-style:      normal;
-	text-decoration: none;
-	color:           #ff00ff;
-}
+.Identifier {
+    font-weight     : normal;
+    font-style      : normal;
+    text-decoration : none;
+    color           : #000000;
+    }
 
-.Identifier{
-	font-weight:     normal;
-	font-style:      normal;
-	text-decoration: none;
-	color:           #000000;
-}
+.Reserved_word {
+    font-weight     : bold;
+    font-style      : normal;
+    text-decoration : none;
+    color           : #000000;
+    }
 
-.Reserved_word{
-	font-weight:     bold;
-	font-style:      normal;
-	text-decoration: none;
-	color:           #000000;
-}
+.Comment {
+    font-weight     : normal;
+    font-style      : normal;
+    overflow        : hidden;
+    white-space     : nowrap;
+    text-decoration : none;
+    color           : #008000;
+    }
 
-.Comment{
-	font-weight:     normal;
-	font-style:      normal;
-	overflow:        hidden;
-	white-space:     nowrap;
-	text-decoration: none;
-	color:           #008000;
-}
+.Preprocessor {
+    font-weight     : normal;
+    font-style      : normal;
+    text-decoration : none;
+    color           : #800080;
+    }
 
-.Preprocessor{
-	font-weight:     normal;
-	font-style:      normal;
-	text-decoration: none;
-	color:           #800080;
-}
+.Selected_block {
+    color            : #ffffff;
+    background-color : #0078d7;
+    }
 
-.Selected_block{
-	color:            #ffffff;
-	background-color: #0078d7;
-}
+.Current_block {
+    }
 
-.Current_block{
-}
+.Current_Line {
+    background-color : #e3e3e3;
+    }
 
-.Current_Line{
-	background-color: #e3e3e3;
-}
+.Search_Match {
+    font-weight      : bold;
+    font-style       : normal;
+    text-decoration  : none;
+    color            : #ffffff;
+    background-color : #000000;
+    }
 
-.Search_Match{
-	font-weight:      bold;
-	font-style:       normal;
-	text-decoration:  none;
-	color:            #ffffff;
-	background-color: #000000;
-}
-
-.Invalid_symbol{
-	font-weight:     bold;
-	font-style:      normal;
-	text-decoration: line-through;
-	color:           #ff0000;
-}
+.Invalid_symbol {
+    font-weight     : bold;
+    font-style      : normal;
+    text-decoration : line-through;
+    color           : #ff0000;
+    }

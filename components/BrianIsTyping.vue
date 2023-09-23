@@ -1,5 +1,11 @@
 <template>
-    <h2 class="text-h4 bp-shadow shadow-blue text-left">hello, my name is</h2>
+
+    <h2 class="text-h3 bp-shadow shadow-blue text-left">hello, my name is
+        <span class="text-caption">
+            (Brian Purgert)
+        </span>
+    </h2>
+
     <v-divider></v-divider>
     <svg
             class="logo" viewBox="0 0 100 17"
@@ -29,112 +35,92 @@
 </template>
 
 
-<script>
+<script setup lang="ts">
 
-export default {
-	name:       'brian-is-typing',
-	components: {}, data: () => {
-		return {
-			typeValue:             '',
-			typeStatus:            false,
-			displayTextArray:      ['rian', 'urgert'],
-			typingSpeed:           100,
-			erasingSpeed:          200,
-			newTextDelay:          2000,
-			displayTextArrayIndex: 0,
-			charIndex:             0
-		}
-	},
-	props:      {},
-	created() {
-		setTimeout(this.typeText, this.newTextDelay + 200)
-	},
-	methods: {
-		typeText() {
-			if (this.charIndex < this.displayTextArray[this.displayTextArrayIndex].length) {
-				if (!this.typeStatus) {
-					this.typeStatus = true
-				}
-				this.typeValue += this.displayTextArray[this.displayTextArrayIndex].charAt(this.charIndex)
-				this.charIndex += 1
-				setTimeout(this.typeText, this.typingSpeed)
-			} else {
-				this.typeStatus = false
-				setTimeout(this.eraseText, this.newTextDelay)
-			}
-		}, eraseText() {
-			if (this.charIndex > 0) {
-				if (!this.typeStatus) {
-					this.typeStatus = true
-				}
-				this.typeValue = this.displayTextArray[this.displayTextArrayIndex].substring(0, this.charIndex - 1)
-				this.charIndex -= 1
-				setTimeout(this.eraseText, this.erasingSpeed)
-			} else {
-				this.typeStatus = false
-				this.displayTextArrayIndex += 1
-				if (this.displayTextArrayIndex >= this.displayTextArray.length) {
-					this.displayTextArrayIndex = 0
-				}
-				setTimeout(this.typeText, this.typingSpeed + 1000)
-			}
-		}
-	}
+
+const typeValue = ref("")
+const typeStatus = ref(false)
+const displayTextArray = ["rian", "urgert"]
+const typingSpeed = 100
+const erasingSpeed = 200
+const newTextDelay = 2000
+let displayTextArrayIndex = 0
+let charIndex = 0
+
+const typeText = () => {
+    if (charIndex < displayTextArray[displayTextArrayIndex].length) {
+        typeStatus.value = true
+        typeValue.value += displayTextArray[displayTextArrayIndex].charAt(charIndex)
+        charIndex++
+        setTimeout(typeText, typingSpeed)
+    } else {
+        typeStatus.value = false
+        setTimeout(eraseText, newTextDelay)
+    }
 }
+
+const eraseText = () => {
+    if (charIndex > 0) {
+        typeStatus.value = true
+        typeValue.value = displayTextArray[displayTextArrayIndex].substring(0, charIndex - 1)
+        charIndex--
+        setTimeout(eraseText, erasingSpeed)
+    } else {
+        typeStatus.value = false
+        displayTextArrayIndex = (displayTextArrayIndex + 1) % displayTextArray.length
+        setTimeout(typeText, typingSpeed + 1000)
+    }
+}
+
+onMounted(() => {
+    setTimeout(typeText, newTextDelay + 200)
+})
 </script>
 
 
 <style scoped>
 
-.tesla-text {
-    font-family: 'tesla', system-ui !important;
-    font-size: 3.1vw !important;
-    font-style: normal !important;
-    color: #2975a8;
-    text-shadow: 1px 1px 0px rgba(9, 9, 9, 0.95), 3px 3px 0px rgba(243, 243, 243, 0.95);
-}
 
 svg.logo {
-    align-content: baseline;
-    display: block;
-    font-family: 'tesla', cursive;
-    font-style: italic;
-    max-height: 9rem;
-    margin: 0 auto;
-
-}
+    align-content : baseline;
+    display       : block;
+    font-family   : 'tesla', cursive;
+    font-style    : italic;
+    max-height    : 9rem;
+    font-size     : 1rem;
+    margin        : 0 10%;
+    }
 
 .text-copy {
-    animation: stroke-offset 10s infinite linear alternate;
-    fill: #bd2c44;
-    stroke: #2975a8;
-    stroke-dasharray: 0 10 20;
-    stroke-dashoffset: -50%;
-    text-shadow: 3px 3px 0px rgba(24, 24, 27, 1);
-}
+    animation         : stroke-offset 10s infinite linear alternate;
+    fill              : #bd2c44;
+    stroke            : #2975a8;
+    stroke-dasharray  : 0 10 20;
+    stroke-dashoffset : -50%;
+    text-shadow       : 3px 3px 0px rgba(24, 24, 27, 1);
+    }
 
 .b-top {
-    fill: #bd2c44;
-
-}
+    fill : #bd2c44;
+    }
 
 .text-copy:nth-child(1) {
-    animation-delay: -1s;
-}
+    animation-delay : -1s;
+    }
 
 .text-copy:nth-child(2) {
-    animation-delay: -3s;
-}
+    animation-delay : -3s;
+    }
 
 .text-copy:nth-child(3) {
-    animation-delay: -5s;
-}
+    animation-delay : -5s;
+    }
 
 @keyframes stroke-offset {
     100% {
-        stroke-dashoffset: 50%;
+        stroke-dashoffset : 50%;
+        }
     }
-}
 
 
 </style>
