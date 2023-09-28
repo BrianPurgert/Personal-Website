@@ -34,32 +34,32 @@
 </template>
 <script>
 export default {
-	name: 'skills',
-	data: function () {
-		return {
-			tags: [
-				'skill-icons:java-light',
-				'skill-icons:linux-light',
-				'skill-icons:nextjs-light',
-				'skill-icons:php-light',
-				'skill-icons:redis-light',
-				'skill-icons:aws-light',
-				"skill-icons:azure-light",
-				"skill-icons:github-light",
-				"skill-icons:java-light",
-				"skill-icons:jenkins-light",
-				"skill-icons:linux-light",
-				"skill-icons:matlab-light",
-				"skill-icons:mysql-light",
-				"skill-icons:nodejs-light",
-				"skill-icons:python-light",
-				"skill-icons:react-light",
-				"skill-icons:unity-light",
-				"skill-icons:vercel-light",
-				"skill-icons:gcp-light"
+    name: 'skills',
+    data: function () {
+        return {
+            tags: [
+                'skill-icons:java-light',
+                'skill-icons:linux-light',
+                'skill-icons:nextjs-light',
+                'skill-icons:php-light',
+                'skill-icons:redis-light',
+                'skill-icons:aws-light',
+                "skill-icons:azure-light",
+                "skill-icons:github-light",
+                "skill-icons:java-light",
+                "skill-icons:jenkins-light",
+                "skill-icons:linux-light",
+                "skill-icons:matlab-light",
+                "skill-icons:mysql-light",
+                "skill-icons:nodejs-light",
+                "skill-icons:python-light",
+                "skill-icons:react-light",
+                "skill-icons:unity-light",
+                "skill-icons:vercel-light",
+                "skill-icons:gcp-light"
 
-			]
-		}
-	}
+            ]
+        }
+    }
 }
 </script>

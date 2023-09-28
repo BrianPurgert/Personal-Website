@@ -27,9 +27,6 @@
         </g>
         <text class="b-top" x="5" y="12">b</text>
     </svg>
-    <v-divider></v-divider>
-
-    <h1 class="text-h4 bp-shadow shadow-red text-right">This is my portfolio</h1>
 
 
 </template>
