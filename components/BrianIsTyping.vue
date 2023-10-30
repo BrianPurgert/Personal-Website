@@ -34,13 +34,12 @@
 
 <script setup lang="ts">
 
-
 const typeValue = ref("")
 const typeStatus = ref(false)
 const displayTextArray = ["rian", "urgert"]
 const typingSpeed = 100
-const erasingSpeed = 200
-const newTextDelay = 2000
+const erasingSpeed = 100
+const newTextDelay = 200
 let displayTextArrayIndex = 0
 let charIndex = 0
 
@@ -65,7 +64,7 @@ const eraseText = () => {
   } else {
     typeStatus.value = false
     displayTextArrayIndex = (displayTextArrayIndex + 1) % displayTextArray.length
-    setTimeout(typeText, typingSpeed + 1000)
+    setTimeout(typeText, typingSpeed + 50)
   }
 }
 

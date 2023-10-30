@@ -1,5 +1,5 @@
 <template>
-  <v-timeline-item>
+  <v-timeline-item line-inset="500">
     <template v-slot:opposite>
       <div
           class="bp-year"
@@ -13,15 +13,15 @@
     <template v-slot:default>
       <v-container>
         <v-card
-            class="mx-auto pa-0"
+            class="pa-0 ma-0"
             elevation="4"
-
+            width="600"
         >
           <v-slide-group
               v-model="model"
-              class="pa-0"
+              class=""
               selected-class="bg-primary"
-              show-arrows
+              show-arrows="false"
           >
             <v-slide-group-item
                 v-for="(image,n) in images"
@@ -29,14 +29,16 @@
                 v-slot="{ isSelected, toggle }"
             >
               <v-card
-                  :class="['ma-2']"
-                  color="bg-transparent"
-                  width="700"
+                  :class="['ma-0 pa-0']"
+                  color=""
+                  width="580"
                   @click="toggle"
               >
                 <v-img
                     :src="image"
-                    height="400"
+                    cover
+                    class="rounded"
+                    height="450"
 
                 ></v-img>
               </v-card>

@@ -1,30 +1,28 @@
 {
-  "private": true,
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "upgrade": "nuxi upgrade --force"
-  },
-  "dependencies": {
-    "vuetify": "^3.3.19",
-    "@nuxt-alt/vuetify": "1.1.2",
-    "@vercel/analytics": "^1.0.2",
-    "nuxi": "^3.9.0",
-    "vue-responsive-video-background-player": "^2.3.1"
-  },
-  "devDependencies": {
-    "@nuxt/config": "^2.17.1",
-    "@nuxt/content": "^2.8.5",
-    "@nuxt/types": "^2.17.1",
-    "@types/node": "^20.8.0",
-    "nuxt": "^3.7.4",
-    "nuxt-icon": "^0.5.0",
-    "nuxt-icons": "^3.2.1"
-  },
-  "overrides": {
-    "consola": "3.1.0"
-  }
+    "private": true,
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare",
+        "upgrade": "nuxi upgrade --force"
+    },
+    "dependencies": {
+        "@nuxt-alt/vuetify": "1.1.2",
+        "@vercel/analytics": "^1.1.1",
+        "nuxi": "^3.9.1",
+        "vue-responsive-video-background-player": "^2.3.1",
+        "vuetify": "^3.3.23"
+    },
+    "devDependencies": {
+        "@nuxt/config": "^2.17.2",
+        "@nuxt/content": "^2.9.0",
+        "@nuxt/types": "^2.17.2",
+        "@types/node": "^20.8.9",
+        "nuxt": "^3.8.0",
+        "nuxt-icon": "^0.6.1",
+        "nuxt-icons": "^3.2.1"
+    },
+    "overrides": {}
 }

@@ -1,13 +1,13 @@
 <template>
   <v-timeline-item>
     <template v-slot:icon>
-
-    </template>
-    <template v-slot:opposite>
       <div
           class="bp-year"
           v-text="'2018'"
       ></div>
+    </template>
+    <template v-slot:opposite>
+    
     </template>
     <v-container>
       <v-card
@@ -21,6 +21,7 @@
         >
         </v-img>
         <v-card-title class="">Founded the Ruby Discord</v-card-title>
+        <v-card-text>which has grown to be one of the largest active Ruby communities</v-card-text>
         <v-card-actions>
           <v-btn
               href="https://discord.com/servers/ruby-518658712081268738"
@@ -38,3 +39,5 @@
 <!--		name: 'ruby-timeline-item'-->
 <!--	}-->
 <!--</script>-->
+<script setup lang="ts">
+</script>

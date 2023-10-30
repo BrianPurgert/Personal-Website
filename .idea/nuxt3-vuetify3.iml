@@ -13,7 +13,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="turingsinterface" />
-    <orderEntry type="library" name="@types/chrome" level="application" />
     <orderEntry type="library" name="@types/npm" level="application" />
+    <orderEntry type="library" name="@types/chrome" level="application" />
   </component>
 </module>

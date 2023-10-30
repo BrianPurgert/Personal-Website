@@ -1,5 +1,3 @@
-import {name} from "ci-info";
-
 export default defineNuxtConfig({
     app: {
         head: {
