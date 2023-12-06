@@ -1,5 +1,5 @@
 <template>
-  <v-timeline-item line-inset="500">
+  <v-timeline-item line-inset="0">
     <template v-slot:opposite>
       <div
           class="bp-year"
@@ -13,12 +13,13 @@
     <template v-slot:default>
       <v-container>
         <v-card
-            class="pa-0 ma-0"
+            class="mx-auto"
             elevation="4"
             width="600"
         >
           <v-slide-group
               v-model="model"
+              center-active
               class=""
               selected-class="bg-primary"
               show-arrows="false"
@@ -29,7 +30,7 @@
                 v-slot="{ isSelected, toggle }"
             >
               <v-card
-                  :class="['ma-0 pa-0']"
+                  :class="['ma-4 pa-0']"
                   color=""
                   width="580"
                   @click="toggle"

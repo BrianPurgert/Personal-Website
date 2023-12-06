@@ -24,8 +24,8 @@
     </v-container>
     <template v-slot:opposite>
       <div
-          class="bp-year mr-5"
-          style="left: 0; margin: auto; height: 100px;"
+          class="bp-year"
+
       >2011 - 2016
       </div>
     </template>

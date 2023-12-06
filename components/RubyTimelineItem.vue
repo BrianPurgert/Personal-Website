@@ -7,17 +7,23 @@
       ></div>
     </template>
     <template v-slot:opposite>
-    
+      <v-container>
+
+
+      </v-container>
+
     </template>
     <v-container>
+
       <v-card
           class="mx-auto"
           width="400"
       >
+        <background></background>
         <v-img
             cover
             height="220px"
-            src="/RubyDiscord/ruby_discord.jpg"
+            src="/RubyDiscord/programmers-best-friend.png"
         >
         </v-img>
         <v-card-title class="">Founded the Ruby Discord</v-card-title>

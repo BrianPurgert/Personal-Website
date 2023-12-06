@@ -8,20 +8,25 @@
           width="600"
       >
         <v-carousel
-            continuous
-            cycle
+            continuous="true"
+            cycle="true"
             hide-delimiters
-            hideDelimiterBackground
+            hideDelimiterBackground="true"
             class="rounded"
         >
           <v-carousel-item
               cover
-              src="/is82/2004.jpg"
+              src="/is82/CIMG0367.JPG"
           ></v-carousel-item>
           <v-carousel-item
               cover
               src="/is82/2004_1.jpg"
           ></v-carousel-item>
+          <v-carousel-item
+              cover
+              src="/is82/2004.jpg"
+          ></v-carousel-item>
+
           <v-carousel-item
               cover
               src="/is82/2004_2.jpg"
@@ -43,13 +48,21 @@
     <template v-slot:opposite>
       <div
           class="bp-year"
-
       >
         12/yrs
       </div>
     </template>
     <template v-slot:icon>
-      <img src="/is82/backside.png" style='max-width: 80px'/>
+      <img src="/is82/bf1942.png" style='max-width: 100px'/>
     </template>
   </v-timeline-item>
 </template>
+<script setup>
+function yearsAgo() {
+  const current = new Date()
+  const date = current.toLocaleDateString('en-US', {
+    year: 'numeric',
+  }) - 2004
+  return date
+}
+</script>

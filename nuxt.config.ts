@@ -26,8 +26,6 @@ export default defineNuxtConfig({
             }
         }
     },
-    plugins: [{
-        src: '~/plugins/vercel.ts', mode: 'client'
-    },
+    plugins: [
         {src: '~/plugins/video-bg.client.ts', mode: 'client'}]
 })
