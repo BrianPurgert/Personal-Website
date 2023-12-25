@@ -1,11 +1,6 @@
 <template>
-
-  <v-card color="blue" variant="outlined" class="mx-auto pt-8 elevation-2 overflow-visible">
-
-
+  <v-card color="default" variant="flat" class="mx-auto pt-8 elevation-2 overflow-visible">
     <BrianIsTyping :displayTextArray="['rian   ','urgert ']"/>
-
-
   </v-card>
 
 
@@ -15,7 +10,6 @@
       density="comfortable"
       side="end"
   >
-
     <!--    2004 - 12 Battlefield 1942 modding IS82	-->
     <is82-timeline-item/>
     <!--	2006 - 14 Runescape Scripting  	-->
@@ -26,13 +20,11 @@
     <doodlebike-timeline-item/>
     <!--	2010 - 18 SpaceBike	-->
     <spacebike-timeline-item/>
-
     <!--	2011 - 19	-->
     <!--		<cap50-timeline-item />-->
     <!--	2012 - 20	Project High Flight	-->
     <miami-timeline-item/>
     <!--	2014 - 22 Smart Diaper-->
-
     <!--	2017  SimpleGSA   -->
     <simplegsa-timeline-item/>
     <!--	2018 	Ruby Discord   -->
@@ -41,8 +33,5 @@
     <twixer-timeline-item/>
   </v-timeline>
 </template>
-
 <script setup>
-
 </script>
-

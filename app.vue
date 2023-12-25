@@ -9,7 +9,7 @@
         </nuxt-link>
 
       </template>
-      
+
       <v-spacer></v-spacer>
       <template v-slot:append>
         <v-btn color='#afd5aa' href='https://www.linkedin.com/in/brian-purgert/'>
@@ -37,12 +37,14 @@
           <span class="hidden-sm-and-down">Resume</span>
         </v-btn>
         <v-btn
-            :icon="color === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'"
+            :icon="color === 'light' ? 'mdi-weather-sunny' : 'meteocons:rainbow-clear-fill'"
             @click="onClick"
         ></v-btn>
       </template>
     </v-app-bar>
     <v-main>
+      <material-parallax/>
+      
       <v-container>
         <nuxt-page/>
       </v-container>

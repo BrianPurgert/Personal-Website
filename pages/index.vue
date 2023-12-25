@@ -34,7 +34,6 @@ if (process.client) {
 </script>
 
 <template>
-
   <projects-timeline/>
 
 

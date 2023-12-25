@@ -16,4 +16,7 @@
     <orderEntry type="library" name="@types/npm" level="application" />
     <orderEntry type="library" name="@types/chrome" level="application" />
   </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="2932018b-c8b6-4160-b13c-94da3747a79c" />
+  </component>
 </module>

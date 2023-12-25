@@ -19,7 +19,7 @@
           class="mx-auto"
           width="400"
       >
-        <background></background>
+        <spinning-ruby></spinning-ruby>
         <v-img
             cover
             height="220px"
@@ -46,4 +46,5 @@
 <!--	}-->
 <!--</script>-->
 <script setup lang="ts">
+import SpinningRuby from "./SpinningRuby.vue";
 </script>
