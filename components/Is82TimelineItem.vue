@@ -9,9 +9,9 @@
       >
         <v-carousel
             continuous
-            cycle="true"
+            cycle
             hide-delimiters
-            hideDelimiterBackground="true"
+            hideDelimiterBackground
             class="rounded"
         >
           <v-carousel-item

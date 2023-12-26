@@ -68,6 +68,14 @@
 	--gunmetal:     #182b38ff;
 }
 
+.v-card{
+	backdrop-filter:         blur(16px) saturate(180%) !important;
+	-webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+	background-color:        rgba(77, 77, 77, 0.75) !important;
+	border-radius:           12px !important;
+	border:                  1px solid rgba(255, 255, 255, 0.125) !important;
+}
+
 @font-face{
 	font-family: yielding timber;
 	font-style:  normal;
