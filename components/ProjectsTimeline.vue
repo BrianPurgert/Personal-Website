@@ -1,5 +1,5 @@
 <template>
-  <v-card color="default" variant="flat" class="mx-auto pt-8 elevation-2 overflow-visible">
+  <v-card color="default" variant="flat" class="bigname mx-auto pt-8 elevation-2 overflow-visible">
     <BrianIsTyping :displayTextArray="['rian purgert   ','urgert ']"/>
   </v-card>
 

@@ -10,14 +10,26 @@
             <mapping deploy="/Personal-Website" local="$PROJECT_DIR$" web="/" />
           </mappings>
           <excludedPaths>
-            <excludedPath local="true" path="$PROJECT_DIR$/../Turings-Test" />
-            <excludedPath local="true" path="$PROJECT_DIR$/../quickienewsonline" />
             <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
             <excludedPath local="true" path="$PROJECT_DIR$/.nuxt" />
             <excludedPath local="true" path="$PROJECT_DIR$/node_modules" />
             <excludedPath path="/Personal-Website/.nuxt" />
             <excludedPath path="/Personal-Website/node_modules" />
           </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="Google Cloud Root">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="Google Cloud Ubuntu">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
         </serverdata>
       </paths>
     </serverData>

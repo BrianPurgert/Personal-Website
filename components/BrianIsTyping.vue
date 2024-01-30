@@ -22,12 +22,12 @@
 <script setup lang="ts">
 import {ref, onMounted} from 'vue'
 
-const typeValue = ref("")
+const typeValue = ref('')
 const typeStatus = ref(false)
 const typingSpeed = 100
 const erasingSpeed = 100000
 const newTextDelay = 200
-// Define props
+
 const props = defineProps({
   displayTextArray: {
     type: Array,
@@ -76,19 +76,22 @@ svg.logo{
   animation:         stroke-offset 20s infinite linear alternate;
   fill:              #bd2c44;
   stroke:            #2975a8;
-  stroke-dasharray:  0 10 20;
+  stroke-linecap:    round;
+  stroke-linejoin:   arcs;
+  stroke-width:      0.5%;
+  stroke-dasharray:  20 60;
   stroke-dashoffset: -100%;
-  //text-shadow:       3px 3px 5px rgba(20, 20, 21, 0.8);
+  text-shadow:       -8px -4px rgba(20, 20, 21, 0.8);
 }
 
 .b-top{
-  fill: #bd2c44;
+
+  fill: rgb(189, 44, 68);
 }
 
 .text-copy:nth-child(1){
   animation-delay: -1s;
   text-shadow:     none;
-  fill:            transparent;
 
 }
 
@@ -100,17 +103,20 @@ svg.logo{
 
 .text-copy:nth-child(3){
   animation-delay: -3s;
+  text-shadow:     none;
+
   fill:            transparent;
 }
 
 .text-copy:nth-child(4){
   animation-delay: -4s;
-  text-shadow:     3px 3px 2px rgba(24, 24, 27, 1);
+
   fill:            transparent;
+  text-shadow:     none;
 }
 
 .text-copy:nth-child(5){
-  text-shadow:     3px 3px 2px rgba(24, 24, 27, 1);
+  text-shadow:     3px 3px 3px rgba(7, 7, 7, 0.73), -2px 1px 0px rgba(21, 21, 21, 0.75);
   animation-delay: -5s;
 }
 

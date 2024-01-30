@@ -69,11 +69,18 @@
 }
 
 .v-card{
-	backdrop-filter:         blur(16px) saturate(180%) !important;
+
+	background-color:        rgba(var(--v-theme-background), 0.7) !important;
+	backdrop-filter:         blur(9px) saturate(180%) !important;
 	-webkit-backdrop-filter: blur(16px) saturate(180%) !important;
-	background-color:        rgba(77, 77, 77, 0.75) !important;
-	border-radius:           12px !important;
-	border:                  1px solid rgba(255, 255, 255, 0.125) !important;
+	/* background:              linear-gradient(180deg, rgba(13, 13, 13, .8), rgba(13, 13, 13, 0)) !important; */
+	/* border-radius:           18px !important; */
+	border-top:              1px solid rgba(255, 255, 255, 0.2) !important;
+
+	border-bottom:           3px solid rgba(255, 255, 255, 0.16) !important;
+	border-right:            2px solid rgba(255, 255, 255, 0.32) !important;
+	border-left:             2px solid rgba(255, 255, 255, 0.3) !important;
+
 }
 
 @font-face{
