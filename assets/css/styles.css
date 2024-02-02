@@ -56,6 +56,18 @@
 	--v-theme-on-code:                               204, 204, 204;
 }
 
+.v-timeline-divider,
+.v-timeline-item__opposite{
+	display: none !important;
+}
+
+@media (min-width: 960px){
+	.v-timeline-divider,
+	.v-timeline-item__opposite{
+		display: flex !important;
+	}
+}
+
 :root{
 	--night:        #121212ff;
 	--black-bean:   #3d191fff;
