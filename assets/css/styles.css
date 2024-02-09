@@ -56,6 +56,50 @@
 	--v-theme-on-code:                               204, 204, 204;
 }
 
+@media (max-width: 960px){
+	.v-timeline-divider{
+		display: none !important;
+	}
+
+	.v-container{
+		padding-left:  0px !important;
+		padding-right: 0px !important;
+		margin-left:   0px !important;
+		margin-right:  0px !important;
+	}
+
+	.v-timeline-item__body{
+		/*padding-left: 0px !important;*/
+	}
+
+	.bp-year{
+
+	}
+
+	.v-timeline-item__opposite{
+	}
+
+}
+
+/*.v-timeline-divider,*/
+/*.v-timeline-item__opposite{*/
+/*	display:  none !important;*/
+/*}*/
+
+/*.v-container{*/
+/*	padding-left:  0px !important;*/
+/*	padding-right: 0px !important;*/
+/*	margin-left:   0px !important;*/
+/*	margin-right:  0px !important;*/
+/*}*/
+
+/*@media (min-width: 960px){*/
+/*	.v-timeline-divider,*/
+/*	.v-timeline-item__opposite{*/
+/*		display: flex !important;*/
+/*	}*/
+/*}*/
+
 :root{
 	--night:        #121212ff;
 	--black-bean:   #3d191fff;

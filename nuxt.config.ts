@@ -16,7 +16,7 @@ export default defineNuxtConfig({
         port: 80
     },
     css: ['@/assets/css/styles.css'],
-    modules: ['@nuxt-alt/vuetify', 'nuxt-icons', 'nuxt-icon'],
+    modules: ['@nuxt-alt/vuetify', 'nuxt-icons', 'nuxt-icon', 'vue3-carousel-nuxt'],
     vuetify: {
         pluginOptions: {styles: true},
         vuetifyOptions: {
