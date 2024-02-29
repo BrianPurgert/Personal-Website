@@ -32,9 +32,12 @@ if (process.client) {
 </script >
 
 <template >
-	  <v-card color = "default" variant = "flat" class = "bigname mx-auto pt-8 elevation-2 overflow-visible" >
-			<BrianIsTyping :displayTextArray = "['rian purgert   ','urgert ']" />
-	  </v-card >
+	  <!--	  <v-card color = "default" variant = "flat" class = "bigname mx-auto pt-1 elevation-2 overflow-visible" >-->
+	  <BrianIsTyping class = 'mt-10 mb-0' :displayTextArray = "['rian purgert']" />
+
+
+	  <!--	  </v-card >-->
+	  <v-card color = "default" variant = "outlined" class = "ma-0 mx-auto  pt-4 elevation-7 " ></v-card >
 	  <projects-timeline />
 	  <currentProjects />
 	  <div class = "my-6" ></div >

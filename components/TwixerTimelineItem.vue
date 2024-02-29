@@ -1,43 +1,56 @@
-<template>
-  <v-timeline-item
-      class="twixer"
-      line-inset="0"
-      size="x-large"
-  >
-    <template v-slot:icon>
-      <v-avatar
-          image="/twixer/twixer_icon.svg"
-          rounded="0"
-          size="150%"
-      ></v-avatar>
-    </template>
-    <template v-slot:opposite>
-      <div
-          class="bp-year"
-          v-text="2019"
-      ></div>
-    </template>
-    <v-container>
-      <v-card
-          class="elevation-2 mx-auto" width="800"
-      >
-        <v-img
-            cover
-            height="520px"
-            src="/twixer/description.png"
-        >
-          <img alt="twixer logo" class="h-25"
-               src="/twixer/logo.svg" style="position: absolute; left:100px; bottom: 50px; ">
-          <v-card-title class="video-overlay-text">Chrome Browser Extension</v-card-title>
+<template >
+
+	  <v-container fluid >
+
+			<v-sheet
+				  class = "elevation-5"
+				  color = "#f5f5f5"
+				  height = "100"
+				  width = "100"
+			>
+			</v-sheet >
+
+			<!--			<img-->
+			<!--				  class = 'd-lg-inline-block position-relative mx-auto' src = "/twixer/twixer_icon.svg"-->
+			<!--				  width = "100" />-->
+
+			<div
+				  class = "bp-year"
+				  v-text = "2019"
+			></div >
+			<v-img
+				  :width = "1920"
+				  max-width = '100%'
+				  aspect-ratio = "1/1"
+				  cover
+				  src = "/twixer/description.png"
+			></v-img >
+
+			<v-card
+
+				  class = "elevation-2 mx-auto"
+				  height = "auto"
+				  width = "100%"
+				  image = '/twixer/description.png'
+
+			>
+				  <!--				  <v-img-->
+				  <!--						cover-->
+
+				  <!--						src = "/twixer/description.png"-->
+				  <!--				  >-->
+				  <!--						<img alt = "twixer logo" class = "h-25"-->
+				  <!--							  src = "/twixer/logo.svg" style = "position: absolute; left:100px; bottom: 50px; " >-->
+				  <!--						<v-card-title class = "video-overlay-text" >Chrome Browser Extension</v-card-title >-->
 
 
-        </v-img>
+				  <!--				  </v-img >-->
 
 
-      </v-card>
-    </v-container>
-  </v-timeline-item>
-</template>
+			</v-card >
+	  </v-container >
 
-<script setup>
-</script>
+</template >
+
+<script setup >
+</script >

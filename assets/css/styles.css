@@ -1,5 +1,12 @@
 @import "https://fonts.fontstorage.com/import/gilam.css";
 
+#app{
+	/*width:      100% !important;*/
+	/*margin:     0 auto;*/
+	/*padding:    0;*/
+	/*text-align: center;*/
+}
+
 .v-theme--dark{
 	color-scheme:                                    dark;
 	--v-theme-background:                            18, 18, 18;
@@ -110,6 +117,15 @@
 	--lapis-lazuli: #245d83ff;
 	--indigo-dye:   #1e445dff;
 	--gunmetal:     #182b38ff;
+}
+
+.carousel__slide{
+	/* Your custom styles here */
+}
+
+.v-timeline--vertical.v-timeline{
+	/*row-gap: 504px !important;*/
+
 }
 
 .v-card{
@@ -243,7 +259,7 @@
 }
 
 VideoBackground{
-	height: 337px;
+	/*height: 337px;*/
 }
 
 .video-overlay-text{

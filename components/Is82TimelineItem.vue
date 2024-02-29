@@ -4,22 +4,24 @@
 			<v-container >
 				  <v-card
 						id = "is82"
-						class = "pa-2 ma-0"
+						class = "pa-0 ma-0 elevation-5"
 						width = "600"
 				  >
 						<Carousel
+							  :autoplay = 4000
+							  :wrap-around = "true"
 							  v-model = "model"
 							  class = ""
-							  show-arrows = "false"
+
 						>
 							  <Slide
 									v-for = "(item, index) in carouselItems"
 									:key = "index"
 							  >
 									<v-card
-										  :class = "['ma-4 pa-0']"
+										  :class = "['ma-0 pa-0']"
 										  color = ""
-										  width = "580"
+										  width = "600"
 									>
 										  <v-img
 												:src = "`${imagePath}${item}`"
@@ -63,7 +65,5 @@ const carouselItems = ref([
 
 const model = ref(null)
 
-const years = computed(
-	() => new Date().getFullYear() - 2004
-)
+
 </script >

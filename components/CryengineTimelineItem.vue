@@ -13,23 +13,25 @@
 			<template v-slot:default >
 				  <v-container >
 						<v-card
-							  class = "mx-auto"
+							  class = "pa-0 ma-0 elevation-5"
 							  elevation = "4"
 							  width = "600"
 						>
 							  <Carousel
+									:autoplay = 2000
+									:wrap-around = "true"
 									v-model = "model"
 									class = ""
-									show-arrows = "false"
+
 							  >
 									<Slide
 										  v-for = "(image,n) in images"
 										  :key = "n"
 									>
 										  <v-card
-												:class = "['ma-4 pa-0']"
+												:class = "['ma-0 pa-1']"
 												color = ""
-												width = "580"
+												width = "600"
 										  >
 												<v-img
 													  :src = "image"

@@ -38,7 +38,7 @@
 
 ### Capitol 50 Consultants Inc
 
-**Role:** Software Developer & Systems Engineer**Duration:** 2011 – 2022
+**Role:** Software Developer & Systems Engineer **Duration:** 2011 – Present
 
 - Developed a price comparison app for GSA Advantage listings.
 - Built a customer-facing site using Nuxt.js, Vuetify.js, and Firebase.
@@ -49,7 +49,7 @@
 
 ### Nationwide Insurance
 
-**Role:** Application Developer Intern**Location:** Columbus, OH**Duration:** Summer 2014
+**Role:** Application Developer Intern **Location:** Columbus, OH **Duration:** Summer 2014
 
 - Upgraded a web application to responsive design.
 - Authored Ruby test automation scripts.
@@ -58,7 +58,7 @@
 
 ### Smart Diaper Project
 
-**Role:** Senior Designer**Duration:** Fall 2014
+**Role:** Senior Designer **Duration:** Fall 2014
 
 - Engineered a Smart Diaper system with a corresponding Android app for parental notifications.
 
@@ -70,7 +70,7 @@
 
 ### Project High Flight
 
-**Role:** GPS Team Leader**Duration:** 2012
+**Role:** GPS Team Leader **Duration:** 2012
 
 - Led the electronics team in tracking and retrieval of project payloads.
 

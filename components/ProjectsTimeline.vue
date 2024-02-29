@@ -27,8 +27,9 @@
 			<!--	2018 	Ruby Discord   -->
 			<ruby-timeline-item />
 			<!--	2019 	Twixer Chrome Extension   -->
-			<twixer-timeline-item />
+
 	  </v-timeline >
+	  <twixer-timeline-item />
 </template >
 <script setup >
 </script >

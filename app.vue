@@ -2,7 +2,7 @@
 	  <v-app :theme = "color" >
 			<v-app-bar border >
 				  <template v-slot:prepend >
-						<nuxt-link style = 'margin: 0' to = "/" >
+						<nuxt-link class = 'ma-0' to = "/" >
 							  <v-img id = "bp" alt = "BP" class = "mr-2" height = "40" src = "/bp.svg" to = "/"
 									width = "40" >
 							  </v-img >
@@ -44,7 +44,7 @@
 				  </template >
 			</v-app-bar >
 			<v-main >
-				  <material-parallax />
+				  <!--				  <material-parallax />-->
 
 				  <v-container >
 						<nuxt-page />
