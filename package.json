@@ -9,7 +9,8 @@
     "upgrade": "nuxi upgrade --force"
   },
   "dependencies": {
-    "@nuxt-alt/vuetify": "1.1.2",
+	"@vercel/speed-insights": "~1.0.10",
+
     "@nuxt/content": "2.12.0",
     "nuxi": "^3.10.1",
     "vue-responsive-video-background-player": "^2.3.1",

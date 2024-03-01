@@ -54,10 +54,12 @@
 				  </v-footer >
 			</v-main >
 	  </v-app >
+	  <SpeedInsights />
 </template >
 
 <script setup >
-import { ref } from "vue"
+import { SpeedInsights } from "@vercel/speed-insights/vue"
+import { ref }           from "vue"
 
 const color = ref("dark")
 
