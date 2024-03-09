@@ -1,6 +1,6 @@
 <template >
 	  <svg
-			class = "logo ma-auto" viewBox = "0 0 180 27"
+			class = "logo ma-auto" viewBox = "0 0 140 27"
 	  >
 			<symbol id = "s-text" >
 				  <text class = "b2" x = "5" y = "12" >b</text >

@@ -1,9 +1,15 @@
+<style >
+.timeline-start{
+
+	border-radius: 50px 0 0 0;
+}
+</style >
 <script setup >
 useSeoMeta({
 	           description       : "[description]",
 	           ogTitle           : "[og:title]",
 	           ogDescription     : "[og:description]",
-	           ogImage           : "https://openclipart.org/image/800px/167281",
+	           ogImage           : "/favicon.png",
 	           ogUrl             : "[og:url]",
 	           twitterTitle      : "[twitter:title]",
 	           twitterDescription: "[twitter:description]",
@@ -32,14 +38,14 @@ if (process.client) {
 </script >
 
 <template >
-	  <!--	  <v-card color = "default" variant = "flat" class = "bigname mx-auto pt-1 elevation-2 overflow-visible" >-->
-	  <BrianIsTyping class = 'mt-10 mb-0' :displayTextArray = "['rian purgert']" />
+	  <BrianIsTyping class = 'mt-10 mb-0 mx-auto' :displayTextArray = "['rian purgert']" />
+
+	  <v-container >
 
 
-	  <!--	  </v-card >-->
-	  <v-card color = "default" variant = "outlined" class = "ma-0 mx-auto  pt-4 elevation-7 " ></v-card >
-	  <projects-timeline />
-	  <currentProjects />
+			<projects-timeline />
+			<currentProjects />
+	  </v-container >
 	  <div class = "my-6" ></div >
 
 

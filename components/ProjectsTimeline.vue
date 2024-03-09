@@ -1,12 +1,35 @@
 <template >
-
+	  <v-progress-linear
+			:height = "10"
+			style = 'transform: rotate(270deg);'
+			stream
+			buffer-value = "60"
+			color = "cyan"
+			model-value = "20"
+			rounded
+			striped
+			tile ></v-progress-linear >
+	  <v-progress-linear
+			:height = "10"
+			style = 'transform: rotate(40deg);'
+			stream
+			buffer-value = "60"
+			color = "cyan"
+			model-value = "50"
+			rounded
+			striped
+			tile ></v-progress-linear >
 
 	  <v-timeline
-			direction = "vertical"
 			align = "start"
 			density = "default"
+			direction = "vertical"
 			side = "end"
+			line-inset = '100px'
+
+			truncate-line = 'start'
 	  >
+
 			<!--    2004 - 12 Battlefield 1942 modding IS82	-->
 			<is82-timeline-item />
 			<!--	2006 - 14 Runescape Scripting  	-->
@@ -32,4 +55,6 @@
 	  <twixer-timeline-item />
 </template >
 <script setup >
+import SimplegsaTimelineItem from "~/components/player/SimplegsaTimelineItem.vue"
 </script >
+

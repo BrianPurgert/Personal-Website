@@ -34,7 +34,7 @@
 	--v-theme-success-overlay-multiplier:            2;
 	--v-theme-warning:                               251, 140, 0;
 	--v-theme-warning-overlay-multiplier:            2;
-	--v-theme-on-background:                         255, 255, 255;
+	/*--v-theme-on-background:                         255, 255, 255;*/
 	--v-theme-on-surface:                            255, 255, 255;
 	--v-theme-on-surface-bright:                     0, 0, 0;
 	--v-theme-on-primary:                            255, 255, 255;
@@ -69,18 +69,14 @@
 	}
 
 	.v-container{
-		padding-left:  0px !important;
-		padding-right: 0px !important;
-		margin-left:   0px !important;
 		margin-right:  0px !important;
+		margin-left:   0px !important;
+		padding-right: 0px !important;
+		padding-left:  0px !important;
 	}
 
 	.v-timeline-item__body{
 		/*padding-left: 0px !important;*/
-	}
-
-	.bp-year{
-
 	}
 
 	.v-timeline-item__opposite{
@@ -108,15 +104,15 @@
 /*}*/
 
 :root{
-	--night:        #121212ff;
-	--black-bean:   #3d191fff;
-	--wine:         #681f2bff;
-	--cordovan:     #932638ff;
-	--cardinal:     #bd2c44ff;
-	--ucla-blue:    #2975a8ff;
-	--lapis-lazuli: #245d83ff;
-	--indigo-dye:   #1e445dff;
-	--gunmetal:     #182b38ff;
+	--bp-black:      #121212ff;
+	--bp-black-red:  #3d191fff;
+	--bp-red-3:      #681f2bff;
+	--bp-red-2:      #932638ff;
+	--bp-red:        #bd2c44ff;
+	--bp-blue:       #2975a8ff;
+	--bp-blue-2:     #245d83ff;
+	--bp-blue-3:     #1e445dff;
+	--bp-black-blue: #182b38ff;
 }
 
 .carousel__slide{
@@ -130,16 +126,16 @@
 
 .v-card{
 
-	background-color:        rgba(var(--v-theme-background), 0.7) !important;
+	border-top:              1px solid rgba(255, 255, 255, 0.2) !important;
 	backdrop-filter:         blur(9px) saturate(180%) !important;
 	-webkit-backdrop-filter: blur(16px) saturate(180%) !important;
-	/* background:              linear-gradient(180deg, rgba(13, 13, 13, .8), rgba(13, 13, 13, 0)) !important; */
-	/* border-radius:           18px !important; */
-	border-top:              1px solid rgba(255, 255, 255, 0.2) !important;
+	background:              linear-gradient(180deg, rgba(var(--v-theme-background), .8), rgba(var(--v-theme-on-secondary), 0)) !important;
+	/*border-radius:           28px !important;*/
+	border-right:            2px solid rgba(255, 255, 255, 0.32) !important;
 
 	border-bottom:           3px solid rgba(255, 255, 255, 0.16) !important;
-	border-right:            2px solid rgba(255, 255, 255, 0.32) !important;
 	border-left:             2px solid rgba(255, 255, 255, 0.3) !important;
+	/*background-color:        rgb(var(--v-theme-background), 0.7) !important;*/
 
 }
 
@@ -188,10 +184,10 @@
 #is82 .v-card-subtitle{
 	font-family: "Yielding Timber Semi-Italic", sans-serif !important;
 	position:    absolute;
-	text-align:  end;
-	background:  rgba(0, 0, 0, 0.5);
 	top:         0px;
 	right:       0px;
+	text-align:  end;
+	background:  rgba(0, 0, 0, 0.5);
 }
 
 #is82 .v-card-text{
@@ -200,7 +196,8 @@
 .robot-crush{
 	font-family: "Segoe UI", sans-serif !important;
 	font-size:   1.7em !important;
-	color:       #ffffff;
+
+	color:       rgb(var(--v-theme-on-background), 0.7) !important;
 	text-shadow: 1px 1px 0px rgba(9, 9, 9, 0.95), 3px 3px 0px rgba(243, 243, 243, 0.95);
 }
 
@@ -215,6 +212,32 @@
 	             3px 3px 0px rgba(243, 243, 243, 0.95);
 }
 
+/**/
+.v-timeline--vertical.v-timeline--align-start .v-timeline-divider .v-timeline-divider__after,
+v-card{
+	animation:                 stroke-flow 20s infinite linear alternate;
+	animation-iteration-count: 20;
+
+	/*fill:                      #bd2c44;*/
+	stroke-width:              4px !important;
+	stroke-linecap:            round;
+	stroke-linejoin:           arcs;
+	stroke-dasharray:          20 60 !important;
+	stroke-dashoffset:         -100% !important;
+}
+
+@keyframes stroke-flow{
+	100%{
+		stroke-dashoffset: 100% !important;
+	}
+}
+
+.text-copy:nth-child(1){
+	animation-delay: -1s;
+	text-shadow:     none;
+}
+
+/**/
 .bp-shadow{
 	font-family: "Yielding Timber", sans-serif !important;
 	font-style:  italic;
@@ -222,25 +245,25 @@
 }
 
 .bp-year{
-	z-index:     1;
-	position:    absolute;
-	left:        0px;
-
-	/*margin: 10px 0.5em;*/
-	padding:     0px 11px;
-	text-align:  center;
-
-	/* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
-	box-shadow:  0px 2px 0px 0px rgb(47, 47, 47);
-
 	font-family: "Bauhaus 93", system-ui !important;
+	/*position:    absolute;*/
 	font-size:   1.6em !important;
 
+	/*margin: 10px 0.5em;*/
+	z-index:     1;
+	left:        0px;
+
+	/* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
 	width:       fit-content;
 
 	margin:      20vh -10px;
+	padding:     0px 11px;
 
-	color:       rgb(255, 255, 255);
+	text-align:  center;
+
+	color:       rgb(var(--v-theme-on-primary));
+
+	box-shadow:  0px 2px 0px 0px rgb(47, 47, 47);
 	text-shadow: 1px 1px 0px rgba(9, 9, 9, 0.95), 2px 2px 0px rgb(41, 117, 168);
 }
 
@@ -263,6 +286,7 @@ VideoBackground{
 }
 
 .video-overlay-text{
+	z-index:         1999;
 	font-family:     "Yielding Timber Semi-Italic", sans-serif !important;
 	font-size:       2.4em !important;
 	position:        absolute !important;
@@ -332,7 +356,7 @@ VideoBackground{
 .v-btn .v-icon,
 .v-btn__content,
 .v-btn__prepend{
-	color: var(--ucla-blue);
+	color: var(--bp-blue);
 }
 
 .v-snackbar__content{

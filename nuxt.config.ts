@@ -1,6 +1,12 @@
 // import { transformAssetUrls } from 'vite-plugin-vuetify'
+import { vite as vidstack } from 'vidstack/plugins'
 
 export default defineNuxtConfig({
+	vue: {
+		compilerOptions: {
+			isCustomElement: (tag) => tag.startsWith('media-')
+		}
+	},
 	extends: [],
 	// ssr: false,
 	sourcemap: true,
@@ -11,6 +17,10 @@ export default defineNuxtConfig({
 
 
 	vite: {
+		plugins: [
+			// Include filter to only check specific files for components and styles.
+			vidstack()
+		],
 		clearScreen: false,
 		define: {
 			'process.env.DEBUG': false
@@ -19,6 +29,7 @@ export default defineNuxtConfig({
 			target: 'esnext'
 		},
 		vue: {
+
 			// template: {transformAssetUrls},
 			script: {
 				propsDestructure: true
