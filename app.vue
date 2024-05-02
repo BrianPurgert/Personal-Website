@@ -1,6 +1,6 @@
 <template >
 	  <v-app :theme = "color" >
-			<v-app-bar border >
+			<v-app-bar scroll-behavior = 'collapse' border >
 				  <template v-slot:prepend >
 						<nuxt-link class = 'ma-0' to = "/" >
 							  <v-img id = "bp" alt = "BP" class = "mr-2" height = "40" src = "/bp.svg" to = "/"
@@ -38,28 +38,29 @@
 							  <span class = "hidden-sm-and-down" >Resume</span >
 						</v-btn >
 						<Icon
-							  :name = "color === 'light' ? 'meteocons:clear-day-fill' : 'meteocons:dust-night-fill'"
+							  :name = "color === 'light' ? 'meteocons:sunset' : 'meteocons:fog-night'"
 							  @click = "onClick"
 						></Icon >
 				  </template >
 			</v-app-bar >
-			<v-main >
-				  <!--				  <material-parallax />-->
-
+			<v-main class = 'overflow-x-hidden overflow-y-hidden' >
+				  <material-parallax_1 />
 				  <v-container >
 						<nuxt-page />
 				  </v-container >
 
 				  <v-footer class = "pt-5 pb-5" color = "transparent" >
 				  </v-footer >
+
 			</v-main >
 	  </v-app >
 	  <SpeedInsights />
 </template >
 
 <script setup >
-import { SpeedInsights } from "@vercel/speed-insights/vue"
-import { ref }           from "vue"
+import { SpeedInsights }  from "@vercel/speed-insights/vue"
+import { ref }            from "vue"
+import MaterialParallax_1 from "~/components/MaterialParallax_1.vue"
 
 const color = ref("dark")
 

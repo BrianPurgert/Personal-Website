@@ -16,13 +16,11 @@
 			<v-container >
 
 				  <v-card
-						class = "mx-auto w-100"
+						class = "mx-auto w-auto"
 
 				  >
-						<spinning-ruby ></spinning-ruby >
+						<!--						<spinning-ruby ></spinning-ruby >-->
 						<v-img
-							  
-
 							  src = "/RubyDiscord/programmers-best-friend.png"
 						>
 						</v-img >

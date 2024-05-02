@@ -1,4 +1,5 @@
 <template >
+
 	  <svg
 			class = "logo ma-auto" viewBox = "0 0 140 27"
 	  >
@@ -20,6 +21,7 @@
 			</g >
 			<text class = "b-top" x = "5" y = "12" >b</text >
 	  </svg >
+
 </template >
 <script lang = "ts" setup >
 import { ref, computed, onMounted } from 'vue'
@@ -68,16 +70,16 @@ svg.logo{
 }
 
 .text-copy{
-	animation:                 stroke-offset 20s infinite ease-in-out alternate;
-	animation-iteration-count: 20;
-	//animation-timing-function: steps(120);
+	animation:                 stroke-offset 4s infinite linear alternate;
+	animation-iteration-count: infinite;
+	/* animation-timing-function: steps(8); */
 	text-shadow:               -8px -4px rgba(20, 20, 21, 0.8);
 	fill:                      #bd2c44;
 	stroke:                    #2975a8;
 	stroke-linecap:            round;
 	stroke-linejoin:           arcs;
 	stroke-width:              0.5%;
-	stroke-dasharray:          20 60;
+	stroke-dasharray:          20 60 40;
 	stroke-dashoffset:         -100%;
 }
 
@@ -111,12 +113,12 @@ svg.logo{
 
 .text-copy:nth-child(5){
 	animation-delay: -5s;
-	text-shadow:     3px 3px 3px rgba(7, 7, 7, 0.73), -2px 1px 0px rgba(21, 21, 21, 0.75);
+	text-shadow:     3px 3px 0px rgba(7, 7, 7, 0.73), -2px 1px 0px rgba(21, 21, 21, 0.75);
 }
 
 @keyframes stroke-offset{
 	100%{
-		stroke-dashoffset: 100%;
+		stroke-dashoffset: 0%;
 	}
 }
 </style >

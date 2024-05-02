@@ -3,7 +3,7 @@
 <template>
   <svg id="ruby-background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 625 725">
     <g id="container">
-      <rect width="00" height="625" style="fill: none"/>
+      <rect width="00" height="625" style="fill: none;"/>
     </g>
     <defs>
       <filter id="glow">

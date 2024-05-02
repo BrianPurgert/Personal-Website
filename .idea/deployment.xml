@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="GCloud" createEmptyFolders="true" persistUploadOnCheckin="false" confirmBeforeUploading="false" confirmBeforeDeletion="false" autoUploadExternalChanges="true">
+  <component name="PublishConfigData" createEmptyFolders="true" persistUploadOnCheckin="false" confirmBeforeUploading="false" confirmBeforeDeletion="false" autoUploadExternalChanges="true">
     <option name="confirmBeforeDeletion" value="false" />
     <option name="confirmBeforeUploading" value="false" />
     <serverData>
       <paths name="GCloud">
         <serverdata>
           <mappings>
-            <mapping deploy="/Personal-Website" local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
-          <excludedPaths>
-            <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
-            <excludedPath local="true" path="$PROJECT_DIR$/.nuxt" />
-            <excludedPath local="true" path="$PROJECT_DIR$/node_modules" />
-            <excludedPath path="/Personal-Website/.nuxt" />
-            <excludedPath path="/Personal-Website/node_modules" />
-          </excludedPaths>
         </serverdata>
       </paths>
       <paths name="Google Cloud Root">

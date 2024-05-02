@@ -8,7 +8,7 @@
 						width = "600"
 				  >
 						<Carousel
-							  :autoplay = 4000
+							  :autoplay = 10000
 							  :wrap-around = "true"
 							  v-model = "model"
 							  class = ""
@@ -43,7 +43,7 @@
 				  <div
 						class = "bp-year"
 				  >
-						12/yrs
+						2004 age 12
 				  </div >
 			</template >
 			<template v-slot:icon >

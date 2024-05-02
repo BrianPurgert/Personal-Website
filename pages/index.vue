@@ -1,8 +1,5 @@
 <style >
-.timeline-start{
 
-	border-radius: 50px 0 0 0;
-}
 </style >
 <script setup >
 useSeoMeta({
@@ -39,10 +36,7 @@ if (process.client) {
 
 <template >
 	  <BrianIsTyping class = 'mt-10 mb-0 mx-auto' :displayTextArray = "['rian purgert']" />
-
 	  <v-container >
-
-
 			<projects-timeline />
 			<currentProjects />
 	  </v-container >

@@ -3,9 +3,9 @@
 			<v-container >
 
 				  <ClientOnly fallback-tag = "span" >
-						<v-card class = "elevation-5 pa-2" width = "600" >
+						<v-card class = "elevation-5 pa-2" >
 							  <VideoBackground
-
+									class = 'vod'
 									objectFit = "fill"
 									src = "/doodlebike/DoodleBike_Portfolio_final.webm"
 									style = "min-height: 337px;"

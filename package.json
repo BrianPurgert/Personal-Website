@@ -11,19 +11,20 @@
   "dependencies": {
     "@nuxt/content": "2.12.1",
     "@vercel/speed-insights": "~1.0.10",
-    "nuxi": "^3.10.1",
+    "nuxi": "^3.11.1",
     "vidstack": "^1.10.9",
     "vue-responsive-video-background-player": "^2.3.1",
-    "vuetify": "3.5.8"
+    "vuetify": "3.6.1"
   },
   "devDependencies": {
     "@nuxt/config": "^2.17.3",
-    "nuxt": "^3.10.3",
-    "nuxt-icon": "^0.6.9",
+    "nuxt": "^3.11.2",
+    "nuxt-icon": "^0.6.10",
     "nuxt-icons": "^3.2.1",
-    "vue-tsc": "^2.0.6",
-    "vue3-carousel-nuxt": "^1.1.0",
-    "vuetify-nuxt-module": "^0.12.0"
+    "vue": "^3.4.26",
+    "vue-tsc": "2.0.15",
+    "vue3-carousel-nuxt": "1.1.1",
+    "vuetify-nuxt-module": "0.13.4"
   },
   "overrides": {}
 }
