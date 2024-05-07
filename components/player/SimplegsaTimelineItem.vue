@@ -3,7 +3,10 @@
 			<v-container >
 
 				  <!--				  <ClientOnly fallback-tag = "span" >-->
-				  <v-card class = "elevation-5 pa-1" width = "70vw" >
+				  <v-card class = "elevation-5 pa-1" width = "100%" >
+						<media-video-layout >
+
+						</media-video-layout >
 						<media-player
 							  :loop = "true"
 							  :aspectRatio = "16/9"
@@ -12,7 +15,7 @@
 							  :paused = "false"
 
 							  :playsInline
-							  src = "/cap50/SimpleGSA-Video_low_av1.mp4"
+							  src = "/cap50/SimpleGSA-Video-AV1.mp4"
 							  style = "min-height: 337px;"
 
 							  title = "Price Comparison Program"
@@ -30,9 +33,7 @@
 
 				  </v-card >
 				  <!--				  </ClientOnly >-->
-				  <media-video-layout >
 
-				  </media-video-layout >
 			</v-container >
 			<template v-slot:icon >
 				  <img class = '' src = ""
