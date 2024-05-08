@@ -3,12 +3,12 @@
 			<v-container >
 
 				  <ClientOnly fallback-tag = "span" >
-						<v-card class = "elevation-5 pa-2" >
+						<v-card class = "elevation-5 pa-1" width = "100%" >
 							  <VideoBackground
 									class = 'vod'
-									objectFit = "fill"
+									
 									src = "/doodlebike/DoodleBike_Portfolio_final.webm"
-									style = "min-height: 337px;"
+
 							  >
 									<v-card-title class = "video-overlay-text" >Doodle Bike
 									</v-card-title >

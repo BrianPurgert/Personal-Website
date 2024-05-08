@@ -239,9 +239,10 @@
 }
 
 .vod{
+	min-height:   337px;
 	width:        unset !important;
 	height:       unset !important;
-	aspect-ratio: 16 / 9;
+	aspect-ratio: 16/9;
 }
 
 .robot-crush{
@@ -417,6 +418,10 @@ VideoBackground{
 .v-timeline-divider__inner-dot{
 
 	background-color: transparent !important;
+}
+
+.scar-background{
+	background-color: rgba(0, 120, 215, 0.32);
 }
 
 /* SCAR CODE */

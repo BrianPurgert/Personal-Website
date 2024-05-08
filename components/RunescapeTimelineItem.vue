@@ -32,14 +32,16 @@
 									</v-expand-transition >
 
 									<v-img
-										  class = "bg-white position-absolute dialog-top-transition"
+										  class = "bg-white w-100 h-100 dialog-top-transition ma-0 "
 										  style = "z-index: 1; top: -1px; left: -1px; right: -1px; bottom: 0;"
 										  src = "/runescape/scar/asset_2113.svg"
 									>
-										  <v-container
-												class = "pr-1"
-
-												style = "position: absolute; top: 75px; left: 30px; bottom: 0;" >
+										  <v-spacer ></v-spacer >
+										  <div class = "d-flex" style = 'height: 95px; width: 100%;' ></div >
+										  <div
+												class = "w-auto h-auto ma-2 pa-2  d-flex"
+												style = ""
+										  >
 												<div class = "seDefault" >
 									<span
 										  class = "Comment" >//The primary motivation for me to learn programming was my interest</span ><br >
@@ -62,7 +64,7 @@
 													  class = "Symbol" >;</span ><br >
 													  <span class = "Reserved_word" >end</span ><span
 													  class = "Symbol" >.</span ></div >
-										  </v-container >
+										  </div >
 									</v-img >
 
 
