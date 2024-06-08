@@ -1,24 +1,22 @@
 <template >
 	  <v-timeline-item >
 			<v-container >
-
 				  <ClientOnly fallback-tag = "span" >
-						<v-card class = "elevation-5 pa-0 " >
+						<v-card class = "elevation-5 pa-1" width = "100%" >
 							  <VideoBackground
-									objectFit = "fill"
 									class = 'vod'
 									src = "/SpaceBike/gameplay_space_bike_trimmed.mp4"
-									style = "min-height: 337px;"
 							  >
 									<v-card-title class = "video-overlay-text" >SpaceBike</v-card-title >
 							  </VideoBackground >
 							  <nuxt-icon class = "google_installs" filled name = "google_installs" ></nuxt-icon >
 						</v-card >
 				  </ClientOnly >
-
 			</v-container >
 			<template v-slot:icon >
-				  <nuxt-icon filled name = "spacebike_icon_new" style = 'font-size: 5em' />
+				  <nuxt-icon filled name = "spacebike_icon_new" style = 'font-size: 72px' />
+<!--				  <img src = "/doodlebike/doodlebike_icon.png" style = 'max-width: unset' />-->
+
 			</template >
 			<template v-slot:opposite >
 				  <div

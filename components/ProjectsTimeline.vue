@@ -4,7 +4,7 @@
 	  <v-timeline
 			class = ''
 			align = "start"
-			density = "default"
+			density = "comfortable"
 			direction = "vertical"
 			side = "end"
 			line-inset = '30px'

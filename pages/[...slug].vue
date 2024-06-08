@@ -1,5 +1,8 @@
-<template>
-  <main>
-    <ContentDoc />
-  </main>
-</template>
+<template >
+	  <main >
+			<v-container fluid >
+				  
+				  <ContentDoc />
+			</v-container >
+	  </main >
+</template >

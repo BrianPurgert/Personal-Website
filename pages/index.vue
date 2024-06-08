@@ -35,7 +35,7 @@ if (process.client) {
 </script >
 
 <template >
-	  <BrianIsTyping class = 'mt-10 mb-0 mx-auto' :displayTextArray = "['rian purgert']" />
+	  <BrianIsTyping class = 'mt-10 mb-0 mx-auto' :displayTextArray = "['rian']" />
 	  <v-container >
 			<projects-timeline />
 			<currentProjects />

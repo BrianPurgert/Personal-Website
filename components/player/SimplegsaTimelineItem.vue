@@ -2,38 +2,26 @@
 	  <v-timeline-item >
 			<v-container >
 
-				  <!--				  <ClientOnly fallback-tag = "span" >-->
-				  <v-card class = "elevation-5 pa-1" width = "100%" >
+				  <v-card class = "elevation-5 pa-0" width = "100%" >
 						<media-video-layout >
 
 						</media-video-layout >
 						<media-player
-							  :loop = "true"
 							  :aspectRatio = "16/9"
-							  :autoPlay = "true"
 							  :controls = "false"
+							  :data-can-fullscreen = "false"
+							  :loop = "true"
 							  :paused = "false"
-
-							  :playsInline
+							  autoplay
 							  src = "/cap50/SimpleGSA-Video-AV1.mp4"
 							  style = "min-height: 337px;"
-
 							  title = "Price Comparison Program"
-							  :data-can-fullscreen = "false"
 						>
-
 							  <media-provider >
 
 							  </media-provider >
-
 						</media-player >
-
-
-						<!--						<v-card-title class = "video-overlay-text" >Price Comparison Program</v-card-title >-->
-
 				  </v-card >
-				  <!--				  </ClientOnly >-->
-
 			</v-container >
 			<template v-slot:icon >
 				  <img class = '' src = ""
@@ -57,15 +45,17 @@
 			</template >
 			<template v-slot:default >
 				  <img height = "400" src = "/cap50/cap_50_logo.svg" style = 'max-width: 500px;' />
-
 			</template >
 	  </v-timeline-item >
 </template >
 
 
 <script setup >
+
 import "vidstack/bundle"
 import "vidstack"
+
+
 
 
 </script >

@@ -1,19 +1,22 @@
 <template >
 	  <v-app :theme = "color" >
-			<v-app-bar scroll-behavior = 'collapse' border >
+			<v-app-bar
+				  border
+				  class = 'position-sticky'
+				  density = 'comfortable'
+				  scroll-behavior = 'collapse'
+			>
 				  <template v-slot:prepend >
-						<nuxt-link class = 'ma-0' to = "/" >
+						<nuxt-link class = 'px-6 ' to = "/" >
 							  <v-img id = "bp" alt = "BP" class = "mr-2" height = "40" src = "/bp.svg" to = "/"
-									width = "40" >
+									width = "50" >
 							  </v-img >
-
 						</nuxt-link >
-
 				  </template >
 
 				  <v-spacer ></v-spacer >
 				  <template v-slot:append >
-						<v-btn color = '#afd5aa' href = 'https://www.linkedin.com/in/brian-purgert/' >
+						<v-btn color = '#afd5aa' href = 'https://www.linkedin.com/in/brian-purgert/' onscroll = '' >
 							  <template v-slot:prepend >
 									<Icon name = "fa-brands:linkedin-in" size = "1.5em" />
 							  </template >
@@ -44,10 +47,10 @@
 				  </template >
 			</v-app-bar >
 			<v-main class = 'overflow-x-hidden overflow-y-hidden' >
-				  <material-parallax_1 />
 				  <v-container >
 						<nuxt-page />
 				  </v-container >
+				  <material-parallax_1 />
 
 				  <v-footer class = "pt-5 pb-5" color = "transparent" >
 				  </v-footer >

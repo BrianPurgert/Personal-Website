@@ -61,12 +61,16 @@ onMounted(() => {
 </script >
 
 <style scoped >
+
+
 svg.logo{
 	font-family: "tesla", cursive;
 	font-size:   1.1rem;
 	font-style:  italic;
-	max-height:  12rem;
-	margin:      0px auto;
+	max-height:  unset;
+
+	margin:      0 auto;
+	white-space: break-spaces;
 }
 
 .text-copy{
@@ -78,8 +82,8 @@ svg.logo{
 	stroke:                    #2975a8;
 	stroke-linecap:            round;
 	stroke-linejoin:           arcs;
-	stroke-width:              0.5%;
-	stroke-dasharray:          20 60 40;
+	stroke-width:              0.4;
+	stroke-dasharray:          20 500 100;
 	stroke-dashoffset:         -100%;
 }
 
@@ -118,7 +122,7 @@ svg.logo{
 
 @keyframes stroke-offset{
 	100%{
-		stroke-dashoffset: 0%;
+		stroke-dashoffset: 0;
 	}
 }
 </style >

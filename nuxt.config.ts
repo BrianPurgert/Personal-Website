@@ -97,6 +97,6 @@ export default defineNuxtConfig({
 		watcher: 'chokidar-granular'
 	},
 	devtools: {
-		enabled: true
+		enabled: false
 	}
 })
