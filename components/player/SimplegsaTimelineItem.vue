@@ -8,7 +8,7 @@
 						</media-video-layout >
 						<media-player
 							  :aspectRatio = "16/9"
-							  :controls = "false"
+							  :controls = "true"
 							  :data-can-fullscreen = "false"
 							  :loop = "true"
 							  :paused = "false"
@@ -22,6 +22,10 @@
 							  </media-provider >
 						</media-player >
 				  </v-card >
+				 <v-card >
+					   <v-card-title>SimpleGSA</v-card-title>
+					   <v-card-text> </v-card-text>
+				 </v-card>
 			</v-container >
 			<template v-slot:icon >
 				  <img class = '' src = ""
@@ -54,6 +58,7 @@
 
 import "vidstack/bundle"
 import "vidstack"
+import { tr } from "vuetify/locale"
 
 
 

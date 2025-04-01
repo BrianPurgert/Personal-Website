@@ -235,8 +235,6 @@
 	background:  rgba(0, 0, 0, 0.5);
 }
 
-#is82 .v-card-text{
-}
 
 .vod{
 	@media (max-width: 960px){
@@ -444,10 +442,6 @@ VideoBackground{
 	background-color: transparent!important;
 }
 
-
-.scar-background{
-	background-color: rgba(0, 120, 215, 0.32);
-}
 
 /* SCAR CODE */
 .seDefault{
