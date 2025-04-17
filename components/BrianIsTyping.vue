@@ -56,7 +56,9 @@ onMounted(() => {
 	const intervalId = setInterval(typeText, typingSpeed)
 
 	// Adjust timeout based on how many words are present
-	setTimeout(() => clearInterval(intervalId), newTextDelay + typingSpeed * props.displayTextArray.length * currentText.value.length)
+	setTimeout(() => {
+return clearInterval(intervalId);
+}, newTextDelay + typingSpeed * props.displayTextArray.length * currentText.value.length)
 })
 </script >
 
@@ -78,8 +80,8 @@ svg.logo{
 	animation-iteration-count: infinite;
 	/* animation-timing-function: steps(8); */
 	text-shadow:               -8px -4px rgba(20, 20, 21, 0.8);
-	fill:                      #bd2c44;
-	stroke:                    #2975a8;
+	fill:                      rgb(189, 44, 68);
+	stroke:                    rgb(41, 117, 168);
 	stroke-linecap:            round;
 	stroke-linejoin:           arcs;
 	stroke-width:              0.4;
@@ -117,7 +119,7 @@ svg.logo{
 
 .text-copy:nth-child(5){
 	animation-delay: -5s;
-	text-shadow:     3px 3px 0px rgba(7, 7, 7, 0.73), -2px 1px 0px rgba(21, 21, 21, 0.75);
+	text-shadow:     3px 3px 0 rgba(7, 7, 7, 0.73), -2px 1px 0 rgba(21, 21, 21, 0.75);
 }
 
 @keyframes stroke-offset{

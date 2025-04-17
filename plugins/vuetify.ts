@@ -1,3 +1,5 @@
+import { process } from 'std-env'
+
 export default defineNuxtPlugin((nuxtApp) => {
 	nuxtApp.hook('vuetify:before-create', ({isDev, vuetifyOptions}) => {
 		if (process.client && isDev) {

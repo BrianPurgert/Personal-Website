@@ -47,7 +47,7 @@
 				  </div >
 			</template >
 			<template v-slot:icon >
-				  <img :src = "`${imagePath}bf1942.png`" style = 'max-width: 100px' />
+				  <img :src = "`${imagePath}bf1942.png`" style = 'max-width: 100px;' />
 			</template >
 	  </v-timeline-item >
 </template >

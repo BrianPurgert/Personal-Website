@@ -3,7 +3,7 @@
 </style >
 <template >
 	  <v-timeline-item >
-			<v-container style = "min-height: 200px" >
+			<v-container style = "min-height: 200px;" >
 				  <v-card
 
 						class = "mx-auto align-center justify-center miami-card"

@@ -105,7 +105,10 @@
 	}
 
 	.v-timeline-divider{
-		display: none !important;
+		/*padding-top: 50px !important;*/
+		padding-bottom: 50px !important;
+		margin: 100px  !important;
+		/*display: none !important;*/
 	}
 
 	.v-container{
@@ -129,35 +132,20 @@
 
 }
 
-/*.v-timeline-divider,*/
-/*.v-timeline-item__opposite{*/
-/*	display:  none !important;*/
-/*}*/
 
-/*.v-container{*/
-/*	padding-left:  0px !important;*/
-/*	padding-right: 0px !important;*/
-/*	margin-left:   0px !important;*/
-/*	margin-right:  0px !important;*/
-/*}*/
 
-/*@media (min-width: 960px){*/
-/*	.v-timeline-divider,*/
-/*	.v-timeline-item__opposite{*/
-/*		display: flex !important;*/
-/*	}*/
-/*}*/
+
 
 :root{
-	--bp-black:      #121212ff;
-	--bp-black-red:  #3d191fff;
-	--bp-red-3:      #681f2bff;
-	--bp-red-2:      #932638ff;
-	--bp-red:        #bd2c44ff;
-	--bp-blue:       #2975a8ff;
-	--bp-blue-2:     #245d83ff;
-	--bp-blue-3:     #1e445dff;
-	--bp-black-blue: #182b38ff;
+	--bp-black:      rgb(18, 18, 18);
+	--bp-black-red:  rgb(61, 25, 31);
+	--bp-red-3:      rgb(104, 31, 43);
+	--bp-red-2:      rgb(147, 38, 56);
+	--bp-red:        rgb(189, 44, 68);
+	--bp-blue:       rgb(41, 117, 168);
+	--bp-blue-2:     rgb(36, 93, 131);
+	--bp-blue-3:     rgb(30, 68, 93);
+	--bp-black-blue: rgb(24, 43, 56);
 }
 
 .carousel__slide{
@@ -188,14 +176,14 @@
 	font-family: yielding timber;
 	font-style:  normal;
 	font-weight: 400;
-	src:         local("Yielding Timber"), url(https://fonts.cdnfonts.com/s/95345/YieldingTimber-axvmg.woff) format("woff")
+	src:         local("Yielding Timber"), url(https://fonts.cdnfonts.com/s/95345/YieldingTimber-axvmg.woff) format("woff");
 }
 
 @font-face{
 	font-family: yielding timber semi-italic;
 	font-style:  normal;
 	font-weight: 400;
-	src:         local("Yielding Timber Semi-Italic"), url(https://fonts.cdnfonts.com/s/95345/YieldingTimberSemiItalic-6YlAA.woff) format("woff")
+	src:         local("Yielding Timber Semi-Italic"), url(https://fonts.cdnfonts.com/s/95345/YieldingTimberSemiItalic-6YlAA.woff) format("woff");
 }
 
 @font-face{
@@ -259,7 +247,7 @@ min-height:  337px ;
 	/*
 	Gilam DEMO, 100 italic, 900
 */
-	color:       #2975a8;
+	color:       rgb(41, 117, 168);
 	text-shadow: 1px 1px 0 rgba(9, 9, 9, 0.95),
 	             2px 2px 0 rgb(189, 44, 68),
 	             3px 3px 0 rgba(243, 243, 243, 0.95);
@@ -417,27 +405,31 @@ VideoBackground{
 }
 
 .v-timeline-divider__dot--size-default .v-timeline-divider__inner-dot {
-	border-radius: 90px!important;
+	border-radius: 4px!important;
 	height: calc(100% - 100px)!important;
-	width: 2px!important;
-	position: absolute;
+	width: 50vw!important;
+	/*position: absolute;*/
+	background-color: transparent !important;
+	border:    var(--bp-black-blue) 2px solid!important;
+
+z-index: -1!important;
 	left: 50vw;
 }
 
 .v-timeline-divider__dot {
 
-	height: 100%!important;
-	width:  100px!important;
-	border-top: #bd2c44 2px solid!important;
+	height:        100%!important;
+	width:         100px!important;
+	border-top:    rgb(189, 44, 68) 2px solid!important;
 	/*border-bottom: #bd2c44 2px solid!important;*/
-	border-radius: 0px !important;
+	border-radius: 0 !important;
 
 	/*display: flex!important;*/
 /*left: 0!important;*/
-	top: 0!important;
-	left: unset!important;
-	right: 0!important;
-	position: absolute!important;
+	top:           0!important;
+	left:          unset!important;
+	right:         0!important;
+	/*position:      absolute!important;*/
 	/*box-shadow: none!important;*/
 	background-color: transparent!important;
 }
@@ -452,7 +444,7 @@ VideoBackground{
 	overflow:        hidden;
 	white-space:     nowrap;
 	text-decoration: none;
-	color:           #000000;
+	color:           rgb(0, 0, 0);
 }
 
 .Default{
@@ -463,42 +455,42 @@ VideoBackground{
 	overflow:        hidden;
 	white-space:     nowrap;
 	text-decoration: none;
-	color:           #000000;
+	color:           rgb(0, 0, 0);
 }
 
 .Symbol{
 	font-weight:     normal;
 	font-style:      normal;
 	text-decoration: none;
-	color:           #000000;
+	color:           rgb(0, 0, 0);
 }
 
 .Number{
 	font-weight:     normal;
 	font-style:      normal;
 	text-decoration: none;
-	color:           #000080;
+	color:           rgb(0, 0, 128);
 }
 
 .String{
 	font-weight:     normal;
 	font-style:      normal;
 	text-decoration: none;
-	color:           #ff00ff;
+	color:           rgb(255, 0, 255);
 }
 
 .Identifier{
 	font-weight:     normal;
 	font-style:      normal;
 	text-decoration: none;
-	color:           #000000;
+	color:           rgb(0, 0, 0);
 }
 
 .Reserved_word{
 	font-weight:     bold;
 	font-style:      normal;
 	text-decoration: none;
-	color:           #000000;
+	color:           rgb(0, 0, 0);
 }
 
 .Comment{
@@ -507,41 +499,41 @@ VideoBackground{
 	overflow:        hidden;
 	white-space:     nowrap;
 	text-decoration: none;
-	color:           #008000;
+	color:           rgb(0, 128, 0);
 }
 
 .Preprocessor{
 	font-weight:     normal;
 	font-style:      normal;
 	text-decoration: none;
-	color:           #800080;
+	color:           rgb(128, 0, 128);
 }
 
 .Selected_block{
-	color:            #ffffff;
-	background-color: #0078d7;
+	color:            rgb(255, 255, 255);
+	background-color: rgb(0, 120, 215);
 }
 
 .Current_block{
 }
 
 .Current_Line{
-	background-color: #e3e3e3;
+	background-color: rgb(227, 227, 227);
 }
 
 .Search_Match{
 	font-weight:      bold;
 	font-style:       normal;
 	text-decoration:  none;
-	color:            #ffffff;
-	background-color: #000000;
+	color:            rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
 }
 
 .Invalid_symbol{
 	font-weight:     bold;
 	font-style:      normal;
 	text-decoration: line-through;
-	color:           #ff0000;
+	color:           rgb(255, 0, 0);
 }
 
 /* ⭐ ⭐ ⭐ ⭐ ⭐ */

@@ -19,7 +19,7 @@
 						class = "mx-auto w-auto"
 
 				  >
-						<!--						<spinning-ruby ></spinning-ruby >-->
+
 						<v-img
 							  src = "/RubyDiscord/programmers-best-friend.png"
 						>

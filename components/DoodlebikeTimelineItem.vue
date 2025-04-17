@@ -15,7 +15,7 @@
 			</v-container >
 			<template v-slot:icon >
 <!--				  <Icon name = "emojione-v1:sparkles" size = "150" class = "mr-1" ></Icon >-->
-				  <img src = "/doodlebike/doodlebike_icon.png" style = 'max-width: unset' />
+				  <img src = "/doodlebike/doodlebike_icon.png" style = 'max-width: unset;' />
 			</template >
 			<template v-slot:opposite >
 				  <div

@@ -14,7 +14,7 @@
 				  </ClientOnly >
 			</v-container >
 			<template v-slot:icon >
-				  <nuxt-icon filled name = "spacebike_icon_new" style = 'font-size: 72px' />
+				  <nuxt-icon filled name = "spacebike_icon_new" style = 'font-size: 72px;' />
 <!--				  <img src = "/doodlebike/doodlebike_icon.png" style = 'max-width: unset' />-->
 
 			</template >

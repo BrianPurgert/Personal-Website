@@ -5,7 +5,7 @@
 			class = ''
 			align = "start"
 			density = "comfortable"
-			direction = "vertical"
+
 			side = "end"
 			line-inset = '30px'
 			truncate-line = 'start'

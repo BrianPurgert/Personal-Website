@@ -63,9 +63,9 @@ const speeds = [1, 5, 3, 4, 2]
 	top:           50vh;
 	height:        10vh;
 	width:         10vh;
-	left:          0px;
+	left:          0;
 
-	border-radius: 10px 10px 999px 0px;
+	border-radius: 10px 10px 999px 0;
 	box-shadow:    0 8px 10px 5px rgba(0, 0, 0, 0.6),
 	               0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12);
 
@@ -82,7 +82,7 @@ const speeds = [1, 5, 3, 4, 2]
 	transform:  translateY(0%) rotateX(0deg) scale(1);
 	margin:     10vh 1vw;
 
-	background: #f4a113;
+	background: rgb(244, 161, 19);
 	animation:  stipe-1 10s ease-in-out infinite alternate;
 
 }
@@ -102,7 +102,7 @@ const speeds = [1, 5, 3, 4, 2]
 	}
 	100%{
 
-		transform: translateY(0%) scale(1.5)
+		transform: translateY(0%) scale(1.5);
 	}
 }
 
@@ -137,7 +137,7 @@ const speeds = [1, 5, 3, 4, 2]
 	margin-left:      -100vh;
 
 	background:       rgb(22, 62, 87);
-	background-color: #ee5522;
+	background-color: rgb(238, 85, 34);
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23d23d09' fill-opacity='0.93'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.93'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
 }
 
@@ -161,7 +161,7 @@ const speeds = [1, 5, 3, 4, 2]
 	top:         160vh;
 	margin-left: 40vh;
 	animation:   stipe-4 10s linear infinite;
-	background:  #ee5522 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23d23d09' fill-opacity='0.93'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.93'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+	background:  rgb(238, 85, 34) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23d23d09' fill-opacity='0.93'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.93'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 @keyframes stipe-4{
@@ -183,8 +183,8 @@ const speeds = [1, 5, 3, 4, 2]
 	transform:             rotatez(0deg);
 	top:                   200vh;
 	margin-left:           90vh;
-	background:            #4d131c;
-	background-color:      #ff7700;
+	background:            rgb(77, 19, 28);
+	background-color:      rgb(255, 119, 0);
 	background-image:      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23d37070' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23af6161' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23b21f2b' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23a30b1d' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23c16b7a' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23a33d50' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23c06a8a' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%238c2453' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23b85a99' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23943d77' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23b255b2' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23944794' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
 	background-attachment: fixed;
 	background-size:       cover;

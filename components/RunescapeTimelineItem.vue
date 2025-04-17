@@ -8,7 +8,7 @@
 				  </div >
 			</template >
 			<template v-slot:icon >
-				  <nuxt-icon filled name = "scar_divi" style = 'font-size: 5em' />
+				  <nuxt-icon filled name = "scar_divi" style = 'font-size: 5em;' />
 			</template >
 			<template v-slot:default >
 				  <v-container >
