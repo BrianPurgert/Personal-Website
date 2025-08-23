@@ -31,22 +31,22 @@
 				  <img class = '' src = ""
 						style = 'max-width: 300px;' />
 			</template >
-			<template v-slot:opposite >
-				  <div
-						class = "bp-year"
-				  >
-						2017
-				  </div >
-			</template >
+			<template v-slot:opposite>
+				  <div class="bp-year">2017</div>
+				  <div v-if="$slots.note || note" class="bp-note">
+						<slot name="note">{{ note }}</slot>
+				  </div>
+			</template>
 	  </v-timeline-item >
 	  <v-timeline-item >
 			<template v-slot:icon >
 
 			</template >
-			<template v-slot:opposite >
-
-
-			</template >
+			<template v-slot:opposite>
+				  <div v-if="$slots.note2 || note2" class="bp-note">
+						<slot name="note2">{{ note2 }}</slot>
+				  </div>
+			</template>
 			<template v-slot:default >
 				  <img height = "400" src = "/cap50/cap_50_logo.svg" style = 'max-width: 500px;' />
 			</template >
@@ -54,16 +54,15 @@
 </template >
 
 
-<script setup >
-
+<script setup>
 import "vidstack/bundle"
 import "vidstack"
-import { tr } from "vuetify/locale"
 
-
-
-
-</script >
+const props = defineProps({
+	note: { type: String, default: '' },
+	note2: { type: String, default: '' }
+})
+</script>
 
 <style scoped >
 

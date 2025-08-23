@@ -12,7 +12,7 @@
 	  >
 
 			<!--    2004 - 12 Battlefield 1942 modding IS82	-->
-			<is82-timeline-item />
+			<is82-timeline-item note='IS82 was a sick mod for Battlefield 1942, I mostly just played around with the map editor and installed maps'/>
 			<!--	2006 - 14 Runescape Scripting  	-->
 			<runescape-timeline-item />
 			<!--    2008 - 16 Crysis Interstate   -->

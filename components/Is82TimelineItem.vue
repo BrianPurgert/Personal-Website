@@ -39,13 +39,12 @@
 				  </v-card >
 
 			</v-container >
-			<template v-slot:opposite >
-				  <div
-						class = "bp-year"
-				  >
-						2004 age 12
-				  </div >
-			</template >
+			<template v-slot:opposite>
+				  <div class="bp-year">2004 age 12</div>
+				  <div v-if="$slots.note || note" class="bp-note">
+						<slot name="note">{{ note }}</slot>
+				  </div>
+			</template>
 			<template v-slot:icon >
 				  <img :src = "`${imagePath}bf1942.png`" style = 'max-width: 100px;' />
 			</template >
@@ -65,5 +64,5 @@ const carouselItems = ref([
 
 const model = ref(null)
 
-
+const props = defineProps({ note: { type: String, default: '' } })
 </script >

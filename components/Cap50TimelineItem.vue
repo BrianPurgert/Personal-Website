@@ -3,12 +3,12 @@
 			<template v-slot:icon >
 
 			</template >
-			<template v-slot:opposite >
-				  <div
-						class = "bp-year"
-						v-text = "2014"
-				  ></div >
-			</template >
+			<template v-slot:opposite>
+				  <div class="bp-year" v-text="2014"></div>
+				  <div v-if="$slots.note || note" class="bp-note">
+						<slot name="note">{{ note }}</slot>
+				  </div>
+			</template>
 			<template v-slot:default >
 				  <v-container style = "min-height: 200px;" >
 						<v-card
@@ -63,8 +63,9 @@
 			</template >
 	  </v-timeline-item >
 </template >
-<script >
+<script>
 export default {
-	name: "cap50-timeline-item"
+	name: "cap50-timeline-item",
+	props: { note: { type: String, default: "" } }
 }
-</script >
+</script>

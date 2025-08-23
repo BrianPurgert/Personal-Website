@@ -1,12 +1,11 @@
 <template >
 	  <v-timeline-item >
-			<template v-slot:opposite >
-				  <div
-						class = "bp-year"
-
-				  >14/yrs
-				  </div >
-			</template >
+			<template v-slot:opposite>
+				  <div class="bp-year">14/yrs</div>
+				  <div v-if="$slots.note || note" class="bp-note">
+						<slot name="note">{{ note }}</slot>
+				  </div>
+			</template>
 			<template v-slot:icon >
 				  <nuxt-icon filled name = "scar_divi" style = 'font-size: 5em;' />
 			</template >
@@ -53,6 +52,7 @@
 			</template >
 	  </v-timeline-item >
 </template >
-<script setup >
+<script setup>
 import ScarText from "~/components/ScarText.vue"
-</script >
+const props = defineProps({ note: { type: String, default: '' } })
+</script>

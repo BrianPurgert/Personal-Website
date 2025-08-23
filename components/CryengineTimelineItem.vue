@@ -1,12 +1,13 @@
 <template >
 	  <v-timeline-item line-inset = "0" >
-			<template v-slot:opposite >
-				  <div
-						class = "bp-year"
-				  >
+			<template v-slot:opposite>
+				  <div class="bp-year">
 						age 16
-				  </div >
-			</template >
+				  </div>
+				  <div v-if="$slots.note || note" class="bp-note">
+						<slot name="note">{{ note }}</slot>
+				  </div>
+			</template>
 			<template v-slot:icon >
 				  <nuxt-icon filled name = "cryengine-logo-vertical-white" style = 'font-size: 8em;' />
 			</template >
@@ -50,6 +51,7 @@
 
 <script >
 export default {
+	props: { note: { type: String, default: "" } },
 	data: () => ({
 		model : null,
 		images: [

@@ -313,19 +313,19 @@
 				  </v-card >
 
 			</v-container >
-			<template v-slot:opposite >
-				  <div
-						class = "bp-year"
-
-				  >2011 - 2016
-				  </div >
-			</template >
+			<template v-slot:opposite>
+				  <div class="bp-year">2011 - 2016</div>
+				  <div v-if="$slots.note || note" class="bp-note">
+						<slot name="note">{{ note }}</slot>
+				  </div>
+			</template>
 			<template v-slot:icon >
 			</template >
 	  </v-timeline-item >
 </template >
-<script >
+<script>
 export default {
-	name: "miami-timeline-item"
+	name: "miami-timeline-item",
+	props: { note: { type: String, default: "" } }
 }
-</script >
+</script>

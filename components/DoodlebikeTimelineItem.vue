@@ -17,15 +17,15 @@
 <!--				  <Icon name = "emojione-v1:sparkles" size = "150" class = "mr-1" ></Icon >-->
 				  <img src = "/doodlebike/doodlebike_icon.png" style = 'max-width: unset;' />
 			</template >
-			<template v-slot:opposite >
-				  <div
-						class = "bp-year"
-				  >
-						17/yrs
-				  </div >
-			</template >
+			<template v-slot:opposite>
+				  <div class="bp-year">17/yrs</div>
+				  <div v-if="$slots.note || note" class="bp-note">
+						<slot name="note">{{ note }}</slot>
+				  </div>
+			</template>
 	  </v-timeline-item >
 </template >
 
-<script setup >
-</script >
+<script setup>
+const props = defineProps({ note: { type: String, default: '' } })
+</script>

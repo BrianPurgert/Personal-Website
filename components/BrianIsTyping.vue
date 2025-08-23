@@ -66,7 +66,7 @@ return clearInterval(intervalId);
 
 
 svg.logo{
-	font-family: "tesla", cursive;
+	font-family: "Tesla", cursive;
 	font-size:   1.1rem;
 	font-style:  italic;
 	max-height:  unset;

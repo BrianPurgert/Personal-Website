@@ -6,13 +6,13 @@
 						v-text = "'2018'"
 				  ></div >
 			</template >
-			<template v-slot:opposite >
-				  <v-container >
-
-
-				  </v-container >
-
-			</template >
+			<template v-slot:opposite>
+				  <div>
+						<div v-if="$slots.note || note" class="bp-note">
+							  <slot name="note">{{ note }}</slot>
+						</div>
+				  </div>
+			</template>
 			<v-container >
 
 				  <v-card
@@ -45,4 +45,5 @@
 <!--</script>-->
 <script setup lang = "ts" >
 import SpinningRuby from './SpinningRuby.vue'
+const props = defineProps<{ note?: string }>()
 </script >
