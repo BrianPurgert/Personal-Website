@@ -9,20 +9,20 @@
     "upgrade": "nuxi upgrade --force"
   },
   "dependencies": {
-    "@nuxt/content": "3.6.3",
+    "@nuxt/content": "3.7.1",
     "@vercel/speed-insights": "1.2.0",
-    "better-sqlite3": "^12.2.0",
-    "std-env": "^3.9.0",
+    "better-sqlite3": "^12.4.1",
+    "std-env": "^3.10.0",
     "vidstack": "1.12.13",
-    "vue": "^3.5.19",
+    "vue": "^3.5.22",
     "vue-responsive-video-background-player": "^2.4.1"
   },
   "devDependencies": {
-    "@nuxt/icon": "2.0.0",
-    "nuxt": "^4.0.3",
+    "@nuxt/icon": "2.1.0",
+    "nuxt": "^4.2.0",
     "vue3-carousel-nuxt": "1.1.6",
-    "vuetify": "3.9.5",
-    "vuetify-nuxt-module": "0.18.7"
+    "vuetify": "3.10.7",
+    "vuetify-nuxt-module": "0.18.8"
   },
   "overrides": {}
 }
