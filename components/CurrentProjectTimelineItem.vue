@@ -42,12 +42,12 @@
 	  </v-timeline-item >
 </template >
 
-<script setup >
-defineProps({
-	title: { type: String, required: true },
-	url: { type: String, required: true },
-	description: { type: String, required: true },
-})
+<script setup lang = "ts" >
+defineProps<{
+	title: string
+	url: string
+	description: string
+}>()
 </script >
 
 <style scoped >
