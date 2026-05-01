@@ -9,7 +9,7 @@
 			<!--    2004 - 12 Battlefield 1942 modding IS82	-->
 			<is82-timeline-item note = "IS82 was a sick mod for Battlefield 1942, Brian mostly just played around with the map editor and installed maps" />
 			<!--	2006 - 14 Runescape Scripting  	-->
-			<runescape-timeline-item note = "Brians introduction to programming was botting in RuneScape, yes he did get banned." />
+			<runescape-timeline-item note = "Brian's introduction to programming was botting in RuneScape, yes he did get banned." />
 			<!--    2008 - 16 Crysis Interstate   -->
 			<cryengine-timeline-item note = "Brian recreated deathrace from the battlefield mod in cryengine." />
 			<!--	2010 - 18 DoodleBike   -->
