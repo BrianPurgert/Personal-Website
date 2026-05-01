@@ -7,7 +7,7 @@
 				  <v-container style = "min-height: 200px;" >
 						<v-card
 							  class = "mx-auto"
-							  color = "grey lighten-5"
+							  color = "grey-lighten-5"
 							  elevation = "0"
 							  max-width = "100%"
 							  tile
