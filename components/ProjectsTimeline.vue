@@ -28,12 +28,12 @@
 			<current-project-timeline-item
 				  title = "FPDS"
 				  url = "https://fpds.me"
-				  description = "Current project."
+				  description = "A current FPDS-focused project."
 			/>
 			<current-project-timeline-item
 				  title = "Creator to Book"
 				  url = "https://creatortobook.com"
-				  description = "Current project."
+				  description = "A current project for turning creator content into books."
 			/>
 	  </v-timeline >
 </template >
