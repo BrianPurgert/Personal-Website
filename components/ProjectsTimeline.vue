@@ -28,7 +28,7 @@
 			<current-project-timeline-item
 				  title = "FPDS"
 				  url = "https://fpds.me"
-				  description = "A current FPDS-focused project."
+				  description = "A current project for exploring Federal Procurement Data System records."
 			/>
 			<current-project-timeline-item
 				  title = "Creator to Book"

@@ -20,7 +20,7 @@
 										  {{ title }}
 									</v-card-title >
 									<v-card-subtitle
-										  class = "text-h6"
+										  class = "text-body-1"
 										  style = "font-style: normal;"
 									>
 										  {{ description }}
