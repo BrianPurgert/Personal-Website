@@ -1,7 +1,7 @@
 <template >
 	  <v-timeline-item >
 			<template v-slot:icon >
-				  <img class = "d-lg-inline-block position-relative mx-auto" src = "/twixer/twixer_icon.svg" width = "100" height = "100" alt = "Twixer Chrome extension logo" />
+				  <img class = "d-lg-inline-block position-relative mx-auto" src = "/twixer/twixer_icon.svg" width = "100" height = "100" alt = "" aria-hidden = "true" />
 			</template >
 			<template v-slot:opposite >
 				  <div class = "bp-year text-center" v-text = "2019" ></div >

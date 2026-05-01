@@ -4,7 +4,7 @@
 				  <div class = "bp-year" >Current</div >
 			</template >
 			<template v-slot:default >
-				  <v-container style = "min-height: 200px;" >
+				  <v-container class = "current-project-timeline-container" >
 						<v-card
 							  class = "mx-auto"
 							  color = "grey-lighten-5"
@@ -49,3 +49,9 @@ defineProps({
 	description: { type: String, required: true },
 })
 </script >
+
+<style scoped >
+.current-project-timeline-container {
+	  min-height: 200px;
+}
+</style >
