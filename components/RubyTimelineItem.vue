@@ -38,12 +38,6 @@
 			</v-container >
 	  </v-timeline-item >
 </template >
-<!--<script>-->
-<!--	export default {-->
-<!--		name: 'ruby-timeline-item'-->
-<!--	}-->
-<!--</script>-->
 <script setup lang = "ts" >
-import SpinningRuby from './SpinningRuby.vue'
-const props = defineProps<{ note?: string }>()
+defineProps<{ note?: string }>()
 </script >

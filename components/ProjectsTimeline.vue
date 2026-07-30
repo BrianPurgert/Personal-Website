@@ -35,8 +35,10 @@
 				  url = "https://creatortobook.com"
 				  description = "A current project for turning creator content into books."
 			/>
+			<current-project-timeline-item
+				  title = "Turing's Interface"
+				  url = "https://turingsinterface.com"
+				  description = "A universal website parser."
+			/>
 	  </v-timeline >
 </template >
-<script setup >
-import SimplegsaTimelineItem from "~/components/player/SimplegsaTimelineItem.vue"
-</script >

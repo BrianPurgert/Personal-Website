@@ -5,24 +5,20 @@
     "dev": "nuxt dev --host",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "upgrade": "nuxi upgrade --force"
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/content": "3.7.1",
-    "@vercel/speed-insights": "1.2.0",
-    "better-sqlite3": "^12.4.1",
-    "std-env": "^3.10.0",
-    "vidstack": "1.12.13",
-    "vue": "^3.5.22",
+    "@vercel/speed-insights": "2.0.0",
+    "vidstack": "1.15.6",
+    "vue": "^3.5.40",
     "vue-responsive-video-background-player": "^2.4.1"
   },
   "devDependencies": {
-    "@nuxt/icon": "2.1.0",
-    "nuxt": "^4.2.0",
+    "@mdi/js": "^7.4.47",
+    "@nuxt/icon": "2.4.1",
+    "nuxt": "^4.5.1",
     "vue3-carousel-nuxt": "1.1.6",
-    "vuetify": "3.10.7",
-    "vuetify-nuxt-module": "0.18.8"
-  },
-  "overrides": {}
+    "vuetify": "4.1.6",
+    "vuetify-nuxt-module": "0.19.5"
+  }
 }

@@ -1,5 +1,5 @@
 <template >
-	  <v-app :theme = "color" >
+	  <v-app :theme = "theme" >
 			<v-app-bar
 				  border
 				  class = 'position-sticky'
@@ -7,16 +7,14 @@
 				  scroll-behavior = 'collapse'
 			>
 				  <template v-slot:prepend >
-						<nuxt-link class = 'px-6 ' to = "/" >
-							  <v-img id = "bp" alt = "BP" class = "mr-2" height = "40" src = "/bp.svg" to = "/"
-									width = "50" >
-							  </v-img >
+						<nuxt-link class = 'px-6' to = "/" >
+							  <v-img id = "bp" alt = "BP" class = "mr-2" height = "40" src = "/bp.svg" width = "50" />
 						</nuxt-link >
 				  </template >
 
 				  <v-spacer ></v-spacer >
 				  <template v-slot:append >
-						<v-btn color = '#afd5aa' href = 'https://www.linkedin.com/in/brian-purgert/' onscroll = '' >
+						<v-btn color = '#afd5aa' href = 'https://www.linkedin.com/in/brian-purgert/' >
 							  <template v-slot:prepend >
 									<Icon name = "fa-brands:linkedin-in" size = "1.5em" />
 							  </template >
@@ -40,34 +38,39 @@
 							  </template >
 							  <span class = "hidden-sm-and-down" >Resume</span >
 						</v-btn >
-						<Icon
-							  :name = "color === 'light' ? 'meteocons:sunset' : 'meteocons:fog-night'"
-							  @click = "onClick"
-						></Icon >
+						<v-btn
+							  :aria-label = "theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme'"
+							  icon
+							  variant = "text"
+							  @click = "toggleTheme"
+						>
+							  <Icon
+									:name = "theme === 'light' ? 'meteocons:sunset' : 'meteocons:fog-night'"
+									size = "2.5em"
+							  />
+						</v-btn >
 				  </template >
 			</v-app-bar >
 			<v-main class = 'overflow-x-hidden overflow-y-hidden' >
 				  <v-container >
 						<nuxt-page />
 				  </v-container >
-				  <material-parallax_1 />
+				  <parallax-background />
 
-				  <v-footer class = "pt-5 pb-5" color = "transparent" >
+				  <v-footer class = "justify-center pt-5 pb-5" color = "transparent" >
+						© {{ new Date().getFullYear() }} Brian Purgert
 				  </v-footer >
-
 			</v-main >
 	  </v-app >
 	  <SpeedInsights />
 </template >
 
 <script setup >
-import { SpeedInsights }  from "@vercel/speed-insights/vue"
-import { ref }            from "vue"
-import MaterialParallax_1 from "~/components/MaterialParallax_1.vue"
+import { SpeedInsights } from "@vercel/speed-insights/vue"
 
-const color = ref("dark")
+const theme = ref("dark")
 
-function onClick() {
-	color.value = color.value === "light" ? "dark" : "light"
+function toggleTheme() {
+	theme.value = theme.value === "light" ? "dark" : "light"
 }
 </script >

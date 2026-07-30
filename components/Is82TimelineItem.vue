@@ -64,5 +64,5 @@ const carouselItems = ref([
 
 const model = ref(null)
 
-const props = defineProps({ note: { type: String, default: '' } })
+defineProps({ note: { type: String, default: '' } })
 </script >

@@ -1,51 +1,36 @@
 <script setup>
-import { process }     from "std-env"
-import CurrentProjects from "~/pages/CurrentProjects.vue";
+const description = "Brian Purgert's personal portfolio showcasing web development projects and skills."
 
-// Extracted SEO and head configurations into constants
-const seoOptions = {
-	description: "Brian Purgert's personal portfolio showcasing web development projects and skills.",
+useSeoMeta({
+	title: "Brian Purgert | Web Development Portfolio",
+	description,
 	ogTitle: "Brian Purgert | Web Development Portfolio",
-	ogDescription: "Brian Purgert's personal portfolio showcasing web development projects and skills.",
+	ogDescription: description,
 	ogImage: "/favicon.png",
 	ogUrl: "https://brianpurgert2.com",
 	twitterTitle: "Brian Purgert | Web Development Portfolio",
-	twitterDescription: "Brian Purgert's personal portfolio showcasing web development projects and skills.",
+	twitterDescription: description,
 	twitterImage: "/favicon.png",
-	twitterCard: "summary",
-};
+	twitterCard: "summary"
+})
 
-const headOptions = {
-	htmlAttrs: { lang: "en" },
-	link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
-};
+useHead({
+	htmlAttrs: {lang: "en"},
+	link: [{rel: "icon", type: "image/png", href: "/favicon.png"}]
+})
 
-// Dedicated function handling client-side console logging
-function logSourceCode() {
-	if (process.client) {
-		const consoleStyles = "color: greenyellow; font-size: 15px;";
-		console.log(
-			"%cSource Code: https://github.com/BrianPurgert/Personal-Website",
-			consoleStyles,
-		);
-	}
+if (import.meta.client) {
+	console.log(
+		"%cSource Code: https://github.com/BrianPurgert/Personal-Website",
+		"color: greenyellow; font-size: 15px;"
+	)
 }
-
-// Invoke composable hooks and client-side logging function
-useSeoMeta(seoOptions);
-useHead(headOptions);
-logSourceCode();
 </script>
 
 <template>
-	  <BrianIsTyping class="mt-10 mb-0 mx-auto" :displayTextArray="['rian']" />
+	  <site-logo class="mt-10 mb-0 mx-auto" />
 	  <v-container>
 			<projects-timeline />
-			<CurrentProjects />
+			<skills class="mt-10" />
 	  </v-container>
-	  <div class="my-6"></div>
 </template>
-
-<style>
-/* Styles extracted into external stylesheets for clarity and maintainability */
-</style>

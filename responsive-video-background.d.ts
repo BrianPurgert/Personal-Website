@@ -1,8 +1,6 @@
 declare module 'vue-responsive-video-background-player' {
-	import { PluginObject } from 'vue'
+	import type { DefineComponent } from 'vue'
 
-	interface VideoPlayerPlugin extends PluginObject<any> {
-	}
-
-	export const Plugin: VideoPlayerPlugin
+	const VideoBackground: DefineComponent<Record<string, unknown>>
+	export default VideoBackground
 }

@@ -34,5 +34,3 @@
 	  </v-timeline-item >
 </template >
 
-<script setup >
-</script >

@@ -6,11 +6,8 @@
 			<symbol id = "s-text" >
 				  <text class = "b2" x = "5" y = "12" >b</text >
 				  <text class = "b2" x = "5" y = "12" >p</text >
-				  <text class = "" x = "18" y = "12" >
-						<!--						{{ typeValue }}-->
-						rian
-				  </text >
-				  <text class = "" x = "15" y = "23" >purgert</text >
+				  <text x = "18" y = "12" >rian</text >
+				  <text x = "15" y = "23" >purgert</text >
 			</symbol >
 			<g class = "g-ants" >
 				  <use class = "text-copy" href = "#s-text" ></use >
@@ -23,47 +20,8 @@
 	  </svg >
 
 </template >
-<script lang = "ts" setup >
-import { ref, computed, onMounted } from 'vue'
-
-const props = defineProps({
-	displayTextArray: {
-		type: Array as () => string[],
-		required: true
-	}
-})
-
-const typeValue      = ref('')
-let currentTextIndex = 0
-let charIndex        = 0
-const typingSpeed    = 200
-const newTextDelay   = 300
-
-const currentText = computed(() => props.displayTextArray[currentTextIndex])
-
-const typeText = () => {
-	if (charIndex < currentText.value.length) {
-		typeValue.value += currentText.value.charAt(charIndex)
-		charIndex++
-	} else {
-		// Prepare for the next word
-		charIndex        = 0
-		currentTextIndex = (currentTextIndex + 1) % props.displayTextArray.length
-	}
-}
-
-onMounted(() => {
-	const intervalId = setInterval(typeText, typingSpeed)
-
-	// Adjust timeout based on how many words are present
-	setTimeout(() => {
-return clearInterval(intervalId);
-}, newTextDelay + typingSpeed * props.displayTextArray.length * currentText.value.length)
-})
-</script >
 
 <style scoped >
-
 
 svg.logo{
 	font-family: "Tesla", cursive;
@@ -78,7 +36,6 @@ svg.logo{
 .text-copy{
 	animation:                 stroke-offset 4s infinite linear alternate;
 	animation-iteration-count: infinite;
-	/* animation-timing-function: steps(8); */
 	text-shadow:               -8px -4px rgba(20, 20, 21, 0.8);
 	fill:                      rgb(189, 44, 68);
 	stroke:                    rgb(41, 117, 168);
@@ -90,7 +47,6 @@ svg.logo{
 }
 
 .b-top{
-
 	fill: rgb(189, 44, 68);
 }
 

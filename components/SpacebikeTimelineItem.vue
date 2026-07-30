@@ -9,14 +9,14 @@
 							  >
 									<v-card-title class = "video-overlay-text" >SpaceBike</v-card-title >
 							  </VideoBackground >
-							  <nuxt-icon class = "google_installs" filled name = "google_installs" ></nuxt-icon >
+							  <span class = "google_installs" >
+									<Icon mode = "svg" name = "bp:google-installs" />
+							  </span >
 						</v-card >
 				  </ClientOnly >
 			</v-container >
 			<template v-slot:icon >
-				  <nuxt-icon filled name = "spacebike_icon_new" style = 'font-size: 72px;' />
-<!--				  <img src = "/doodlebike/doodlebike_icon.png" style = 'max-width: unset' />-->
-
+				  <Icon mode = "svg" name = "bp:spacebike-icon" size = "72" />
 			</template >
 			<template v-slot:opposite>
 				  <div class="bp-year">17/yrs</div>
@@ -28,5 +28,5 @@
 </template >
 
 <script setup>
-const props = defineProps({ note: { type: String, default: '' } })
+defineProps({ note: { type: String, default: '' } })
 </script>

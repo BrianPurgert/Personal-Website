@@ -7,7 +7,7 @@
 				  </div>
 			</template>
 			<template v-slot:icon >
-				  <nuxt-icon filled name = "scar_divi" style = 'font-size: 5em;' />
+				  <Icon mode = "svg" name = "bp:scar-divi" size = "5em" />
 			</template >
 			<template v-slot:default >
 				  <v-container >
@@ -54,5 +54,5 @@
 </template >
 <script setup>
 import ScarText from "~/components/ScarText.vue"
-const props = defineProps({ note: { type: String, default: '' } })
+defineProps({ note: { type: String, default: '' } })
 </script>

@@ -22,8 +22,3 @@
 			<span class = "Reserved_word" >end</span ><span
 			class = "Symbol" >.</span ></div >
 </template >
-<script >
-export default {
-	name: "scar-text"
-}
-</script >

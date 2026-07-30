@@ -15,14 +15,6 @@ const speeds = [1, 5, 3, 4, 2]
 
 <style >
 
-.grid{
-
-	background-image:    linear-gradient(to right, rgb(203 213 225) 1px, transparent 1px),
-	                     linear-gradient(to bottom, rgb(203 213 225) 1px, transparent 1px);
-	background-size:     2.5rem 2.5rem;
-	background-position: center center;
-}
-
 .v-main, .v-application{
 	backdrop-filter: blur(10px) !important;
 }
@@ -51,12 +43,7 @@ const speeds = [1, 5, 3, 4, 2]
 	left:            0;
 	background:      none;
 	justify-content: center;
-	overflow:        visible;;
-}
-
-.elevation-16{
-	box-shadow: 0 8px 10px 5px rgba(0, 0, 0, 0.6),
-	            0 16px 24px 2px rgba(0, 0, 0, 0.43), 0 6px 30px 5px rgba(0, 0, 0, 0.45);
+	overflow:        visible;
 }
 
 .stripe{
@@ -209,10 +196,6 @@ const speeds = [1, 5, 3, 4, 2]
 
 .speed-5{
 	transform: translateZ(-10px) scale(11);
-}
-
-.speed-6{
-	transform: translateZ(-12px) scale(13);
 }
 
 .speed-6{
