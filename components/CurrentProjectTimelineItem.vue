@@ -7,7 +7,6 @@
 				  <v-container class = "current-project-timeline-container" >
 						<v-card
 							  class = "mx-auto"
-							  color = "grey-lighten-5"
 							  elevation = "0"
 							  max-width = "100%"
 							  tile
@@ -20,7 +19,7 @@
 										  {{ title }}
 									</v-card-title >
 									<v-card-subtitle
-										  class = "text-body-1"
+										  class = "text-body-1 text-wrap"
 										  style = "font-style: normal;"
 									>
 										  {{ description }}
@@ -53,5 +52,12 @@ defineProps<{
 <style scoped >
 .current-project-timeline-container {
 	  min-height: 200px;
+}
+
+/* styles.css zeroes padding inside timeline bodies on small screens, which pushes this text against the screen edge */
+@media (max-width: 960px) {
+	  .current-project-timeline-container .v-card-text {
+			padding-inline: 16px !important;
+	  }
 }
 </style >
