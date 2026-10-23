@@ -459,3 +459,46 @@ z-index: -1!important;
 	color:           rgb(255, 0, 0);
 }
 
+/* 2027 layer: hero, Now shipping, build log chrome. Archive styles above stay untouched. */
+
+html{
+	scroll-behavior: smooth;
+}
+
+section[id]{
+	scroll-margin-top: 96px;
+}
+
+::selection{
+	background: rgb(189, 44, 68);
+	color:      rgb(255, 255, 255);
+}
+
+:focus-visible{
+	outline:        2px solid rgb(189, 44, 68);
+	outline-offset: 2px;
+}
+
+.bp-mono{
+	font-family:    ui-monospace, "Cascadia Mono", Consolas, "Courier New", monospace;
+	letter-spacing: 0.02em;
+}
+
+.bp-note{
+	max-width:   34ch;
+	margin:      0 auto;
+	line-height: 1.6;
+	text-align:  center;
+}
+
+@media (prefers-reduced-motion: reduce){
+	html{
+		scroll-behavior: auto;
+	}
+
+	.stripe,
+	.text-copy,
+	.v-timeline--vertical.v-timeline--align-start .v-timeline-divider .v-timeline-divider__after{
+		animation: none !important;
+	}
+}

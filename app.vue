@@ -12,8 +12,12 @@
 						</nuxt-link >
 				  </template >
 
-				  <v-spacer ></v-spacer >
+				  <v-btn class="hidden-md-and-down" href="#now" variant="text">Now</v-btn>
+						<v-btn class="hidden-md-and-down" href="#build-log" variant="text">Build log</v-btn>
+						<v-btn class="hidden-md-and-down" href="#stack" variant="text">Stack</v-btn>
+						<v-spacer ></v-spacer >
 				  <template v-slot:append >
+						<v-btn aria-label="Open jump menu (Ctrl K)" class="hidden-sm-and-down bp-mono" variant="text" @click="openPalette">Ctrl K</v-btn>
 						<v-btn color = '#afd5aa' href = 'https://www.linkedin.com/in/brian-purgert/' >
 							  <template v-slot:prepend >
 									<Icon name = "fa-brands:linkedin-in" size = "1.5em" />
@@ -58,7 +62,8 @@
 				  <parallax-background />
 
 				  <v-footer class = "justify-center pt-5 pb-5" color = "transparent" >
-						© {{ new Date().getFullYear() }} Brian Purgert
+						© {{ new Date().getFullYear() }} Brian Purgert · Shipping since 2004<br>
+						<span class="bp-mono" style="font-size: 0.75rem; opacity: 0.8;">Nuxt 4 + Vuetify · <a href="https://github.com/BrianPurgert/Personal-Website" rel="noopener noreferrer" target="_blank">Site source</a> · Ctrl K to jump</span>
 				  </v-footer >
 			</v-main >
 	  </v-app >
@@ -69,6 +74,10 @@
 import { SpeedInsights } from "@vercel/speed-insights/vue"
 
 const theme = ref("dark")
+
+function openPalette() {
+	window.dispatchEvent(new Event("bp:palette"))
+}
 
 function toggleTheme() {
 	theme.value = theme.value === "light" ? "dark" : "light"
